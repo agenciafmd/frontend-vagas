@@ -24,7 +24,7 @@ Seu dia será repleto de:
   'Oportunidade em aperfeiçoar hard skills',
   'Oportunidade em aperfeiçoar soft skills',
   'Salário coerente com o mercado, trabalho e perfil profissional',
-  'Disputas de ping pong',
+  'Disputas de Pebolim',
   'Disputas de Fifinha',
   'Entre muitas outras coisas legais!'
 ]
@@ -43,7 +43,11 @@ const frontendFMDTecnologies = [
     'Sass',
     'Typescript',
     'Git',
-    'Gitlab'
+    'Gitlab',
+    'Ionic',
+    'RXJS',
+    'NGRX',
+    'NGXS'
 ];
 ````
 ````javascript
