@@ -99,6 +99,7 @@ Ficou em dúvida!? Não se preocupe, nós preparamos um figma para ser como mode
 E caso esteja em dúvida de qual API usar este [site](https://publicapis.dev/) tem diversas API's bem legais que podem te ajudar, escolha a que mais lhe agrade!
 
 ## Entrega
+Para fazer a entrega do desafio, preparamos um template com algumas recomendações para que você possa utilizar no desenvolvimento do projeto ([Template Pull Request](https://github.com/agenciafmd/frontend-vagas/blob/main/docs/pull_request_template.md))
 
 ## Dúvidas
 
