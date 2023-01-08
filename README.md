@@ -132,7 +132,7 @@ Em nossos projetos adotamos um Styleguide ([Commit Amigão](https://github.com/B
 Exemplo:
   
 ```
-    feat(seção sobre nós): Adiciona os dados mockados da api no html
+    feat(seção sobre nós): adiciona os dados mockados da api no html
 ```
   
 
