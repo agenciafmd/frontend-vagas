@@ -95,7 +95,7 @@ sua preferência, basta atender os requisitos abaixo:
 - Formulário de newsletter.
 - Footer.
 
-Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de inspiração para a sua proposta - [Protótipo de LP](https://www.figma.com/file/SSTsobmlfwSgfxIpk1OWqP/Desafio-para-vaga-de-Front-End?node-id=201%3A9&t=H4tzwZSQRHgv9rGl-1).
+Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de inspiração para a sua proposta - [Protótipo de LP](https://www.figma.com/file/SSTsobmlfwSgfxIpk1OWqP/Desafio-para-vaga-de-Front-End?t=uB4gXzXXZJyrCnnN-1).
 
 <b>Requisitos mínimos</b>
 - HTML
