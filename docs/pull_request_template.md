@@ -1,42 +1,36 @@
-# Pull Request Checklist
-Antes de submeter uma pull request, verifique se ela segue as seguintes recomendações ( faz parte da nossa avaliação :slightly_smiling_face:) 
+# Pull Request
+Antes de submeter uma pull request, gostariamos de entender como o projeto foi desenvolvido, detalhe um pouco mais sobre :slightly_smiling_face:
+
+<b> Framework, linguagem e ferramentas </b>
+
+Quais as ferramentas, bibliotecas e framework você usou? por quê?
+
+<b> API's </b>
+
+Quais API's foram utilizadas? por quê? 
+
+<b> Feedback do desafio </b>
+
+Em nosso time somos abertos ao diálogo e parte disso é a cultura do feedback, porque acreditamos na evolução do aprendizado através dela.
+e dado isso, queremos saber de você :slightly_smiling_face:.
+você teve alguma dificuldade em entender o desafio proposto? Se sim, descreva para a gente qual o ponto que você acha que deveria ser melhorado.
 
 
-## Styleguides
+## Review
 
-Em nossos projetos adotamos uma Styleguides ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação de um commit, onde a estrutura é baseada em
+- [] Header com os link de âncora para as seções.
+- [] Seção contendo 3 banners rotativo (Slider).
+- [] Seção de cards (Tema livre).
+  - [] Mobile: um card abaixo do outro.
+  - [] Desktop: 3 colunas.
+- [] Seção de cards (Tema livre).
+  - [] Mobile: Slider.
+  - [] Desktop: Slider desligado.
+- [] Footer
 
-```
-<tipo>(<escopo>): <assunto>
-```
 
-<b>Os valores permitidos para o `<tipo>` são:</b>
-
--  feat (nova funcionalidade)
--  style (formatação geral no código. Não confundir com CSS)
--  refactor (refatoração de código de produção)
--  test (adicionar/refatorar testes)
--  fix (adivinha qual é esse)
--  docs (e esse também)
--  chore (atualização de tarefas ou código que não está relacionado a produção)
-
-  <b>`<escopo>`</b><br>
     
-  O escopo deve especificar o diretório e/ou arquivo que foi trabalhado.
-  
-  <b>`<assunto>`</b>
-
-    - Máximo de 50 caracteres
-    - Tipo de escopo devem estar em letras minúsculas
-    - Assunto deve estar no imperativo
-
-Exemplo:
-  
-```
-  feat(app/app.component.ts): cria método para resgatar dados da rota ativa 
-```
-  
-    
-### Hora da verdade, os seus commit's estão seguindo as recomendações? ( `preencha com "x" uma das alternativas` :monocle_face:)
+### Hora da verdade, os seus commit's estão seguindo as recomendações do ([Commit Amigão](https://github.com/agenciafmd/frontend-vagas/#entrega))? ( `preencha com "x" uma das alternativas` :monocle_face:)
  - [] Sim <br>
  - [] Não
+
