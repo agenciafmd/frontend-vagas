@@ -113,7 +113,38 @@ Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de insp
 E caso esteja em dúvida de qual API usar, esse [site](https://publicapis.dev/) possuí diversas API's bem legais que podem te ajudar, escolha o que seu s2 mandar!
 
 ## Entrega
-Para fazer a entrega do desafio, preparamos um template com algumas recomendações para que você possa utilizar no desenvolvimento do projeto ([Template Pull Request](https://github.com/agenciafmd/frontend-vagas/blob/main/docs/pull_request_template.md))
+Em nossos projetos adotamos um Styleguide ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação dos commit's, onde a estrutura é baseada em
+
+```
+<tipo>(<escopo>): <assunto>
+```
+
+<b>Os valores permitidos para o `<tipo>` são:</b>
+
+-  feat (nova funcionalidade)
+-  style (formatação geral no código. Não confundir com CSS)
+-  refactor (refatoração de código de produção)
+-  test (adicionar/refatorar testes)
+-  fix (adivinha qual é esse)
+-  docs (e esse também)
+-  chore (atualização de tarefas ou código que não está relacionado a produção)
+
+  <b>`<escopo>`</b><br>
+    
+  O escopo deve informar onde foi feito a alteração
+  
+  <b>`<assunto>`</b>
+
+    - Máximo de 50 caracteres
+    - Tipo de escopo devem estar em letras minúsculas
+    - Assunto deve estar no imperativo
+
+Exemplo:
+  
+```
+    feat(seção sobre nós): adiciona os dados mockados da api no html
+```
+  
 
 ## Avaliação
 
