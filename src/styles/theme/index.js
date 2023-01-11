@@ -18,7 +18,8 @@ export default {
     },
     background: {
       main: '#000',
-      second: 'rgba(255, 255, 255, 0.1)'
+      second: 'rgba(255, 255, 255, 0.1)',
+      footer: '#fff'
     },
     error: {
       main: '#FF0000'

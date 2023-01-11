@@ -3,10 +3,16 @@ import Image from 'next/image.js'
 import { useEffect, useState } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import logo from '../../assets/logo.svg'
+import logoV2 from '../../assets/logoV2.svg'
 import { useWindowSize } from '../../hooks/useWindowSize.js'
 import { MenuDesktop } from '../Menu/MenuDesktop'
 import { MenuMobile } from '../Menu/MenuMobile'
-import { HeaderContainer } from './style.js'
+import {
+  FooterBoxInfos,
+  FooterBoxLogo,
+  FooterContainer,
+  HeaderContainer
+} from './style.js'
 
 export function Layout({ children }) {
   const { width } = useWindowSize()
@@ -43,8 +49,18 @@ export function Layout({ children }) {
           <main>{children}</main>
         </Row>
 
-        <Row>
-          <footer>footer</footer>
+        <Row className="position-relative">
+          <FooterContainer>
+            <FooterBoxInfos>
+              <Image src={logoV2} alt="Logo" width={233.62} />
+              <span>email@email.com</span>
+              <span>17 9 4736-4958</span>
+            </FooterBoxInfos>
+
+            <FooterBoxLogo>
+              <h1>F&MD</h1>
+            </FooterBoxLogo>
+          </FooterContainer>
         </Row>
       </Container>
     </>
