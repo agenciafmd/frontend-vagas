@@ -253,6 +253,73 @@
                 
             </div>
         </section>
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="heading">
+                <h1>Assine nossa<span>Newsletter</span></h1>
+            </div> 
+            <div class="newsletter-form">
+                <div class="newsletter-form-img">
+                    <img src="./assets/img/form.jpg" alt="">
+                 </div>               
+                <form id="formulario" method="post" autocomplete="on">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Digite seu nome" 
+                        required
+                        />
+                        <label for="email">E-mail</label>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Digite seu e-mail" 
+                        data-tipo="email"
+                        pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?"
+                        required
+                        />
+                     
+                    <input type="submit" class="btn modal-btn" value="Quero me inscrever" />
+                </div>
+                </form>
+            </div>
+            <!-- Modal -->
+            <div class="modal-overlay">
+                <div class="modal-container">
+                    <h2>Sucesso!</h2>  
+                    <p>Sua inscrição foi realizada e em breve você começará a receber nossas notícias.</p>
+                    <button class="close-btn">
+                        <i class='bx bx-window-close'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-box">
+                <h2>Cat Café</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusantium ab tempora, numquam in corporis.</p>
+    
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Contatos</h3>
+                <li><a href="#"><i class='bx bx-phone'></i>Telefone</a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp' ></i>Whatsapp</a></li>
+                <li><a href="#"><i class='bx bx-envelope' ></i>E-mail</a></li>
+            </div>
+        </section>
+
+
 
 
 

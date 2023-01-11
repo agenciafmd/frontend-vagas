@@ -77,7 +77,7 @@ section{
 .home {
     width: 100%;
     min-height: 50vh;
-    background: #d1c7d0;
+    background: var(--bg-color);
 }
 
 .swiper {
@@ -106,7 +106,7 @@ section{
     text-align: center;
 }
 
-.heading h1{
+.heading h1 {
     font-size: 1.7rem;
     font-weight: 600;
     text-transform: capitalize;
@@ -217,4 +217,119 @@ img{
 .avaliacao-container .avaliacao-slide:hover{
     background: var(--text-color);
     color: var(--main-color);
+}
+
+/* Newsletter*/
+
+.newsletter-form {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form-img {
+    width: 30%;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-form-img img {
+    width: 50%;
+    border-radius: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-group label {
+    color: var(--text-color);
+    font-weight: 700;
+
+}
+
+.form-group input{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    outline: none;
+    margin-bottom: 1rem;
+
+}
+
+.form-group input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.btn {
+    background: var(--text-color);
+    color: var(--second-color);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Modal*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(233, 132, 228, 0.5);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s linear;
+    visibility: hidden;
+    z-index: -10;
+}
+
+/* Open/close modal*/
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+.modal-container {
+    background: var(--text-color);
+    color: var(--second-color);
+    border-radius: 5px;
+    width: 90vw;
+    height: 20vh;
+    max-width: 620px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    color: #c13131 ;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.close-btn:hover {
+    color: #9b2626;
+    transform: scale(1.2);
 }
