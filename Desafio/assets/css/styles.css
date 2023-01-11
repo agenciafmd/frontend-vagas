@@ -172,3 +172,49 @@ img{
     transform: scaleX(-1);
     transition: 0.5s;
 }
+
+/* Avaliações*/
+
+.avaliacao-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.avaliacao-container .avaliacao-slide{
+   
+    padding: 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.avaliacao-container .avaliacao-slide img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+
+.avaliacao-container .avaliacao-slide .stars .bx{
+    color: var(--main-color);
+}
+
+.avaliacao-container .avaliacao-slide p{
+    font-size: 0.938rem;
+    font-style: italic;
+    margin: 0.5rem 0.5rem;
+}
+
+.avaliacao-container .avaliacao-slide h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.avaliacao-container .avaliacao-slide:hover{
+    background: var(--text-color);
+    color: var(--main-color);
+}
