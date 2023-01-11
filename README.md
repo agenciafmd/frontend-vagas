@@ -113,7 +113,12 @@ Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de insp
 E caso esteja em dúvida de qual API usar, esse [site](https://publicapis.dev/) possuí diversas API's bem legais que podem te ajudar, escolha o que seu s2 mandar!
 
 ## Entrega
-Em nossos projetos adotamos um Styleguide ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação dos commit's, onde a estrutura é baseada em
+
+Para avaliarmos o projeto de teste, submeta um [Pull Request (PR)](https://github.com/agenciafmd/frontend-vagas/blob/main/docs/pull_request_template.md)  para este repositório!
+
+### Commits
+
+Em nossos projetos adotamos um styleguide ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação dos commit's, onde a estrutura é baseada em
 
 ```
 <tipo>(<escopo>): <assunto>
