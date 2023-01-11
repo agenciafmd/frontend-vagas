@@ -1,5 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
+import { Layout } from '../src/components/Layout'
 import { GlobalStyle } from '../src/styles/global'
 import theme from '../src/styles/theme'
 
@@ -13,7 +15,9 @@ export default function App({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   )

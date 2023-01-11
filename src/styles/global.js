@@ -19,11 +19,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #__next {
-    width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center
+  }
+
+  .customModal {
+    background-color: ${props => props.theme.pallete.background.main};
+
+    .modal-body {
+      padding: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `

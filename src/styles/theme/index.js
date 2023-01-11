@@ -17,7 +17,8 @@ export default {
       main: '#e9ff00'
     },
     background: {
-      main: '#000'
+      main: '#000',
+      second: 'rgba(255, 255, 255, 0.1)'
     },
     error: {
       main: '#FF0000'
