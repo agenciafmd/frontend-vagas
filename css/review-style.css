@@ -1,0 +1,105 @@
+.slider-review {
+    position: relative;
+    width: 100%;
+}
+
+.buttons-review {
+    display: none;
+}
+
+.profile-img {
+    width: 90px;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+@media (max-width:500px) {
+
+    .slider-review {
+        position: relative;
+        height: 600px;
+        overflow: auto;
+    }
+
+    .review {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    .review.current-review {
+        opacity: 1;
+
+    }
+
+
+    .review .user {
+        position: absolute;
+        opacity: 0;
+        padding: 15px 0 15px 15px;
+        width: 100%;
+        color: #333;
+    }
+
+    .review .user h1 {
+        margin-bottom: 10px;
+
+    }
+
+    .review .user p {
+        line-height: normal;
+    }
+
+    .review.current-review .user {
+        opacity: 1;
+        transition: all 0.7s ease-in-out 0.3s;
+
+    }
+
+    .buttons-review {
+        display: block;
+    }
+
+    .buttons-review button#next-review {
+        position: absolute;
+        top: 60%;
+        right: 15px;
+    }
+
+    .buttons-review button#prev-review {
+        position: absolute;
+        top: 60%;
+        left: 15px;
+    }
+
+    .buttons-review button {
+        border: 2px solid #333;
+        background-color: transparent;
+        color: #333;
+        cursor: pointer;
+        padding: 13px 15px;
+        border-radius: 50%;
+        outline: none;
+        opacity: 0.3;
+    }
+
+    .buttons-review button:hover {
+        background-color: #333;
+        color: #FFF;
+        opacity: 1;
+    }
+}

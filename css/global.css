@@ -1,0 +1,374 @@
+:root {
+    --width: 1280px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    width: var(--width);
+    height: 150px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+}
+
+header a {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fffeff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+}
+
+h1 {
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.125rem;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 42px;
+    color: #33323D;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #33323D;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* color: #33323D;*/
+}
+
+div {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: var(--width);
+    background-color: #33323D;
+}
+
+footer a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+footer p {
+    text-align: end;
+    color: white;
+}
+
+.movie-info {
+    padding: 70px 35px;
+    color: white;
+}
+
+.movie-info .movie-title {
+    width: 65%;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    height: 710px;
+    width: 100%;
+    background-image: url("../assets/Rectangle 1.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+
+}
+
+.container-main img {
+    width: 80px;
+    color: white;
+}
+
+.container-main p {
+    font-size: 15px;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nav-container img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.content-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100px;
+}
+
+.content-page div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    width: var(--width);
+}
+
+.container-cards div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.container-cards .card {
+    height: 267px;
+    width: 176px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.container-reviwes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    width: var(--width);
+}
+
+.default-button {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    padding: 5px;
+    width: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container-newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    width: var(--width);
+}
+
+.container-newsletter form {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    width: var(--width);
+}
+
+.container-footer div {
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    gap: 15px;
+    width: 40%;
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        width: 100vw;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    ul {
+        justify-content: space-between;
+        width: 100vw;
+        padding: 0.5rem;
+        gap: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .container-main {
+        width: 100vw;
+        height: auto;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-container .controller {
+        width: auto;
+    }
+
+    .container-cards {
+        width: 100vw;
+    }
+
+    .container-cards div:last-child {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .container-reviwes {
+        width: 100vw;
+        height: 600px;
+        position: relative;
+    }
+
+    .container-reviwes .load-more {
+        display: none;
+    }
+
+    .container-newsletter {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .container-newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .container-footer div {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+}
+
+.off {
+    visibility: hidden;
+}
