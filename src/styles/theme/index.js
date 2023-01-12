@@ -14,7 +14,8 @@ export default {
       text: '#fff'
     },
     secondary: {
-      main: '#e9ff00'
+      main: '#e9ff00',
+      second: '#fff'
     },
     background: {
       main: '#000',
