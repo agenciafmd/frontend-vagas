@@ -90,3 +90,49 @@ export const HighlightInfosBox = styled.section`
     background-color: ${props => props.theme.pallete.secondary.main};
   }
 `
+
+export const HighlighPagination = styled.div`
+  width: 89%;
+
+  position: absolute;
+  left: 80px;
+  bottom: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 576px) {
+    left: 20px;
+  }
+
+  .ellipses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ellipse {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background-color: ${props => props.theme.pallete.background.ellipse};
+  }
+
+  .active {
+    background-color: ${props => props.theme.pallete.secondary.main};
+  }
+
+  .arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+`

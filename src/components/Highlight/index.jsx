@@ -1,6 +1,9 @@
 import Image from 'next/image'
+import arrowLeft from '../../../src/assets/arrowLeft.svg'
+import arrowRight from '../../../src/assets/arrowRight.svg'
 import {
   Gradient,
+  HighlighPagination,
   HighlightContainer,
   HighlightInfosBox,
   HighlightInfosContainer,
@@ -26,6 +29,18 @@ export function Highlight({ content }) {
           nibh, viverra vitae erat ut, lacinia interdum nisl.
         </p>
       </HighlightInfosContainer>
+
+      <HighlighPagination>
+        <div className="ellipses">
+          <div className="ellipse active" />
+          <div className="ellipse" />
+          <div className="ellipse" />
+        </div>
+        <div className="arrows">
+          <Image src={arrowRight} alt="arrow right" />
+          <Image src={arrowLeft} alt="arrow left" />
+        </div>
+      </HighlighPagination>
     </HighlightContainer>
   )
 }
