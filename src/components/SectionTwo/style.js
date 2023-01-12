@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SectionOneContainer = styled.section`
+export const SectionTwoContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,26 +24,17 @@ export const SectionOneContainer = styled.section`
       font-size: 1.7em;
     }
   }
-
-  .bg--section_one {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    @media (max-width: 576px) {
-      top: 28%;
-      left: -30%;
-    }
-  }
 `
 
-export const SectionOneCards = styled.div`
+export const SectionTwoCards = styled.div`
+  margin-top: 48px;
+
   display: grid;
   align-items: flex-start;
-  grid-template-columns: repeat(4, minmax(257px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(330px, 1fr));
+  gap: 65px;
 
   @media (max-width: 980px) {
-    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   }
 `
