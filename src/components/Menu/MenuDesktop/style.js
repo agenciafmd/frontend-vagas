@@ -14,6 +14,7 @@ export const NavList = styled.ul`
   align-items: center;
   text-align: center;
 
+  margin: 0;
   gap: 20px;
 
   @media (max-width: 576px) {

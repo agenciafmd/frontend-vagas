@@ -11,7 +11,8 @@ import {
   FooterBoxInfos,
   FooterBoxLogo,
   FooterContainer,
-  HeaderContainer
+  HeaderContainer,
+  MainContainer
 } from './style.js'
 
 export function Layout({ children }) {
@@ -35,8 +36,8 @@ export function Layout({ children }) {
         <title>Menos do mesmo</title>
       </Head>
 
-      <Container fluid>
-        <Row>
+      <Container className="p-0" fluid>
+        <Row className="m-0">
           <HeaderContainer>
             <Image src={logo} alt="Logo" width={233.62} />
 
@@ -45,11 +46,11 @@ export function Layout({ children }) {
           </HeaderContainer>
         </Row>
 
-        <Row>
-          <main>{children}</main>
+        <Row className="m-0">
+          <MainContainer>{children}</MainContainer>
         </Row>
 
-        <Row className="position-relative">
+        <Row className="position-relative m-0">
           <FooterContainer>
             <FooterBoxInfos>
               <Image src={logoV2} alt="Logo" width={233.62} />

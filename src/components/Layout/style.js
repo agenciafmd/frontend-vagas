@@ -3,17 +3,32 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   padding: 20px 80px;
 
+  position: fixed;
+  z-index: 999;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   background: ${props => props.theme.pallete.background.second};
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+
+  @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
+    background: ${props => props.theme.pallete.background.second};
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 
   @media (max-width: 576px) {
     padding: 20px 16px;
     width: 100%;
   }
+`
+
+export const MainContainer = styled.main`
+  max-width: 1280px;
+  padding: 0;
 `
 
 export const FooterContainer = styled.footer`
