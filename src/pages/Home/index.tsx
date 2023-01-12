@@ -7,9 +7,9 @@ const Home = () => {
       <p>
         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
       </p>
-      <label>Receba novidades por e-mail</label>
+      <label>Receive news by email</label>
       <div className="content">
-        <button>Cadastrar-se</button>
+        <button>register</button>
         <input type='email' placeholder='E-mail' />
         <input type='text' placeholder="Nome" />
       </div>

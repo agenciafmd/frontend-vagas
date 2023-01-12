@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Main = styled.div`
   .first {
-    background: red;
+    /* background: red; */
     overflow: hidden;
 
     .offset {
@@ -27,7 +27,10 @@ export const Main = styled.div`
         height: 100%;
 
         .right-image {
-          background-image: url('https://i.picsum.photos/id/447/1280/853.jpg?hmac=4DUUCOsHRIoYbNrPRYEUHOW7wCjM7TROrTrYFivtdPw');
+          background-image: 
+            url(
+              'https://i.picsum.photos/id/447/1280/853.jpg?hmac=4DUUCOsHRIoYbNrPRYEUHOW7wCjM7TROrTrYFivtdPw'
+            );
           background-size: cover;
           background-position: center;
           height: 100%;
@@ -38,16 +41,26 @@ export const Main = styled.div`
     .b {
       width: 100%;
       height: 100%;
-      background: #582534;
+      background-image: linear-gradient(to right, #0a7397, #1c1c1c);
     }
     .c {
       width: 100%;
       height: 100%;
-      background: #0a7397;
+      background-image:
+        url(
+          'https://i.picsum.photos/id/946/5000/3572.jpg?hmac=o__WbAcVSi9EvwRNEm2Z6vdOF_S5pMuW6L4zuXhsSvM'
+        );
+      background-size: cover;
+      background-position: center;
     }
   }
   .second {
-    background: gray;
+    background-image: 
+      url(
+        'https://i.picsum.photos/id/474/4288/2848.jpg?hmac=qOXPlChs-058LiF4XKEk4fhZAwNP7JpIbsiMRKU19oE'
+      );
+    background-size: cover;
+    background-position: center;
   }
   .third {
     background: yellow;

@@ -1,7 +1,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 import { Sticky } from '../../styles';
+
 import Home from '../../pages/Home';
+import About from '../../pages/About';
+import Contact from '../../pages/Contact';
 
 const FirstAndSecond = () => {
   const { scrollYProgress } = useScroll();
@@ -94,8 +97,12 @@ export const First = () => {
             />
           </div>
         </div>
-        <div className='b'></div>
-        <div className='c'></div>
+        <div className='b'>
+          <About />
+        </div>
+        <div className='c'>
+          <Contact />
+        </div>
       </motion.div>
     </Sticky>
 
