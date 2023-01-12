@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 
 export const CardRatingContainer = styled.div`
-  max-height: 213px;
   width: 100%;
   max-height: 215px;
 
   position: relative;
 
   display: flex;
+
+  @media (max-width: 576px) {
+    margin-bottom: 32px;
+  }
 `
 
 export const CardRatingImageContainer = styled.div`
@@ -44,5 +47,9 @@ export const CardRatingInfos = styled.div`
   p {
     font-size: 1em;
     font-weight: 400;
+
+    @media (max-width: 576px) {
+      font-size: 0.8em;
+    }
   }
 `
