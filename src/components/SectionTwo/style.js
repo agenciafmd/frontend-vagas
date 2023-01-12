@@ -37,4 +37,8 @@ export const SectionTwoCards = styled.div`
   @media (max-width: 980px) {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   }
+
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
 `
