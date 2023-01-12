@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  padding: 20px 80px;
+  width: 100%;
 
-  position: fixed;
+  position: absolute;
+  padding: 20px 80px;
   z-index: 999;
 
   display: flex;
@@ -20,9 +21,12 @@ export const HeaderContainer = styled.header`
     backdrop-filter: blur(10px);
   }
 
+  @media (max-width: 834px) {
+    padding: 20px 40px;
+  }
+
   @media (max-width: 576px) {
-    padding: 20px 16px;
-    width: 100%;
+    padding: 30px 16px;
   }
 `
 

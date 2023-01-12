@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image.js'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import logo from '../../assets/logo.svg'
 import logoV2 from '../../assets/logoV2.svg'
@@ -17,18 +17,8 @@ import {
 
 export function Layout({ children }) {
   const { width } = useWindowSize()
-  const [currentWidth, setCurrentWidth] = useState('xl')
 
-  useEffect(() => {
-    if (width >= 1400) return setCurrentWidth('xxl')
-    if (width >= 1200) return setCurrentWidth('xl')
-    if (width >= 992) return setCurrentWidth('lg')
-    if (width >= 768) return setCurrentWidth('md')
-    if (width >= 576) return setCurrentWidth('sm')
-    if (width < 576) return setCurrentWidth('xs')
-
-    setCurrentWidth(width)
-  })
+  useEffect(() => console.log(width))
 
   return (
     <>

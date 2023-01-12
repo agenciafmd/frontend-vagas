@@ -7,8 +7,8 @@ export const SlideContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`
 
-  @media (max-width: 320px) {
-    padding: 0 20px;
-  }
+export const SlideOption = styled.div`
+  width: 100%;
 `

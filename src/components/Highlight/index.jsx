@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Slider } from '../Slider'
+import { SlideOption } from '../Slider/style'
 import {
   Gradient,
   HighlightContainer,
@@ -14,7 +15,7 @@ export function Highlight({ content }) {
       <Slider>
         {content.map((item, index) => {
           return (
-            <div key={index + 1}>
+            <SlideOption key={index + 1}>
               <HighlightThumbContainer>
                 <Gradient />
                 <Image src={item.thumb} alt="Banner" />
@@ -31,7 +32,7 @@ export function Highlight({ content }) {
                   Cras metus nibh, viverra vitae erat ut, lacinia interdum nisl.
                 </p>
               </HighlightInfosContainer>
-            </div>
+            </SlideOption>
           )
         })}
       </Slider>
