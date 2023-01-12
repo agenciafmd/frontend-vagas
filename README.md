@@ -1,167 +1,70 @@
-## A empresa
-![alt text](assets/logo.svg)
+# Getting Started with Create React App
 
-Somente um lugar apaixonante pode manter um time apaixonado. E somente um time apaixonado é capaz de realizar um bom trabalho. Por isso, na F&MD, fazemos de tudo para que as pessoas sejam felizes além do fim de semana. Não é discurso pronto pra pegar bem com o mercado. É algo que nasceu com a gente. É claro que existe cobrança. É claro que existem problemas. Mas quando surge algum, tentamos resolver do jeito mais justo possível. Nem sempre a gente acerta.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Curioso em saber um pouco do nosso ecosistema? Deem uma olhada nesse reels do Instagram e espero que ele 
-te agrade e mostre um pouquinho do nosso ambiente: [Crazy F&MD](https://www.instagram.com/p/CjJUzHTLjo1/)
+## Available Scripts
 
-<b>Nosso Site</b>: [F&MD Site](https://fmd.ag/)
-<br>
-<b>Nosso Instagram</b>: [F&MD Instagram](https://www.instagram.com/agenciafmd/)
+In the project directory, you can run:
 
-## Oportunidade
-Estamos em busca de pessoas apaixonadas por Front-end e com sede de projetos e experiências FODAS.
+### `npm start`
 
-Seu dia será repleto de: 
-```javascript
-const differentials = [
-  'Tecnologia foda',
-  'Pessoas engajadas em crescer juntas',
-  'Ambiente de trabalho saudável',
-  'Respeito às pessoas em primeiro lugar',
-  'Produzir trabalhos incríveis',
-  'Oportunidade em aperfeiçoar Hard Skills',
-  'Oportunidade em aperfeiçoar Soft Skills',
-  'Salário coerente com o mercado, trabalho e perfil profissional',
-  'Disputas de Pebolim(Pebolas)',
-  'Disputas de Fifinha',
-  'Entre muitas outras coisas legais!',
-  ...awesomeThings
-];
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Nossa stack é composta por: 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-````javascript
-const frontendFMDTechnologies = [
-    'HTML',
-    'CSS',
-    'Javascript',
-    'Bootstrap',
-    'Blade (Laravel template engineering)',
-    'Angular',
-    'Sass',
-    'Typescript',
-    'Git',
-    'Ionic',
-    'NPM',
-    'Webpack',
-    'RxJs',
-    'NGRX',
-    'NGXS',
-];
-````
-````javascript
-const frontendFMDTools = [
-    'WebStorm',
-    'Homestead (VirtualBox, Vagrant)',
-    'Gitlab',
-    'Github',
-    'Discord',
-    'Trello',
-    'Plann',
-    'Jira',
-    'Postman',
-    'Figma',
-    'Notion',
-    'Visual Studio(Just Sometimes)',
-    'Linux (Terminal)',
-];
-````
+### `npm test`
 
-Usando como base projetos conceituados pela comunidade, como por exemplo o Bootstrap ou Angular, a estrutura de arquivos e diretórios que utilizamos consciste no isolamento por responsabilidade para agrupar determinada funcionalidade que necessita de vários arquivos para abranger todo seu conteúdo sem perder a objetividade e facilitar a manutenção.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Requisitos principais 
-- Proatividade
-- Sentimento de dono
-- Comprometimento, organização e senso de trabalho em equipe
-- Estar disposto a buscar o aprendizado e evolução constante
-- Usar o bom senso para tomada de decisões em situações adversas
+### `npm run build`
 
-## Challenge
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-O nosso challenge para a <b>mais nova vaga de Front-end</b> consiste em desenvolver uma Landing Page de assunto de
-sua preferência, basta atender os requisitos abaixo:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Header com os links de âncora para as seções. 
-- Seção com 3 banners (Slider).
-- Seção com cards (Mínimo 3 cards).
-  - Mobile: Blocado abaixo do outro.
-  - Desktop: Um ao lado do outro (garantindo a mesma altura).
-- Segunda seção de cards (Mínimo 3 cards).
-  - Mobile: Slider
-  - Desktop: Slider desligado (garantindo a mesma altura).
-- Formulário de newsletter.
-- Footer.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de inspiração para a sua proposta - [Protótipo de LP](https://www.figma.com/file/SSTsobmlfwSgfxIpk1OWqP/Desafio-para-vaga-de-Front-End?t=uB4gXzXXZJyrCnnN-1).
+### `npm run eject`
 
-<b>Requisitos mínimos</b>
-- HTML
-- CSS
-- Javascript
-- Consumir API
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-<b>Sugestões para dar um diferencial e deixar foda!</b>
-- Animações
-- Frameworks SPA (Angular, Vue, React...)
-- Frameworks Front-end (Bootstrap, Angular Material, Tailwind CSS...)
-- Pré-processadores de CSS (Sass, Less, Stylus...)
-- Typescript
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-E caso esteja em dúvida de qual API usar, esse [site](https://publicapis.dev/) possuí diversas API's bem legais que podem te ajudar, escolha o que seu s2 mandar!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Entrega
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Para avaliarmos o projeto de teste, submeta um [Pull Request (PR)](https://github.com/agenciafmd/frontend-vagas/blob/main/docs/pull_request_template.md)  para este repositório!
+## Learn More
 
-### Commits
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Em nossos projetos adotamos um styleguide ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação dos commit's, onde a estrutura é baseada em
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-<tipo>(<escopo>): <assunto>
-```
+### Code Splitting
 
-<b>Os valores permitidos para o `<tipo>` são:</b>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
--  feat (nova funcionalidade)
--  style (formatação geral no código. Não confundir com CSS)
--  refactor (refatoração de código de produção)
--  test (adicionar/refatorar testes)
--  fix (adivinha qual é esse)
--  docs (e esse também)
--  chore (atualização de tarefas ou código que não está relacionado a produção)
+### Analyzing the Bundle Size
 
-  <b>`<escopo>`</b><br>
-    
-  O escopo deve informar onde foi feito a alteração
-  
-  <b>`<assunto>`</b>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-    - Máximo de 50 caracteres
-    - Tipo de escopo devem estar em letras minúsculas
-    - Assunto deve estar no imperativo
+### Making a Progressive Web App
 
-Exemplo:
-  
-```
-    feat(seção sobre nós): adiciona os dados mockados da api no html
-```
-  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Avaliação
+### Advanced Configuration
 
-Iremos avaliar os seguintes critérios:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- Código limpo e organização
-- Semântica
-- Organização dos commits
-- Acessibilidade
+### Deployment
 
-## Dúvidas
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Não deixe que alguma dúvida faça você pirar! Abra uma issue ou nos mande um e-mail em <b>frontend@fmd.ag</b>, fechou?!
+### `npm run build` fails to minify
 
-<b>Que a força esteja com você :)</b>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
