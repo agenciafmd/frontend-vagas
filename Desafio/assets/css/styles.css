@@ -54,6 +54,17 @@ header.shadow{
     color: var(--main-color);
 }
 
+
+.header-icons{
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+#menu-icon{
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -399,4 +410,67 @@ form {
 .contatos a .bx:hover{
     cursor: pointer;
     color: var(--text-color);
+}
+
+/* Responsividade*/   
+@media (max-width: 360px) {
+    header {
+        padding: 5px;
+        font-size: 0.8rem;
+        justify-content: left;
+        gap: 50px;
+    }
+    section{
+        padding: 5px;
+    } 
+    .logo{
+        font-size: 1.5rem;
+    }
+    .header-icons{
+        z-index: 10;
+
+    }
+    #menu-icon {
+        display: initial;
+    }
+    
+    header .navbar {
+        position: absolute;
+        width: 240px;
+        height: 20vh;
+        top: 100%;
+        right: -150%;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s linear;
+        text-align: left;
+    }
+    .navbar.active {
+        right: 30%;
+    }
+    .heading h2{
+        font-size: 1.5rem;
+    }
+    .produto-container, .avaliacao-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .newsletter-form{
+        flex-direction: column;
+    }
+    .newsletter-form-img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
