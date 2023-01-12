@@ -1,5 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
+
 import { Sticky } from '../../styles';
+import Home from '../../pages/Home';
 
 const FirstAndSecond = () => {
   const { scrollYProgress } = useScroll();
@@ -81,6 +83,7 @@ export const First = () => {
               height: leftSideHeight
             }}
           />
+          <Home />
           <div className='right-side'>
             <motion.div
               className='right-image'

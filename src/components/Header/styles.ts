@@ -16,11 +16,11 @@ export const Container = styled(motion.header)`
   h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #7dbb91;
+    color: #8baeca;
   }
   a {
     text-decoration: none;
-    color: #7dbb91;
+    color: #8baeca;
     font-size: 1.2rem;
     font-weight: 400;
 
@@ -58,7 +58,7 @@ export const Container = styled(motion.header)`
     }
     #hamburger {
       width: 20px;
-      color: #7dbb91;
+      color: #8baeca;
       border-top: 3px solid;
     }
     #hamburger::after, #hamburger::before  {
@@ -97,7 +97,7 @@ export const Container = styled(motion.header)`
       
       li {
         &:hover {
-          background: #7dbb91;
+          background: #8baeca;
           border-radius: 5px;
         }
       }

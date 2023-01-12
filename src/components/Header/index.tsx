@@ -1,4 +1,5 @@
 import { useScroll, useTransform } from "framer-motion";
+
 import { Container } from "./styles";
 
 const Header = () => {

@@ -20,14 +20,16 @@ export const Main = styled.div`
       .left-side {
         width: 50%;
         height: 100%;
-        background: #7dbb91;
+        background: #8baeca;
       }
       .right-side {
         width: 50%;
         height: 100%;
 
         .right-image {
-          background: #7dbb91;
+          background-image: url('https://i.picsum.photos/id/447/1280/853.jpg?hmac=4DUUCOsHRIoYbNrPRYEUHOW7wCjM7TROrTrYFivtdPw');
+          background-size: cover;
+          background-position: center;
           height: 100%;
           width: 100%;
         }
@@ -45,7 +47,7 @@ export const Main = styled.div`
     }
   }
   .second {
-    background: green;
+    background: gray;
   }
   .third {
     background: yellow;
