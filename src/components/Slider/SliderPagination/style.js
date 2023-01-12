@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const SliderPaginationContainer = styled.div`
-  width: 100%;
+  width: 86%;
+  margin-bottom: 80px;
 
   display: flex;
   justify-content: space-between;
