@@ -10,7 +10,7 @@ export function Header () {
                 <Navbar.Brand href="#home">Cadufc</Navbar.Brand>
                 <Nav>
                     <Nav.Link href="#about">Sobre</Nav.Link>
-                    <Nav.Link href="#services">Serviços</Nav.Link>
+                    <Nav.Link href="#technologies">Tecnologias</Nav.Link>
                     <Nav.Link href="#work">Trabalhos</Nav.Link>
                     <Nav.Link href="#contact">Contato</Nav.Link>
                 </Nav>
