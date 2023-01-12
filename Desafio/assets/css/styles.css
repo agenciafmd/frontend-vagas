@@ -32,6 +32,7 @@ header {
     justify-content: space-between;
     padding: 20px 100px;
     transition: 0.5s linear;
+    font-size: 1.5rem;
 }
 
 header.shadow{
@@ -45,7 +46,6 @@ header.shadow{
 }
 
 .navbar a {
-    font-size: 1.2rem;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -57,7 +57,6 @@ header.shadow{
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
     font-weight: 700;
     column-gap: 0.2rem;
     color: var(--text-color);
@@ -98,7 +97,7 @@ section{
 .home-swiper .slide img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 /* Produto*/
@@ -106,7 +105,7 @@ section{
     text-align: center;
 }
 
-.heading h1 {
+.heading h2 {
     font-size: 1.7rem;
     font-weight: 600;
     text-transform: capitalize;
@@ -114,20 +113,17 @@ section{
 }
 
 .heading span{
-    padding: 0.2rem 1.2rem;
-    align-items: center;
-    justify-content: center;
+    padding: 0.5rem;
     background: var(--main-color);
     color: var(--bg-color);
     font-weight: 500;
     display: inline-block;
     text-transform: uppercase;
-    clip-path: polygon(100% 0, 93% 50%, 86% 99%, 0% 100%, 7% 47%, 13% 0%);
+    border-radius: 10px;
 }
 
 .produto-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         gap: 1rem;
         margin-top: 2rem;
 }
@@ -322,7 +318,7 @@ form {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: transparent;
     color: #c13131 ;
     cursor: pointer;
@@ -332,4 +328,75 @@ form {
 .close-btn:hover {
     color: #9b2626;
     transform: scale(1.2);
+}
+
+/* Footer*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.footer-box {
+    text-align: center;
+}
+
+.footer-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.footer-box p{
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social a .bx{
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 0.5rem;
+}
+
+.social a .bx:hover{
+    cursor: pointer;
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+.contatos li {
+    margin-bottom: 10px;
+}
+.contatos li a {
+    color: var(--text-color);
+}
+
+.contatos a .bx {
+    color: var(--main-color);
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.contatos a .bx:hover{
+    cursor: pointer;
+    color: var(--text-color);
 }
