@@ -164,4 +164,8 @@ Iremos avaliar os seguintes critérios:
 
 Não deixe que alguma dúvida faça você pirar! Abra uma issue ou nos mande um e-mail em <b>frontend@fmd.ag</b>, fechou?!
 
+## Quer saber se temos vagas abertas?
+
+Acesse nosso [LinkedIn](https://www.linkedin.com/company/agenciafmd/) e fique de olho :slightly_smiling_face:
+
 <b>Que a força esteja com você :)</b>
