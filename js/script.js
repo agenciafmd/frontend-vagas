@@ -1,19 +1,11 @@
 const body = document.querySelector('body');
+let selectedMovie = 0;
 
 const sliderReviews = document.querySelector('.slider-review');
 const reviewBtnDiv = document.querySelector('.buttons-review');
-let review = '';
-let userDiv = '';
-let userDataDiv = '';
-let profileImg = '';
-let profileLink = '';
-let userInfo = '';
-let spanUserName = '';
-let spanSpoiler = '';
-let spanDate = '';
-let spanRate = '';
-let h3Title = '';
-let pContent = '';
+
+
+let movieData = [];
 
 const loadReview = () => {
     review = document.createElement('div')
@@ -23,10 +15,8 @@ const loadReview = () => {
     profileLink = document.createElement('a');
     userInfo = document.createElement('div');
     spanUserName = document.createElement('span');
-    spanSpoiler = document.createElement('span');
     spanDate = document.createElement('span');
     spanRate = document.createElement('span');
-    h3Title = document.createElement('h3');
     pContent = document.createElement('p');
     review.classList.add('review');
     userDiv.classList.add("user");
@@ -35,48 +25,26 @@ const loadReview = () => {
     profileLink.classList.add("profile-link");
     userInfo.classList.add("user-info");
     spanUserName.classList.add("username");
-    spanSpoiler.classList.add("spoiler");
     spanDate.classList.add("date");
     spanRate.classList.add("rate");
-    h3Title.classList.add("review-title");
     pContent.classList.add("review-content");
     sliderReviews.appendChild(review);
     sliderReviews.children[0].classList.add('current-review')
     review.appendChild(userDiv);
     userDiv.appendChild(userDataDiv);
-    userDiv.appendChild(h3Title);
     userDiv.appendChild(pContent);
     userDataDiv.appendChild(profileImg);
     userDataDiv.appendChild(userInfo);
     userInfo.appendChild(profileLink);
     profileLink.appendChild(spanUserName);
-    userInfo.appendChild(spanSpoiler);
     userInfo.appendChild(spanDate);
     userInfo.appendChild(spanRate);
-    userDiv.appendChild(h3Title);
     userDiv.appendChild(pContent);
 };
 
 
 
-const fillReview = () => {
 
-    profileImg.src = '../assets/icons/user-profile.svg'
-    profileLink.href = 'www.google.com'
-    spanUserName.textContent = 'Usupario'
-    spanSpoiler.textContent = 'Spoiler'
-    spanDate.textContent = '1 de Março de 2023'
-    spanRate.textContent = 'Rate'
-    h3Title.textContent = 'Title';
-    pContent.textContent = "My 3rd time watching this movie! Yet, it still stunned my mind, kept me enjoyed its every moment and left me with many thoughts afterward.For someone like me, who've rarely slept without dream, it's so exciting watching how Christopher Nolan had illustrated every single characteristic of dream on the big screen. As it's been done so sophisticatedly, I do believe the rumour that Nolan had spent 10 years to finish the script of Inception.In my opinion, it's been so far the greatest achievement in his brilliant writer-direc";
-}
-
-loadReview();
-fillReview();
-loadReview();
-fillReview();
-loadReview();
-fillReview();
 
 const mobileMenu = document.querySelector('.mobile-nav-btn');
 const headerNav = document.querySelector('.mobile-nav');
@@ -129,3 +97,105 @@ form.addEventListener('submit', (event) => {
         showConfirmButton: false,
     })
 })
+
+
+let movieList = []
+const getMovieData = async () => {
+    const response = await api.get('3/movie/now_playing?api_key=ebfa926d29440aa3d72079d299f2df42&language=en-US&page=1');
+    const items = response.data.results;
+    for (let i = 0; i < 6; i++) {
+        movieList.push({
+            id: items[i].id,
+            original_title: items[i].original_title,
+            overview: items[i].overview,
+            vote_average: items[i].vote_average,
+            poster: "http://image.tmdb.org/t/p/w342" + items[i].poster_path,
+            background_path: "http://image.tmdb.org/t/p/w1280" + items[i].backdrop_path
+        }
+        )
+    }
+    getMovieReviews();
+}
+
+const cards = document.querySelectorAll('.card');
+
+const getMovieReviews = async () => {
+    try {
+        for (let i = 0; i < movieList.length; i++) {
+            const response = await api.get(`3/movie/${movieList[i].id}/reviews?api_key=ebfa926d29440aa3d72079d299f2df42&language=en-US&page=1`);
+            movieData.push({
+                data: movieList[i],
+                comments: response.data.results,
+            });
+        }
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].style.backgroundImage = `url(${movieData[i].data.poster})`;
+            cards[i].addEventListener('click', () => {
+                selectedMovie = i;
+                fillReview(movieData);
+            })
+        }
+        createSlide(movieData);
+        fillReview(movieData);
+    } catch (erro) {
+        console.log(erro.message);
+    }
+}
+
+getMovieData();
+
+
+
+
+const slideBackground = document.querySelectorAll('.slide');
+const slideTitle = document.querySelectorAll('.content h1');
+const content = document.querySelectorAll('.content p')
+const createSlide = (movieData) => {
+    for (let i = 0; i < movieData.length; i++) {
+        slideBackground[i].style.background = `url(${movieData[i].data.background_path}) no-repeat center center/cover`
+        slideTitle[i].textContent = movieData[i].data.original_title;
+        content[i].textContent = movieData[i].data.overview;
+
+    }
+}
+
+const profileLinks = document.querySelectorAll('.profile-link');
+const username = document.querySelectorAll('.username');
+const spanDate = document.querySelectorAll('.date');
+const spanRating = document.querySelectorAll('.rating');
+const reviewContent = document.querySelectorAll('.review-content');
+const reviewContainerTitle = document.querySelector('.container-reviwes h2');
+
+const fillReview = (movieData) => {
+    reviewContainerTitle.textContent = `${movieData[selectedMovie].data.original_title}'s Reviews`
+    clearReviews();
+    try {
+        for (let i = 0; i < 4; i++) {
+            let { author, content, created_at, author_details, url } = movieData[selectedMovie].comments[i];
+            profileLinks[i].href = url;
+            username[i].textContent = author;
+            spanDate[i].textContent = new Date(created_at).toLocaleDateString("pt-BR", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                timeZone: "UTC",
+            });
+            spanRating[i].textContent = `Rating: ${author_details.rating.toFixed(2)}`;
+            reviewContent[i].textContent = content;
+        }
+    } catch (erro) {
+        console.log(erro);
+    }
+}
+
+const clearReviews = () => {
+    for (let i = 0; i < 4; i++) {
+        profileLinks[i].href = '';
+        username[i].textContent = '';
+        spanDate[i].textContent = '';
+        spanRating[i].textContent = '';
+        reviewContent[i].textContent = 'Não existem comentários para o filme selecionado.';
+    }
+}
+
+

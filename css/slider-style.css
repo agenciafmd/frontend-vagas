@@ -80,15 +80,3 @@
         transform: translateY(-300px);
     }
 }
-
-.slide:first-child {
-    background: url(../assets/img/img1.jpg) no-repeat center center/cover;
-}
-
-.slide:nth-child(2) {
-    background: url(../assets/img/img2.jpg) no-repeat center top/cover;
-}
-
-.slide:nth-child(3) {
-    background: url(../assets/img/img3.jpg) no-repeat center top/cover;
-}

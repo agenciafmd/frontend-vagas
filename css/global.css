@@ -83,6 +83,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
+    text-align: center;
     line-height: 42px;
     color: #33323D;
 }
@@ -119,7 +120,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    width: var(--width);
+    width: 100%;
     background-color: #33323D;
 }
 
@@ -200,9 +201,8 @@ footer img:hover {
 .container-cards .card {
     height: 267px;
     width: 176px;
-    background-color: aqua;
+    background-size: cover;
     transition: all .2s ease-in-out;
-
 }
 
 .container-cards .card:hover {
@@ -301,7 +301,6 @@ footer img:hover {
 
     footer {
         flex-direction: column;
-        width: 100vw;
     }
 
     footer p {
@@ -370,7 +369,7 @@ footer img:hover {
 
     .container-reviwes {
         width: 100vw;
-        height: 600px;
+        height: 650px;
         position: relative;
     }
 
