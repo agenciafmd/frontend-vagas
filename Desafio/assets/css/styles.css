@@ -413,7 +413,7 @@ form {
 }
 
 /* Responsividade*/   
-@media (max-width: 360px) {
+@media (max-width: 780px) {
     header {
         padding: 5px;
         font-size: 0.8rem;
