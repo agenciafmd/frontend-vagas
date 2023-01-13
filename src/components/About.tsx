@@ -20,7 +20,7 @@ export const About = () => {
                                         Styled Components e outras tecnologias relacionadas ao Desenvolvimento Web.
                                     </p>
                                     <Button variant='light'>
-                                        <a href="#contact" className='text-dark link-secondary'>Entre em contato <BsFillArrowRightCircleFill size={30}/></a> 
+                                        <a href="#contact" className='text-dark link-secondary'>Entre em contato <BsFillArrowRightCircleFill size={30} className="ms-2"/></a> 
                                     </Button>
                                 </div>
                             }

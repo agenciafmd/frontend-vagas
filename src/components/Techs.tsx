@@ -1,4 +1,3 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import JavaScrit from '../assets/icons/icons8-javascript-100.png';
 import Bootstrap from '../assets/icons/icons8-bootstrap-100.png';
@@ -10,114 +9,90 @@ import React from '../assets/icons/icons8-react-100-2.png';
 import Api from '../assets/icons/icons8-rest-api-100.png';
 import Sass from '../assets/icons/icons8-sass-100.png';
 import Typescript from '../assets/icons/icons8-typescript-100.png';
-import { Navigation, Pagination } from 'swiper';
+import { Row, Col, Container } from 'react-bootstrap';
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
 
 export const Techs = () => {
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+
     return(
         <section id='#technologies'>
-            <Swiper
-                slidesPerView={4}
-                spaceBetween={30}
-                loop={true}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <img src={JavaScrit} alt="" />
-                    <h5>JavaScrit</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Bootstrap} alt="" />
-                    <h5>Bootstrap</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Git} alt="" />
-                    <h5>Git</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={jQuery} alt="" />
-                    <h5>jQuery</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Next} alt="" />
-                    <h5>Next</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Node} alt="" />
-                    <h5>Node</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={React} alt="" />
-                    <h5>React</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Api} alt="" />
-                    <h5>Rest API</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Sass} alt="" />
-                    <h5>Sass</h5>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Typescript} alt="" />
-                    <h5>Typescript</h5>
-                </SwiperSlide>
-            </Swiper>
-            {/* <Container >
+            <Container >
                 <Row >
                     <Col >
-                        <div className='d-flex flex-column align-items-center'>
-                            <h2>Tecnologias</h2>
-                            <Carousel className='d-flex flex-row align-content-center m-5'>
-                                <Carousel.Item className='text-center'>
+                        <div className='text-center m-5'>
+                            <h2 className='mb-5'>Tecnologias</h2>
+                            <Carousel 
+                                responsive={responsive} 
+                                infinite={true} 
+                                className="skill-slider" 
+                                autoPlay={true} 
+                                autoPlaySpeed={1500}
+                            >
+                                <div  className='text-center'>
                                     <img src={JavaScrit} alt="" />
                                     <h5>JavaScrit</h5>
-                                </Carousel.Item>
-                                <Carousel.Item  className='text-center'>
+                                </div>
+                                <div  className='text-center'>
                                     <img src={Bootstrap} alt="" />
                                     <h5>Bootstrap</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={Git} alt="" />
                                     <h5>Git</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={jQuery} alt="" />
                                     <h5>jQuery</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={Next} alt="" />
                                     <h5>Next</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={Node} alt="" />
                                     <h5>Node</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={React} alt="" />
                                     <h5>React</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={Api} alt="" />
                                     <h5>Rest API</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={Sass} alt="" />
                                     <h5>Sass</h5>
-                                </Carousel.Item>
-                                <Carousel.Item className='text-center'>
+                                </div>
+                                <div className='text-center'>
                                     <img src={Typescript} alt="" />
                                     <h5>Typescript</h5>
-                                </Carousel.Item>
+                                </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
-            </Container> */}
+            </Container>
         </section>
     )
 }
