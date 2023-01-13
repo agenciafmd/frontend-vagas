@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import NewLetter from "../../components/NewLetter";
 import Pokemons from "../../components/Pokemons";
@@ -8,13 +9,40 @@ import { Container } from "./styles";
 
 function Home() {
   const [list, setList] = useState([]);
+  const [listOthers, setListOthers] = useState([]);
 
-  async function getPokemon() {
-    await axios
-      .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=4")
+  // objeto com { [id]: [detalhes_da_api] }
+  const [pokeDetails, setPokeDetails] = useState({});
+
+  async function fetchIndividualPokemons(listResults) {
+    const newDetails = {};
+
+    for (const result of listResults) {
+      const { name } = result;
+      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
+      newDetails[name] = {
+        name: res.data.name, // da pra tirar isso se quiser
+        image: res.data.sprites.front_default,
+      };
+
+      setPokeDetails({
+        ...pokeDetails,
+        ...newDetails,
+      });
+    }
+  }
+
+  function fetchPokemonList() {
+    console.log("fetchPokemonList");
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=8")
       .then(function (response) {
         console.log("response", response);
-        setList(response.data.results);
+        const firstFour = response.data.results.slice(0, 4);
+        const others = response.data.results.slice(4);
+        setList(firstFour);
+        setListOthers(others);
+        fetchIndividualPokemons(response.data.results);
       })
       .catch(function (error) {
         console.log(error);
@@ -22,15 +50,17 @@ function Home() {
   }
 
   useEffect(() => {
-    getPokemon();
+    fetchPokemonList();
   }, []);
+  console.log("new", listOthers);
 
   return (
     <Container>
       <Header />
       <Banner />
-      <Pokemons list={list} />
+      <Pokemons list={list} details={pokeDetails} />
       <NewLetter />
+      <Footer />
     </Container>
   );
 }
