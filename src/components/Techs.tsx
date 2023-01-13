@@ -35,7 +35,7 @@ export const Techs = () => {
       };
 
     return(
-        <section id='#technologies'>
+        <section id='technologies'>
             <Container >
                 <Row >
                     <Col >

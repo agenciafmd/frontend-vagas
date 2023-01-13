@@ -11,7 +11,7 @@ export function Header () {
                 <Nav>
                     <Nav.Link href="#about">Sobre</Nav.Link>
                     <Nav.Link href="#technologies">Tecnologias</Nav.Link>
-                    <Nav.Link href="#work">Trabalhos</Nav.Link>
+                    <Nav.Link href="#projects">Projetos</Nav.Link>
                     <Nav.Link href="#contact">Contato</Nav.Link>
                 </Nav>
             </Container>
