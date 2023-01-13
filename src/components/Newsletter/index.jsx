@@ -22,18 +22,16 @@ export function Newsletter() {
     }
   })
 
-  const [show, setShow] = useState(false)
-
-  const handleClose = () => setShow(false)
+  const [showModal, setShowModal] = useState(false)
+  const handleClose = () => setShowModal(false)
 
   const onSubmit = async data => {
     console.log(data)
     reset({ name: '', email: '' })
-
-    setShow(true)
+    setShowModal(true)
   }
 
-  const onError = () => {
+  const onError = data => {
     setTimeout(() => {
       clearErrors()
     }, 5000)
@@ -54,7 +52,7 @@ export function Newsletter() {
               placeholder="Nome"
               className={errors.name ? 'error' : ''}
             />
-            {errors.name && <p>{`O campo nome é obrigatório.`}</p>}
+            {errors.name && <p>{errors.name.message}</p>}
           </InputBox>
 
           <InputBox>
@@ -62,9 +60,10 @@ export function Newsletter() {
               control={control}
               name="email"
               placeholder="E-mail"
+              pattern={/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i}
               className={errors.email ? 'error' : ''}
             />
-            {errors.email && <p>{`O campo e-mail é obrigatório.`}</p>}
+            {errors.email && <p>{errors.email.message}</p>}
           </InputBox>
 
           <NewsletterButton>
@@ -74,7 +73,7 @@ export function Newsletter() {
       </NewsletterContainer>
 
       <Modal
-        show={show}
+        show={showModal}
         onHide={handleClose}
         contentClassName="customModalNews"
       >
