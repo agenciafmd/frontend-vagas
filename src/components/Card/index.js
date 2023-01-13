@@ -1,14 +1,20 @@
 import React from "react";
-import { Container, Image, ImageContainer, Title, TitleContainer } from "./styles";
+import {
+  Container,
+  Image,
+  ImageContainer,
+  Title,
+  TitleContainer,
+} from "./styles";
 
-function Card() {
+function Card({ name }) {
   return (
     <Container>
       <ImageContainer>
         <Image src={"/pokeball.png"} />
       </ImageContainer>
       <TitleContainer>
-        <Title>Lorem Ipsum</Title>
+        <Title>{name}</Title>
       </TitleContainer>
     </Container>
   );

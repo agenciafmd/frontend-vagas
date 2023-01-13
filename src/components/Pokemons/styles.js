@@ -20,6 +20,8 @@ const TitleContainer = styled.div`
 
 const CardsContainer = styled.div`
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export { Container, Content, TitleContainer, CardsContainer };

@@ -1,11 +1,13 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../../components/Banner";
 import Header from "../../components/Header";
 import Pokemons from "../../components/Pokemons";
 import { Container } from "./styles";
 
 function Home() {
+  const [list, setList] = useState([]);
+
   async function getPokemon() {
     await axios
       .get("https://pokeapi.co/api/v2/pokemon/", {
@@ -15,7 +17,7 @@ function Home() {
         },
       })
       .then(function (response) {
-        console.log("response", response);
+        setList(response.data.results);
       })
       .catch(function (error) {
         console.log(error);
@@ -30,7 +32,7 @@ function Home() {
     <Container>
       <Header />
       <Banner />
-      <Pokemons />
+      <Pokemons list={list} />
     </Container>
   );
 }

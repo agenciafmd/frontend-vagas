@@ -3,7 +3,8 @@ import Card from "../Card";
 import Title from "../Title";
 import { CardsContainer, Container, Content, TitleContainer } from "./styles";
 
-function Pokemons() {
+function Pokemons({ list }) {
+  console.log("list", list);
   return (
     <Container>
       <Content>
@@ -11,7 +12,9 @@ function Pokemons() {
           <Title title="Pokémons" />
         </TitleContainer>
         <CardsContainer>
-          <Card />
+          {list.map((listItem, idx) => {
+            return <Card name={listItem.name} />;
+          })}
         </CardsContainer>
       </Content>
     </Container>
