@@ -10,8 +10,6 @@ import { Container } from "./styles";
 function Home() {
   const [list, setList] = useState([]);
   const [listOthers, setListOthers] = useState([]);
-
-  // objeto com { [id]: [detalhes_da_api] }
   const [pokeDetails, setPokeDetails] = useState({});
 
   async function fetchIndividualPokemons(listResults) {
@@ -33,11 +31,9 @@ function Home() {
   }
 
   function fetchPokemonList() {
-    console.log("fetchPokemonList");
     axios
       .get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=8")
       .then(function (response) {
-        console.log("response", response);
         const firstFour = response.data.results.slice(0, 4);
         const others = response.data.results.slice(4);
         setList(firstFour);
