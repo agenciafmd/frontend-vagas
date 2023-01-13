@@ -63,10 +63,20 @@ export const Main = styled.div`
     background-position: center;
   }
   .third {
-    background: yellow;
+    background-image: 
+      url(
+        'https://i.picsum.photos/id/903/5000/3333.jpg?hmac=vVM4lWd0r8EfyVfslHRgjKjiY90FwM_brwJpzdKcXvg'
+      );
+    background-size: cover;
+    background-position: center;
   }
   .fourth {
-    background: blue;
+    background-image:
+      url(
+        'https://i.picsum.photos/id/855/5000/3333.jpg?hmac=plFPjVKm__JX994YSgieXxj7LBnlggL0Qd3DGQcfv5E'
+      );
+    background-size: cover;
+    background-position: center;
   }
 
 `;

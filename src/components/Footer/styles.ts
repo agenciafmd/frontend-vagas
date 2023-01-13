@@ -13,5 +13,10 @@ export const Container = styled(motion.footer)`
     text-align: center;
     padding: 20px;
     
+    span {
+      display: felx;
+      margin-top: 10px;
+      justify-content: center;
+    }
   }
 `;

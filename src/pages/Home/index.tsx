@@ -11,7 +11,7 @@ const Home = () => {
       <div className="content">
         <button>register</button>
         <input type='email' placeholder='E-mail' />
-        <input type='text' placeholder="Nome" />
+        <input type='text' placeholder='Name' />
       </div>
     </Container>
   );

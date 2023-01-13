@@ -97,10 +97,10 @@ export const First = () => {
             />
           </div>
         </div>
-        <div className='b'>
+        <div className='b' id='about'>
           <About />
         </div>
-        <div className='c'>
+        <div className='c' id='contact'>
           <Contact />
         </div>
       </motion.div>

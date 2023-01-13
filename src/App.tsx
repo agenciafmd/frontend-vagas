@@ -15,10 +15,10 @@ function App() {
           <FirstAndSecond />
         </Section>
         <Section style={{ height: '9.7%' }}>
-          <Sticky className="third" />
+          <Sticky className="third" id='headlines' />
         </Section>
         <Section style={{ height: '10.1%%' }}>
-          <Sticky className="fourth" />
+          <Sticky className="fourth" id='news' />
         </Section>
       </Main>
       <Footer />
