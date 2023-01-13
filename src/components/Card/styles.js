@@ -7,8 +7,16 @@ const Container = styled.div`
   align-items: center;
   width: 257px;
   height: 319px;
-  background: #ffffff;
+  color: #ffffff;
   border-radius: 40px 40px 0px 0px;
+  cursor: pointer;
+  background-color: #000000;
+  transition: background-color 300ms ease-out;
+
+  :hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 `;
 
 const ImageContainer = styled.div``;

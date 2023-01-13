@@ -28,7 +28,7 @@ function Home() {
     <Container>
       <Header />
       <Banner />
-      {/* <Pokemons list={list} /> */}
+      <Pokemons list={list} />
     </Container>
   );
 }
