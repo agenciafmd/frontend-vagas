@@ -7,6 +7,12 @@ export const NewsletterContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 834px) {
+    flex-direction: column;
+    padding: 0px 80px;
+    margin-bottom: 100px;
+  }
+
   h1 {
     max-width: 330px;
 
@@ -15,6 +21,10 @@ export const NewsletterContainer = styled.div`
 
     span {
       font-size: 1.25em;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2em;
     }
   }
 
@@ -29,6 +39,11 @@ export const NewsletterForm = styled.form`
   justify-content: center;
   align-items: center;
   gap: 15px;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    gap: 40px;
+  }
 `
 
 export const NewsletterButton = styled.button`

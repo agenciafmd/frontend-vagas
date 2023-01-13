@@ -29,7 +29,10 @@ export default function Home() {
         <SectionTwo />
       </Row>
 
-      <Row className="m-0">{width > 576 && <Newsletter />}</Row>
+      {/* <Row className="m-0">{width > 576 && <Newsletter />}</Row> */}
+      <Row className="m-0">
+        <Newsletter />
+      </Row>
     </>
   )
 }
