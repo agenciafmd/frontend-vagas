@@ -10,7 +10,9 @@ const nextReview = () => {
     } else {
         reviews[0].classList.add('current-review');
     }
-    setTimeout(() => currentReview.classList.remove('current-review'));
+    if (reviews.length > 1) {
+        setTimeout(() => currentReview.classList.remove('current-review'));
+    }
 }
 
 const prevReview = () => {
@@ -21,7 +23,9 @@ const prevReview = () => {
     } else {
         reviews[reviews.length - 1].classList.add('current-review');
     }
-    setTimeout(() => currentReview.classList.remove('current-review'));
+    if (reviews.length > 1) {
+        setTimeout(() => currentReview.classList.remove('current-review'));
+    }
 }
 
 btnNextReview.addEventListener('click', (event) => {

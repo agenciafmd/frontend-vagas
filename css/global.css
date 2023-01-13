@@ -24,10 +24,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
     padding: 35px;
     width: var(--width);
     height: 150px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    z-index: 1;
 }
 
 header a {
@@ -55,6 +57,11 @@ ul {
 
 li {
     list-style: none;
+    transition: all .2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.1);
 }
 
 main {
@@ -96,10 +103,6 @@ p {
     /* color: #33323D;*/
 }
 
-div {
-    width: 100%;
-}
-
 form {
     display: flex;
     gap: 15px;
@@ -110,7 +113,6 @@ input {
     width: 250px;
     padding: 5px;
 }
-
 
 footer {
     display: flex;
@@ -136,6 +138,14 @@ footer p {
     color: white;
 }
 
+footer img {
+    transition: all .2s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
 .movie-info {
     padding: 70px 35px;
     color: white;
@@ -152,54 +162,20 @@ footer p {
     position: relative;
     height: 710px;
     width: 100%;
-    background-image: url("../assets/Rectangle 1.jpg");
-    background-size: cover;
-    background-position: center;
     flex-direction: column;
-
 }
 
 .container-main img {
     width: 80px;
-    color: white;
 }
 
-.container-main p {
-    font-size: 15px;
-    color: white;
+.container-main .mobile-nav-btn {
+    display: none;
 }
 
-.nav-container {
-    display: flex;
-    flex-direction: row;
+.container-main .mobile-nav {
+    display: none;
 }
-
-.nav-container div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 15px;
-}
-
-.nav-container img {
-    width: 60px;
-    cursor: pointer;
-}
-
-.content-page {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: 100px;
-}
-
-.content-page div {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: yellow;
-}
-
 
 .container-cards {
     display: flex;
@@ -208,6 +184,10 @@ footer p {
     align-items: center;
     padding: 50px 20px;
     width: var(--width);
+}
+
+.container-cards div {
+    width: 100%;
 }
 
 .container-cards div:last-child {
@@ -220,8 +200,14 @@ footer p {
 .container-cards .card {
     height: 267px;
     width: 176px;
-    cursor: pointer;
     background-color: aqua;
+    transition: all .2s ease-in-out;
+
+}
+
+.container-cards .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .container-reviwes {
@@ -242,6 +228,7 @@ footer p {
     border: solid 1px;
     padding: 5px;
     width: 150px;
+    height: 27px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -256,7 +243,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 80px 20px;
     width: var(--width);
 }
@@ -264,6 +251,16 @@ footer p {
 .container-newsletter form {
     display: flex;
     flex-direction: row;
+}
+
+.container-newsletter form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-newsletter form div span {
+    color: red;
 }
 
 .container-footer {
@@ -283,14 +280,14 @@ footer p {
     width: 40%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     main {
         width: 100vw;
     }
 
     header {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         width: 100vw;
     }
@@ -313,7 +310,39 @@ footer p {
 
     .container-main {
         width: 100vw;
-        height: auto;
+        height: 100vh
+    }
+
+    .container-main .desk-nav {
+        display: none;
+    }
+
+    .container-main .mobile-nav {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0.5rem;
+        gap: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+    }
+
+    .container-main .mobile-nav-btn {
+        display: block;
+        width: 40px;
+        position: absolute;
+        right: 30px;
+        transition: all .2s ease-in-out;
+    }
+
+    .container-main .mobile-nav-btn:hover {
+        transform: scale(1.1);
     }
 
     .nav-container {
@@ -327,6 +356,10 @@ footer p {
 
     .container-cards {
         width: 100vw;
+    }
+
+    .container-cards div {
+        width: 100%;
     }
 
     .container-cards div:last-child {
@@ -347,10 +380,19 @@ footer p {
 
     .container-newsletter {
         flex-direction: column;
+        align-items: center;
         width: 100vw;
+        padding: 20px;
+        margin-top: 100px;
     }
 
     .container-newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-newsletter form div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -367,6 +409,10 @@ footer p {
         padding-right: 0;
     }
 
+}
+
+.error {
+    border: solid red 3px;
 }
 
 .off {

@@ -1,6 +1,26 @@
 .slider-review {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
     position: relative;
     width: 100%;
+    gap: 15px;
+    overflow: auto;
+}
+
+.reviews {
+    width: 100%;
+}
+
+.review {
+    height: 300px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.review .user {
+    padding: 10px;
+
 }
 
 .buttons-review {
@@ -28,7 +48,6 @@
     .slider-review {
         position: relative;
         height: 600px;
-        overflow: auto;
     }
 
     .review {
@@ -61,6 +80,7 @@
     }
 
     .review .user p {
+        padding-right: 10px;
         line-height: normal;
     }
 

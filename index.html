@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -13,6 +14,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/slider-style.css">
     <link rel="stylesheet" href="./css/review-style.css">
     <title>Home</title>
 </head>
@@ -21,9 +23,16 @@
     <main>
         <section class="container-main">
             <header>
-                <img src="./assets/badge-4k.svg" alt="Logo">
+                <img src="./assets/img/badge-4k.svg" alt="Logo">
+                <img src="./assets/icons/menu.svg" alt="" class="mobile-nav-btn">
                 <nav>
-                    <ul>
+                    <ul class="desk-nav">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#intheater">Nos cinemas</a></li>
+                        <li><a href="#reviwes">Avaliações</a></li>
+                        <li><a href="#footer">Contato</a></li>
+                    </ul>
+                    <ul class="mobile-nav">
                         <li><a href="#">Início</a></li>
                         <li><a href="#intheater">Nos cinemas</a></li>
                         <li><a href="#reviwes">Avaliações</a></li>
@@ -31,29 +40,58 @@
                     </ul>
                 </nav>
             </header>
-            <div class="movie-info">
-                <div class="movie-title">
-                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit repudiandae quo nesciunt modi
-                        pariatur magnam architecto possimus, aliquam similique hic esse aspernatur vel maxime dolores!
-                        Saepe sapiente natus dolores adipisci?</p>
-                </div>
-                <div class="nav-container">
-                    <div class="content-page">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="controller">
-                        <img src="./assets/arrow-left-light.svg" alt="Left" />
-                        <img src="./assets/arrow-right-light.svg" alt="Left" />
+            <div class="slider">
+                <div class="slide current">
+                    <div class="content">
+                        <h1>Slide One</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima recusandae accusamus,
+                            beatae,
+                            in, distinctio consectetur magnam eaque explicabo pariatur quasi? Fugit quae ab inventore
+                            dignissimos officiis eum nesciunt suscipit iure ipsa consectetur, totam quos quam quasi
+                            consequatur
+                            corrupti ea illum, cum aperiam animi, unde quisquam ratione eius necessitatibus! Assumenda
+                            aliquid,
+                            eaque nostrum reiciendis pariatur voluptates fugiat alias debitis soluta?</p>
                     </div>
                 </div>
+                <div class="slide">
+                    <div class="content">
+                        <h1>Slide Two</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima recusandae accusamus,
+                            beatae,
+                            in, distinctio consectetur magnam eaque explicabo pariatur quasi? Fugit quae ab inventore
+                            dignissimos officiis eum nesciunt suscipit iure ipsa consectetur, totam quos quam quasi
+                            consequatur
+                            corrupti ea illum, cum aperiam animi, unde quisquam ratione eius necessitatibus! Assumenda
+                            aliquid,
+                            eaque nostrum reiciendis pariatur voluptates fugiat alias debitis soluta?</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <h1>Slide Three</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima recusandae accusamus,
+                            beatae,
+                            in, distinctio consectetur magnam eaque explicabo pariatur quasi? Fugit quae ab inventore
+                            dignissimos officiis eum nesciunt suscipit iure ipsa consectetur, totam quos quam quasi
+                            consequatur
+                            corrupti ea illum, cum aperiam animi, unde quisquam ratione eius necessitatibus! Assumenda
+                            aliquid,
+                            eaque nostrum reiciendis pariatur voluptates fugiat alias debitis soluta?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="next"><i class="fas fa-arrow-right"></i>
+                </button>
             </div>
         </section>
         <section class="container-cards" id="intheater">
             <h2>Nos cinemas</h2>
             <div>
+                <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
@@ -65,121 +103,6 @@
             <h2>Avaliações</h2>
             <div class="reviews">
                 <div class="slider-review">
-                    <div class="review current-review">
-                        <div class="user">
-                            <div class="user-data">
-                                <img src="./assets/user-profile.svg" alt="Avatar" class="profile-img">
-                                <div class="user-info">
-                                    <a class="profile-link" href="www.google.com"><span
-                                            class="username">Username</span></a>
-                                    <span class="spoiler">Spoler</span>
-                                    <span class="data">Data dia tal</span>
-                                    <span class="rate">Rate 10</span>
-                                </div>
-                            </div>
-                            <h3 class="review-title">Titulo</h3>
-                            <p class="review-content">Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas. Dado o fluxo de dados atual, a otimização de
-                                performance da renderização do DOM causou a race condition da execução parelela de
-                                funções em multi-threads. Fala pro cliente que um erro não identificado otimizou a
-                                renderização na criação de novos polyfills para suportar os processos. Desde ontem a
-                                noite a normalização da data causou o bug na criação de novos polyfills para suportar os
-                                processos.Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas. Dado o fluxo de dados atual, a otimização de
-                                performance da renderização do DOM causou a race condition da execução parelela de
-                                funções em multi-threads. Fala pro cliente que um erro não identificado otimizou a
-                                renderização na criação de novos polyfills para suportar os processos. Desde ontem a
-                                noite a normalização da data causou o bug na criação de novos polyfills para suportar os
-                                processos.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <div class="user">
-                            <div class="user-data">
-                                <img src="./assets/user-profile.svg" alt="Avatar" class="profile-img">
-                                <div class="user-info">
-                                    <a class="profile-link" href="www.google.com"><span
-                                            class="username">Username</span></a>
-                                    <span class="spoiler">Spoler</span>
-                                    <span class="data">Data dia tal</span>
-                                    <span class="rate">Rate 10</span>
-                                </div>
-                            </div>
-                            <h3 class="review-title">Titulo</h3>
-                            <p class="review-content">Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <div class="user">
-                            <div class="user-data">
-                                <img src="./assets/user-profile.svg" alt="Avatar" class="profile-img">
-                                <div class="user-info">
-                                    <a class="profile-link" href="www.google.com"><span
-                                            class="username">Username</span></a>
-                                    <span class="spoiler">Spoler</span>
-                                    <span class="data">Data dia tal</span>
-                                    <span class="rate">Rate 10</span>
-                                </div>
-                            </div>
-                            <h3 class="review-title">Titulo</h3>
-                            <p class="review-content">Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas.
-                                Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas.
-                                Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas.
-                                Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas.
-                                Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas.
-                                Desde ontem a noite o gerenciador de dependências do frontend
-                                causou a race condition da execução de requisições effcientes na API. A equipe de
-                                suporte precisa saber que a compilação final do programa causou a race condition da
-                                execução parelela de funções em multi-threads. Com este commit, a compilação final do
-                                programa complexificou o merge dos argumentos que definem um schema dinâmico. Nesse pull
-                                request, a otimização de performance da renderização do DOM corrigiu o bug do
-                                carregamento de JSON delimitado por linhas.
-                            </p>
-                        </div>
-                    </div>
                 </div>
                 <div class="buttons-review">
                     <button id="prev-review"><i class="fas fa-arrow-left"></i>
@@ -193,8 +116,14 @@
         <section class="container-newsletter">
             <h2>Assine nossa Newsletter</h2>
             <form class="form">
-                <input type="text" class="name" placeholder="Nome" required>
-                <input type="email" class="email" placeholder="E-Mail" required>
+                <div>
+                    <input type="text" class="name" placeholder="Nome">
+                    <span class="off name-msg">O campo nome é obrigatório.</span>
+                </div>
+                <div>
+                    <input type="text" class="email" placeholder="E-Mail">
+                    <span class="off email-msg">O campo E-mail é obrigatório.</span>
+                </div>
                 <button type="submit" class="default-button">Cadastrar</button>
             </form>
         </section>
@@ -210,19 +139,21 @@
                 </ul>
             </nav>
             <div>
-                <a href="https://github.com/DouglasAnthero" target="_blank"><img src="./assets/github-light.svg"
+                <a href="https://github.com/DouglasAnthero" target="_blank"><img src="./assets/icons/github-light.svg"
                         alt="GitHub" /></a>
                 <a href="https://www.linkedin.com/in/douglas-anthero/" target="_blank"><img
-                        src="./assets/linkedin-light.svg" alt="Linkedin" /></a>
+                        src="./assets/icons/linkedin-light.svg" alt="Linkedin" /></a>
             </div>
         </div>
         <p>douglasdemello@gmail.com<br>
             (24)99838-4309
         </p>
     </footer>
-    <!--script src="./js/script.js"></script-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/review-slider.js"></script>
-
+    <script src="./js/main-slider.js"></script>
 </body>
 
 </html>
