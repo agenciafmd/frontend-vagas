@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import Banner from "../../components/Banner";
 import Header from "../../components/Header";
+import Pokemons from "../../components/Pokemons";
 import { Container } from "./styles";
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
     <Container>
       <Header />
       <Banner />
+      <Pokemons />
     </Container>
   );
 }
