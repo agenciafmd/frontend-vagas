@@ -5,7 +5,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 export function Footer () {
     return(
         <Stack 
-            className="d-flex flex-row justify-content-between align-content-center p-5 bg-light"
+            className="d-flex justify-content-between align-content-center p-5 bg-light flex-column flex-lg-row"
         >
             <a href="#home" className="text-dark list-group-item">Cadufc</a>
             <p>fernandes.cadu@gmail.com</p>

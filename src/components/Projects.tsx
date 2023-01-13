@@ -39,7 +39,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2 className='mb-5'>Projetos</h2>
-                        <div className='d-flex w-75'>
+                        <div className='d-flex w-75 flex-column flex-lg-row'>
                             {
                                 projects.map((project, index) => {
                                     return(

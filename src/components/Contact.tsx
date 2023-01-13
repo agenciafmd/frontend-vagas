@@ -55,7 +55,7 @@ export const Contact = () => {
         <section id="contact">
             <Container className="text-center my-5">
                 <h2 className="mb-3">Contato</h2>
-                <Row className="d-flex align-items-center">
+                <Row className="d-flex align-items-center flex-column flex-lg-row">
                     <Col>
                         <h3>
                             Entre em contato
