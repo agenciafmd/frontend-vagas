@@ -1,171 +1,67 @@
-## A empresa
-![alt text](assets/logo.svg)
-
-Somente um lugar apaixonante pode manter um time apaixonado. E somente um time apaixonado é capaz de realizar um bom trabalho. Por isso, na F&MD, fazemos de tudo para que as pessoas sejam felizes além do fim de semana. Não é discurso pronto pra pegar bem com o mercado. É algo que nasceu com a gente. É claro que existe cobrança. É claro que existem problemas. Mas quando surge algum, tentamos resolver do jeito mais justo possível. Nem sempre a gente acerta.
-
-Curioso em saber um pouco do nosso ecosistema? Deem uma olhada nesse reels do Instagram e espero que ele 
-te agrade e mostre um pouquinho do nosso ambiente: [Crazy F&MD](https://www.instagram.com/p/CjJUzHTLjo1/)
-
-<b>Nosso Site</b>: [F&MD Site](https://fmd.ag/)
-<br>
-<b>Nosso Instagram</b>: [F&MD Instagram](https://www.instagram.com/agenciafmd/)
-
-## Oportunidade
-Estamos em busca de pessoas apaixonadas por Front-end e com sede de projetos e experiências FODAS.
-
-Seu dia será repleto de: 
-```javascript
-const differentials = [
-  'Tecnologia foda',
-  'Pessoas engajadas em crescer juntas',
-  'Ambiente de trabalho saudável',
-  'Respeito às pessoas em primeiro lugar',
-  'Produzir trabalhos incríveis',
-  'Oportunidade em aperfeiçoar Hard Skills',
-  'Oportunidade em aperfeiçoar Soft Skills',
-  'Salário coerente com o mercado, trabalho e perfil profissional',
-  'Disputas de Pebolim(Pebolas)',
-  'Disputas de Fifinha',
-  'Entre muitas outras coisas legais!',
-  ...awesomeThings
-];
-```
-
-Nossa stack é composta por: 
-
-````javascript
-const frontendFMDTechnologies = [
-    'HTML',
-    'CSS',
-    'Javascript',
-    'Bootstrap',
-    'Blade (Laravel template engineering)',
-    'Angular',
-    'Sass',
-    'Typescript',
-    'Git',
-    'Ionic',
-    'NPM',
-    'Webpack',
-    'RxJs',
-    'NGRX',
-    'NGXS',
-];
-````
-````javascript
-const frontendFMDTools = [
-    'WebStorm',
-    'Homestead (VirtualBox, Vagrant)',
-    'Gitlab',
-    'Github',
-    'Discord',
-    'Trello',
-    'Plann',
-    'Jira',
-    'Postman',
-    'Figma',
-    'Notion',
-    'Visual Studio(Just Sometimes)',
-    'Linux (Terminal)',
-];
-````
-
-Usando como base projetos conceituados pela comunidade, como por exemplo o Bootstrap ou Angular, a estrutura de arquivos e diretórios que utilizamos consciste no isolamento por responsabilidade para agrupar determinada funcionalidade que necessita de vários arquivos para abranger todo seu conteúdo sem perder a objetividade e facilitar a manutenção.
-
-## Requisitos principais 
-- Proatividade
-- Sentimento de dono
-- Comprometimento, organização e senso de trabalho em equipe
-- Estar disposto a buscar o aprendizado e evolução constante
-- Usar o bom senso para tomada de decisões em situações adversas
-
-## Challenge
-
+<h1 align="center">Projeto desafio Landing Page</h1>
+<hr>
+<h2 align="center">Aprendizados nesse projeto 🎯</h2>
 O nosso challenge para a <b>mais nova vaga de Front-end</b> consiste em desenvolver uma Landing Page de assunto de
 sua preferência, basta atender os requisitos abaixo:
 
-- Header com os links de âncora para as seções. 
-- Seção com 3 banners (Slider).
-- Seção com cards (Mínimo 3 cards).
-  - Mobile: Blocado abaixo do outro.
-  - Desktop: Um ao lado do outro (garantindo a mesma altura).
+<h2 align="center">Status do projeto: Em construção...  🚧</h2>
+
+### Features
+
+- [x] Header com os links de âncora para as seções. 
+- [x] Seção com 3 banners (Slider).
+- [x] Seção com cards (Mínimo 3 cards).
+  - [x] Mobile: Blocado abaixo do outro.
+  - [x] Desktop: Um ao lado do outro (garantindo a mesma altura).
 - Segunda seção de cards (Mínimo 3 cards).
-  - Mobile: Slider
-  - Desktop: Slider desligado (garantindo a mesma altura).
-- Formulário de newsletter.
-- Footer.
+  - [] Mobile: Slider
+  - [x] Desktop: Slider desligado (garantindo a mesma altura).
+- [x] Formulário de newsletter.
+- [x] Footer.
+- [x] Commit Amigão.
+- [x] API (Swiper)
 
-Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de inspiração para a sua proposta - [Protótipo de LP](https://www.figma.com/file/SSTsobmlfwSgfxIpk1OWqP/Desafio-para-vaga-de-Front-End?t=uB4gXzXXZJyrCnnN-1).
+<hr>
+<h2 align="center"> Prints do projeto </h2>
+<br />
 
-<b>Requisitos mínimos</b>
-- HTML
-- CSS
-- Javascript
-- Consumir API
+<img width="100%" align="center" src="assets/img/header.jpg">
+<img width="100%" align="center" src="assets/img/secao-card1.jpg">
+<img width="100%" align="center" src="assets/img/secao-card2-e-newsletter.jpg">
+<img width="100%" align="center" src="assets/img/newsletter-erro.jpg">
 
-<b>Sugestões para dar um diferencial e deixar foda!</b>
-- Animações
-- Frameworks SPA (Angular, Vue, React...)
-- Frameworks Front-end (Bootstrap, Angular Material, Tailwind CSS...)
-- Pré-processadores de CSS (Sass, Less, Stylus...)
-- Typescript
+<img width="100%" align="center" src="assets/img/newsletter-input-preenchido.jpg">
+<img width="100%" align="center" src="assets/img/newsletter-modal.jpg">
+<img width="100%" align="center" src="assets/img/secao-footer.jpg">
 
-E caso esteja em dúvida de qual API usar, esse [site](https://publicapis.dev/) possuí diversas API's bem legais que podem te ajudar, escolha o que seu s2 mandar!
+<hr>
+<h2 align="center"> Demo versão Desktop</h2>
+<br />
+<img width="100%" align="center" src="assets/img/desktop.gif">
 
-## Entrega
 
-Para avaliarmos o projeto de teste, submeta um [Pull Request (PR)](https://github.com/agenciafmd/frontend-vagas/blob/main/docs/pull_request_template.md)  para este repositório!
+<hr>
+<h2 align="center">Tecnologias utilizadas 🛠</h2><br>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" data-canonical-src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" style="max-width: 100%;">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" data-canonical-src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white" style="max-width: 100%;">
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" >
 
-### Commits
 
-Em nossos projetos adotamos um styleguide ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação dos commit's, onde a estrutura é baseada em
+<hr>
+<h2 align="center"> Contributor 💻</h2>
+<table align="center">
+<tbody>
+<tr>
+<td align="center">
+<img src="https://avatars.githubusercontent.com/u/105670314?v=4" width="100px;" alt="Lilian Rangel" style="max-width: 100%;"><br><b>Lílian Rangel</b>
+<br>
+<a href="https://www.linkedin.com/in/lilian-rangel-de-paiva/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://github.com/lilian-rangel"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
 
-```
-<tipo>(<escopo>): <assunto>
-```
+</td>
+</tr>
+</tbody>
+</table>
 
-<b>Os valores permitidos para o `<tipo>` são:</b>
-
--  feat (nova funcionalidade)
--  style (formatação geral no código. Não confundir com CSS)
--  refactor (refatoração de código de produção)
--  test (adicionar/refatorar testes)
--  fix (adivinha qual é esse)
--  docs (e esse também)
--  chore (atualização de tarefas ou código que não está relacionado a produção)
-
-  <b>`<escopo>`</b><br>
-    
-  O escopo deve informar onde foi feito a alteração
-  
-  <b>`<assunto>`</b>
-
-    - Máximo de 50 caracteres
-    - Tipo de escopo devem estar em letras minúsculas
-    - Assunto deve estar no imperativo
-
-Exemplo:
-  
-```
-    feat(seção sobre nós): adiciona os dados mockados da api no html
-```
-  
-
-## Avaliação
-
-Iremos avaliar os seguintes critérios:
-
-- Código limpo e organização
-- Semântica
-- Organização dos commits
-- Acessibilidade
-
-## Dúvidas
-
-Não deixe que alguma dúvida faça você pirar! Abra uma issue ou nos mande um e-mail em <b>frontend@fmd.ag</b>, fechou?!
-
-## Quer saber se temos vagas abertas?
-
-Acesse nosso [LinkedIn](https://www.linkedin.com/company/agenciafmd/) e fique de olho :slightly_smiling_face:
 
 <b>Que a força esteja com você :)</b>
