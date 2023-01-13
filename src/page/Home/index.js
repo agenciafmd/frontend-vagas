@@ -10,13 +10,9 @@ function Home() {
 
   async function getPokemon() {
     await axios
-      .get("https://pokeapi.co/api/v2/pokemon/", {
-        params: {
-          offset: 0,
-          limit: 4,
-        },
-      })
+      .get("https://www.pokemon.com/us/api/pokedex/kalos")
       .then(function (response) {
+        console.log("response", response);
         setList(response.data.results);
       })
       .catch(function (error) {
@@ -32,7 +28,7 @@ function Home() {
     <Container>
       <Header />
       <Banner />
-      <Pokemons list={list} />
+      {/* <Pokemons list={list} /> */}
     </Container>
   );
 }
