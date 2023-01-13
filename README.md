@@ -18,7 +18,7 @@
 </h1>
 
 <h4 align="center"> 
-	🚧  Buscador de CEP - <a href="#">Concluído</a> 🚀 🚧
+	🚧  Landing Page - <a href="#">Concluído</a> 🚀 🚧
 </h4>
 
 <p align="center">
