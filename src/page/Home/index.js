@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Banner from "../../components/Banner";
 import Header from "../../components/Header";
+import NewLetter from "../../components/NewLetter";
 import Pokemons from "../../components/Pokemons";
 import { Container } from "./styles";
 
@@ -29,6 +30,7 @@ function Home() {
       <Header />
       <Banner />
       <Pokemons list={list} />
+      <NewLetter />
     </Container>
   );
 }
