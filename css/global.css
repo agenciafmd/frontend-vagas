@@ -40,7 +40,7 @@ header a {
     line-height: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #fffeff;
+    color: #FAFAFA;
 }
 
 a {
@@ -101,7 +101,6 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    /* color: #33323D;*/
 }
 
 form {
@@ -131,12 +130,12 @@ footer a {
     line-height: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FAFAFA;
 }
 
 footer p {
     text-align: end;
-    color: white;
+    color: #FAFAFA;
 }
 
 footer img {
@@ -145,15 +144,6 @@ footer img {
 
 footer img:hover {
     transform: scale(1.1);
-}
-
-.movie-info {
-    padding: 70px 35px;
-    color: white;
-}
-
-.movie-info .movie-title {
-    width: 65%;
 }
 
 .container-main {
@@ -280,6 +270,14 @@ footer img:hover {
     width: 40%;
 }
 
+.error {
+    border: solid red 3px;
+}
+
+.off {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 500px) {
     main {
         width: 100vw;
@@ -344,15 +342,6 @@ footer img:hover {
         transform: scale(1.1);
     }
 
-    .nav-container {
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .nav-container .controller {
-        width: auto;
-    }
-
     .container-cards {
         width: 100vw;
     }
@@ -371,10 +360,6 @@ footer img:hover {
         width: 100vw;
         height: 650px;
         position: relative;
-    }
-
-    .container-reviwes .load-more {
-        display: none;
     }
 
     .container-newsletter {
@@ -408,12 +393,4 @@ footer img:hover {
         padding-right: 0;
     }
 
-}
-
-.error {
-    border: solid red 3px;
-}
-
-.off {
-    visibility: hidden;
 }

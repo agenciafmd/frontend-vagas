@@ -1,15 +1,15 @@
+.reviews {
+    width: 100%;
+}
+
 .slider-review {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
     position: relative;
+    margin: 30px 0;
     width: 100%;
     gap: 15px;
     overflow: auto;
-}
-
-.reviews {
-    width: 100%;
 }
 
 .review {
@@ -20,15 +20,6 @@
 
 .review .user {
     padding: 10px;
-
-}
-
-.buttons-review {
-    display: none;
-}
-
-.profile-img {
-    width: 90px;
 }
 
 .user-data {
@@ -36,11 +27,19 @@
     flex-direction: row;
 }
 
-.user-info {
+.user-data .profile-img {
+    width: 90px;
+}
+
+.user-data .user-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 20px;
+}
+
+.buttons-review {
+    display: none;
 }
 
 @media (max-width:500px) {
@@ -62,9 +61,7 @@
 
     .review.current-review {
         opacity: 1;
-
     }
-
 
     .review .user {
         position: absolute;
@@ -76,7 +73,6 @@
 
     .review .user h1 {
         margin-bottom: 10px;
-
     }
 
     .review .user p {
@@ -87,7 +83,6 @@
     .review.current-review .user {
         opacity: 1;
         transition: all 0.7s ease-in-out 0.3s;
-
     }
 
     .buttons-review {
@@ -107,19 +102,19 @@
     }
 
     .buttons-review button {
-        border: 2px solid #333;
-        background-color: transparent;
-        color: #333;
-        cursor: pointer;
         padding: 13px 15px;
+        border: 2px solid #333;
         border-radius: 50%;
+        cursor: pointer;
         outline: none;
         opacity: 0.3;
+        background-color: transparent;
+        color: #333;
     }
 
     .buttons-review button:hover {
+        opacity: 1;
         background-color: #333;
         color: #FFF;
-        opacity: 1;
     }
 }
