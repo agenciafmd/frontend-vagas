@@ -292,6 +292,14 @@ form {
     cursor: pointer;
 }
 
+.span-required{
+    font-size: 12px;
+    margin: 0 0 3px;
+    padding: 2px;
+    color: #9b2626;
+    display: none;
+}
+
 /* Modal*/
 .modal-overlay {
     position: fixed;
@@ -474,3 +482,4 @@ form {
     }
 
 }
+

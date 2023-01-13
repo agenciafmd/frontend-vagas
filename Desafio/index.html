@@ -215,8 +215,11 @@
                         name="name" 
                         id="name" 
                         placeholder="Digite seu nome" 
-                        required
+                        class="required"
+                        oninput="nameValidate()"
                         />
+                        <span class="span-required">Preencha o nome</span>
+
                         <label for="email">E-mail</label>
                         <input 
                         type="email" 
@@ -224,9 +227,11 @@
                         id="email" 
                         placeholder="Digite seu e-mail" 
                         data-tipo="email"
-                        pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?"
-                        required
+                        class="required"
+                        oninput="emailValidate()"
                         />
+                        <span class="span-required">Digite um e-mail válido</span>
+
                      
                     <input type="submit" class="btn modal-btn" value="Quero me inscrever" />
                 </div>

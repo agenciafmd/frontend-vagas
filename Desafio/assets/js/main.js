@@ -37,14 +37,60 @@ var swiper = new Swiper(".home-swiper", {
     centeredSlides: true,
 });
 
-// Modal 
+
+// Validação do formulário de newsletter
+
 const modalBtn = document.querySelector(".modal-btn");
 const modal = document.querySelector(".modal-overlay");
 const closeBtn = document.querySelector(".close-btn");
 
-modalBtn.addEventListener("click", function () {
-    modal.classList.add("open-modal");
+const form = document.getElementById("formulario");
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
+const emailRegex = /[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/;
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    nameValidate();
+    emailValidate();
+
+    if((campos[0].value.length != "") && (emailRegex.test(campos[1].value))) {
+        modal.classList.add("open-modal");
+        closeBtn.addEventListener("click", function () {
+        modal.classList.remove("open-modal");
+        });
+    }
+    parent.document.getElementById("formulario").reset();
 });
-closeBtn.addEventListener("click", function () {
-    modal.classList.remove("open-modal");
-});
+
+function setError(index){
+    campos[index].style.border = "2px solid #e63636";
+    spans[index].style.display = "block";
+}
+
+function removeError(index){
+    campos[index].style.border = "";
+    spans[index].style.display = "none";
+}
+
+function nameValidate() {
+    if(campos[0].value.length == "")
+    {
+        setError(0);
+    }
+    else
+    {
+        removeError(0);
+    }
+}
+
+function emailValidate(){
+    if(!emailRegex.test(campos[1].value))
+    {
+        setError(1);
+   }
+    else
+    {
+        removeError(1);
+    }
+}
