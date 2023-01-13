@@ -10,7 +10,11 @@ function Home() {
 
   async function getPokemon() {
     await axios
-      .get("https://www.pokemon.com/us/api/pokedex/kalos")
+      .get("https://www.pokemon.com/us/api/pokedex/kalos", {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
       .then(function (response) {
         console.log("response", response);
         setList(response.data.results);
