@@ -36,4 +36,31 @@ export const GlobalStyle = createGlobalStyle`
       align-items: center;
     }
   }
+
+  .customModalNews {
+    background-color: ${props => props.theme.pallete.background.main};
+    color: ${props => props.theme.pallete.background.text};
+
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.2);
+    border-left: 14px solid #E9FF00;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      text-align: center;
+
+      h3 {
+        font-weight: 800;
+      }
+
+      p {
+        font-size: 1.3em;
+      }
+
+    }
+  }
 `
