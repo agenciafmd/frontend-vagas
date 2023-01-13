@@ -5,24 +5,28 @@ let movieData = [];
 let movieList = [];
 
 const getMovieData = async () => {
-    const response = await api.get('3/movie/now_playing?api_key=ebfa926d29440aa3d72079d299f2df42&language=pt-BR&page=1');
-    const items = response.data.results;
-    for (let i = 0; i < 6; i++) {
-        const review = await api.get(`3/movie/${items[i].id}/reviews?api_key=ebfa926d29440aa3d72079d299f2df42&language=en-US&page=1`);
-        movieList.push({
-            id: items[i].id,
-            original_title: items[i].original_title,
-            overview: items[i].overview,
-            vote_average: items[i].vote_average,
-            poster: "http://image.tmdb.org/t/p/w342" + items[i].poster_path,
-            background_path: "http://image.tmdb.org/t/p/w1280" + items[i].backdrop_path,
-            comments: review.data.results
-        }
-        );
-    };
-    fillSlide(movieList);
-    fillCards(movieList);
-    fillReview(movieList);
+    try {
+        const response = await api.get('3/movie/now_playing?api_key=ebfa926d29440aa3d72079d299f2df42&language=pt-BR&page=1');
+        const items = response.data.results;
+        for (let i = 0; i < 6; i++) {
+            const review = await api.get(`3/movie/${items[i].id}/reviews?api_key=ebfa926d29440aa3d72079d299f2df42&language=en-US&page=1`);
+            movieList.push({
+                id: items[i].id,
+                original_title: items[i].original_title,
+                overview: items[i].overview,
+                vote_average: items[i].vote_average,
+                poster: "http://image.tmdb.org/t/p/w780" + items[i].poster_path,
+                background_path: "http://image.tmdb.org/t/p/w1280" + items[i].backdrop_path,
+                comments: review.data.results
+            }
+            );
+        };
+        fillSlide(movieList);
+        fillCards(movieList);
+        fillReview(movieList);
+    } catch (erro) {
+        console.log(erro);
+    }
 };
 
 const mobileMenu = document.querySelector('.mobile-nav-btn');
@@ -45,7 +49,12 @@ const slideTitle = document.querySelectorAll('.content h1');
 const content = document.querySelectorAll('.content p');
 const fillSlide = (movieList) => {
     for (let i = 0; i < movieList.length; i++) {
-        slideBackground[i].style.background = `url(${movieList[i].background_path}) no-repeat center center/cover`;
+
+        if (body.clientWidth > 500) {
+            slideBackground[i].style.background = `url(${movieList[i].background_path}) no-repeat center center/cover`;
+        } else {
+            slideBackground[i].style.background = `url(${movieList[i].poster}) no-repeat center center/cover`;
+        };
         slideTitle[i].textContent = movieList[i].original_title;
         content[i].textContent = movieList[i].overview;
     };
@@ -133,5 +142,13 @@ form.addEventListener('submit', (event) => {
         showConfirmButton: false,
     });
 });
+
+
+let initialBodyWidth = body.clientWidth;
+setInterval(() => {
+    if (initialBodyWidth !== body.clientWidth) {
+        fillSlide(movieList);
+    }
+}, 1000);
 
 getMovieData();
