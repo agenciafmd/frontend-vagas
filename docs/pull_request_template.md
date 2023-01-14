@@ -5,9 +5,13 @@ Antes de submeter uma pull request, gostariamos de entender como o projeto foi d
 
 Quais as ferramentas, bibliotecas e framework você usou? Por quê?
 
+Utilizei HTML, CSS, Javascript, a biblioteca Font Awsome, Google Fonts e o SweetAlert para o modal. Embora um pouco mais trabalhoso, optei por estas ferramentas por usá-las a mais tempo e estar mais familiarizado com elas. Para a conexão com a API utilizei o axios. 
+
 <b> API's </b>
 
 Quais API's foram utilizadas? Por quê? 
+
+Utilizei a API do The Movie Database por ter uma quantidade grande de opções de dados para consumir. 
 
 <b> Feedback do desafio </b>
 
@@ -18,20 +22,20 @@ Você teve alguma dificuldade em entender o desafio proposto? Se sim, descreva p
 
 ## Review
 
-- [] Header com os link de âncora para as seções.
-- [] Seção contendo 3 banners rotativo (Slider).
-- [] Seção de cards.
-  - [] Mobile: um card abaixo do outro.
-  - [] Desktop: 3 colunas.
-- [] Seção de cards.
-  - [] Mobile: Slider.
-  - [] Desktop: Slider desligado.
-- [] Formulário de newsletter.
-- [] Footer
+- [x] Header com os link de âncora para as seções.
+- [x] Seção contendo 3 banners rotativo (Slider).
+- [x] Seção de cards.
+  - [x] Mobile: um card abaixo do outro.
+  - [x] Desktop: 3 colunas.
+- [x] Seção de cards.
+  - [x] Mobile: Slider.
+  - [x] Desktop: Slider desligado.
+- [x] Formulário de newsletter.
+- [x] Footer
 
 
     
 ### Hora da verdade, os seus commit's estão seguindo as recomendações do ([Commit Amigão](https://github.com/agenciafmd/frontend-vagas/#entrega))? ( `preencha com "x" uma das alternativas` :monocle_face:)
- - [] Sim <br>
+ - [x] Sim <br>
  - [] Não
 

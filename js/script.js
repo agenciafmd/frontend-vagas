@@ -1,14 +1,13 @@
 const body = document.querySelector('body');
 const cards = document.querySelectorAll('.card');
-let selectedMovie = 0;
-let movieData = [];
+let selectedMovie = 3;
 let movieList = [];
 
 const getMovieData = async () => {
     try {
         const response = await api.get('3/movie/now_playing?api_key=ebfa926d29440aa3d72079d299f2df42&language=pt-BR&page=1');
         const items = response.data.results;
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 9; i++) {
             const review = await api.get(`3/movie/${items[i].id}/reviews?api_key=ebfa926d29440aa3d72079d299f2df42&language=en-US&page=1`);
             movieList.push({
                 id: items[i].id,
@@ -48,7 +47,7 @@ const slideBackground = document.querySelectorAll('.slide');
 const slideTitle = document.querySelectorAll('.content h1');
 const content = document.querySelectorAll('.content p');
 const fillSlide = (movieList) => {
-    for (let i = 0; i < movieList.length; i++) {
+    for (let i = 0; i < 3; i++) {
 
         if (body.clientWidth > 500) {
             slideBackground[i].style.background = `url(${movieList[i].background_path}) no-repeat center center/cover`;
@@ -61,9 +60,9 @@ const fillSlide = (movieList) => {
 };
 
 const fillCards = (movieList) => {
-    for (let i = 0; i < movieList.length; i++) {
-        cards[i].style.backgroundImage = `url(${movieList[i].poster})`;
-        cards[i].addEventListener('click', () => {
+    for (let i = 3; i < movieList.length; i++) {
+        cards[i - 3].style.backgroundImage = `url(${movieList[i].poster})`;
+        cards[i - 3].addEventListener('click', () => {
             selectedMovie = i;
             fillReview(movieList);
         });
