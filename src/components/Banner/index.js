@@ -48,7 +48,7 @@ function Banner() {
           <BackgroundContainer />
           <Image
             alt="banner-1"
-            src="https://assets.pokemon.com/assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg"
+            src="https://wallpapers.com/images/hd/pikachu-4k-and-other-pokemons-ant5blc95axsagar.jpg"
           />
         </ImageContainer>
 
@@ -56,7 +56,7 @@ function Banner() {
           <BackgroundContainer />
           <Image
             alt="banner-2"
-            src="https://image.winudf.com/v2/image/Y29tLnRvcHJha3Jpbmd0b25lZGV2LnBva2Vtb253YWxscGFwZXJzYW5kYmFja2dyb3VuZHBpY3R1cmVzX3NjcmVlbl8wXzE1Mjg3NTYzMDBfMDIx/screen-0.jpg?fakeurl=1&type=.webp"
+            src="https://images2.alphacoders.com/116/1160159.png"
           />
         </ImageContainer>
 
@@ -64,7 +64,7 @@ function Banner() {
           <BackgroundContainer />
           <Image
             alt="banner-3"
-            src="https://external-preview.redd.it/NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.jpg?auto=webp&s=b18e1b0df84f417036d4e1ac0affb6245a071ebf"
+            src="https://cdn.vox-cdn.com/thumbor/bnUvKI_USAi_Gqsv5J-ZvaaGv_s=/0x0:1920x1005/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22733282/Pokemon_UNITE___Season_1___Welcome_to_Aeos____1080p.png"
           />
         </ImageContainer>
       </Carousel>
