@@ -91,4 +91,5 @@ export const Sticky = styled(motion.div)`
   top: 0;
   left: 0;
   right: 0;
+
 `;

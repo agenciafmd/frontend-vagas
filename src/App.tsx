@@ -4,6 +4,8 @@ import GlobalStyles from './styles/global';
 import FirstAndSecond from './components/FirstAndSecond';
 
 import { Main, Section, Sticky } from './styles';
+import NewsBitcoin from './components/NewsBitcoin';
+import NewsEverything from './components/NewsEverything';
 
 function App() {
   return (
@@ -15,10 +17,14 @@ function App() {
           <FirstAndSecond />
         </Section>
         <Section style={{ height: '9.7%' }}>
-          <Sticky className="third" id='headlines' />
+          <Sticky className="third" id='headlines' >
+            <NewsBitcoin />
+          </Sticky>
         </Section>
         <Section style={{ height: '10.1%%' }}>
-          <Sticky className="fourth" id='news' />
+          <Sticky className="fourth" id='news' >
+            <NewsEverything />
+          </Sticky>
         </Section>
       </Main>
       <Footer />

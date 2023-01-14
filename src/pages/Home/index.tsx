@@ -1,6 +1,7 @@
 import { Container } from "./styles";
 
 const Home = () => {
+
   return (
     <Container>
       <h1>Lorem Ipsum</h1>
