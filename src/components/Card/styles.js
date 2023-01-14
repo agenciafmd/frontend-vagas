@@ -15,13 +15,13 @@ const Container = styled.div`
 
   :hover {
     background-color: #ffffff;
-    background-image: url("${({pokeImage}) => pokeImage}");
+    background-image: url("${({ pokeImage }) => pokeImage}");
     background-size: 50%;
     background-position: 0 -30px;
     color: #000000;
 
     & > span {
-      background: rgba(255,255,255,.7);
+      background: rgba(255, 255, 255, 0.7);
       transition: background-color 400ms ease-out;
     }
   }

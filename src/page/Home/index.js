@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import NewLetter from "../../components/NewLetter";
 import Pokemons from "../../components/Pokemons";
+import PokemonsDetails from "../../components/PokemonsDetails";
 import { Container } from "./styles";
 
 function Home() {
@@ -16,9 +17,10 @@ function Home() {
     const newDetails = {};
 
     for (const result of listResults) {
-      const { name } = result;
-      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
-      newDetails[name] = {
+      const res = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${result.name}`
+      );
+      newDetails[result.name] = {
         name: res.data.name, // da pra tirar isso se quiser
         image: res.data.sprites.front_default,
       };
@@ -48,13 +50,14 @@ function Home() {
   useEffect(() => {
     fetchPokemonList();
   }, []);
-  console.log("new", listOthers);
+  // console.log("new", listOthers);
 
   return (
     <Container>
       <Header />
       <Banner />
       <Pokemons list={list} details={pokeDetails} />
+      <PokemonsDetails list={listOthers} details={pokeDetails} />
       <NewLetter />
       <Footer />
     </Container>

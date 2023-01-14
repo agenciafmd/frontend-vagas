@@ -12,11 +12,13 @@ function Pokemons({ list, details }) {
         </TitleContainer>
         <CardsContainer>
           {list.map((listItem, idx) => {
-            return <Card
-              key={idx}
-              name={listItem.name}
-              pokeImage={details[listItem.name]?.image}
-            />;
+            return (
+              <Card
+                key={idx}
+                name={listItem.name}
+                pokeImage={details[listItem.name]?.image}
+              />
+            );
           })}
         </CardsContainer>
       </Content>
