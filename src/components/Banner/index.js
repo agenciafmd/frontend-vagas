@@ -3,14 +3,38 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {
   BackgroundContainer,
+  Center,
   Container,
   Image,
   ImageContainer,
+  InfoContainer,
+  Marker,
+  Text,
+  TextContainer,
+  Title,
+  TitleContainer,
 } from "./styles";
 
 function Banner() {
   return (
     <Container>
+      <InfoContainer>
+        <Center>
+          <TitleContainer>
+            <Marker />
+            <Title>
+              Lorem ipsum dolor <br /> sit amet
+            </Title>
+          </TitleContainer>
+          <TextContainer>
+            <Text>
+              Quisque cursus nunc urna, eget ultricies orci accumsan at. Cras
+              <br />
+              metus nibh, viverra vitae erat ut, lacinia interdum nisl.
+            </Text>
+          </TextContainer>
+        </Center>
+      </InfoContainer>
       <Carousel
         autoPlay={true}
         dynamicHeight={false}

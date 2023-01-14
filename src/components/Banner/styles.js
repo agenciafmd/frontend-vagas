@@ -12,6 +12,63 @@ const Container = styled.div`
   }
 `;
 
+const InfoContainer = styled.div`
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 98;
+`;
+
+const Center = styled.div`
+  max-width: 1280px;
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const TitleContainer = styled.div`
+  position: relative;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+`;
+
+const Marker = styled.div`
+  width: 6px;
+  height: 109px !important;
+  background: #e9ff00;
+  margin-right: 6px;
+`;
+
+const Title = styled.h1`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 68px;
+  color: #ffffff;
+  margin: 0px;
+`;
+
+const TextContainer = styled.div`
+  height: auto !important;
+  margin-top: 10px;
+`;
+
+const Text = styled.span`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* or 24px */
+
+  color: #ffffff;
+`;
+
 const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -34,4 +91,16 @@ const Image = styled.img`
   object-fit: cover;
 `;
 
-export { Container, ImageContainer, BackgroundContainer, Image };
+export {
+  Container,
+  ImageContainer,
+  BackgroundContainer,
+  Image,
+  InfoContainer,
+  TitleContainer,
+  Marker,
+  Center,
+  Title,
+  TextContainer,
+  Text,
+};
