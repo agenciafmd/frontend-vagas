@@ -6,6 +6,7 @@ import FirstAndSecond from './components/FirstAndSecond';
 import { Main, Section, Sticky } from './styles';
 import NewsBitcoin from './components/NewsBitcoin';
 import NewsEverything from './components/NewsEverything';
+import TopHeadlinesDolar from './components/NewsDolar';
 
 function App() {
   return (
@@ -22,10 +23,17 @@ function App() {
           </Sticky>
         </Section>
         <Section style={{ height: '10.1%%' }}>
-          <Sticky className="fourth" id='news' >
+          <Sticky className="fourth" >
             <NewsEverything />
           </Sticky>
         </Section>
+        <TopHeadlinesDolar />
+        <div className='news-main'></div>
+        <div className="hiddenX">
+          <div className="news-content">
+            <span>Breaking news</span>
+          </div>
+        </div>
       </Main>
       <Footer />
     </>

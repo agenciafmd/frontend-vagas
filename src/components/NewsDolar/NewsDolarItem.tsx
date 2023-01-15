@@ -7,7 +7,7 @@ interface INewsItemProps {
   urlImage: string;
 }
 
-const NewsItem = (newsItemData: INewsItemProps) => {
+const NewsDolarItem = (newsItemData: INewsItemProps) => {
   return (
     <Item>
       <img src={newsItemData.urlImage} alt='News-Img' />
@@ -18,4 +18,4 @@ const NewsItem = (newsItemData: INewsItemProps) => {
   );
 }
 
-export default NewsItem;
+export default NewsDolarItem;

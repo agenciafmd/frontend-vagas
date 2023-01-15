@@ -1,19 +1,22 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-export const Container = styled.div`
+export const Container = styled.div.attrs({
+  id: 'news'
+})`
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1260px;
+  margin: -150px auto;
   min-height: 100vh;
   display: flex;    
   justify-content: center;
+  align-items: center;
 
-  div.bitcoin{
+  div.dolar {
     width: 100%;
     height: 100%;
     position: relative;
-    top: 32rem;
+    top: 18rem;
   }
 `;
 
@@ -37,8 +40,7 @@ export const Item = styled(motion.div)`
   border-radius: 0.5rem;
   background: #fff;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
-  
-  
+
   img {
     width: 100%;
     max-height: 9rem;
@@ -53,7 +55,7 @@ export const Item = styled(motion.div)`
   }
   p {
     font-size: .8rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 0.5rem;
     word-wrap: break-word;
   }

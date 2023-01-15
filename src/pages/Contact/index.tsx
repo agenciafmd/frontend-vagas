@@ -1,7 +1,5 @@
-import { IoLogoWhatsapp, } from 'react-icons/io5';
-import { AiOutlineLinkedin } from 'react-icons/ai';
-import { AiOutlineFacebook } from 'react-icons/ai';
-import { AiOutlineInstagram } from 'react-icons/ai';
+import { AiOutlineLinkedin, AiOutlineFacebook, AiOutlineInstagram } from 'react-icons/ai';
+import { IoLogoWhatsapp } from 'react-icons/io5';
 import { Container } from './styles';
 
 const Contact = () => {

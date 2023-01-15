@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-import NewsItem from './NewsItem';
+import NewsDolarItem from './NewsDolarItem';
 import { Carousel, Container, Inner } from './styles';
+import { AiFillDollarCircle } from 'react-icons/ai';
 
 
-const NewsList = () => {
+const NewsDolarList = () => {
   const carousel = useRef<HTMLElement | any>(null);
   const [width, setWidth] = useState(0);
   const [articles, setArticles] = useState([]);
@@ -14,7 +15,7 @@ const NewsList = () => {
   useEffect(() => {
     setWidth(carousel.current?.scrollWidth);
     const getArticles = async () => {
-      const response = await axios.get('https://newsapi.org/v2/everything?q=bitcoin&apiKey=da3f850c5b5a4633ac2cf948fb8f1273')
+      const response = await axios.get('https://newsapi.org/v2/everything?q=dolar&apiKey=da3f850c5b5a4633ac2cf948fb8f1273')
       setArticles(response.data.articles);
     }
     getArticles();
@@ -39,7 +40,7 @@ const NewsList = () => {
           {articles.map((article: any, index) => {
             return (
               <div key={index}>
-                <NewsItem
+                <NewsDolarItem
                   title={article.title}
                   description={article.description}
                   url={article.url}
@@ -50,16 +51,11 @@ const NewsList = () => {
           })}
         </Inner>
       </Carousel>
-      <div className="bitcoin">
-        <img
-          src='https://www.cryptocompare.com/media/19633/btc.png'
-          alt='bitcoin'
-          width={70}
-          height={70}
-        />
+      <div className='dolar'>
+        <AiFillDollarCircle size={80} color='#ffd700' />
       </div>
     </Container>
   );
 }
 
-export default NewsList;
+export default NewsDolarList;

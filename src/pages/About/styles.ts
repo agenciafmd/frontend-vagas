@@ -11,11 +11,11 @@ export const Container = styled.div`
 
   h1 {
     font-size: 11rem;
-    color: #fff;
+    color: #1c1c1c;
   }
   p {
     font-size: 2rem;
-    color: #fff;
+    color: #1c1c1c;
   }
 
   .options {
