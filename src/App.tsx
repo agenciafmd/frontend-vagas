@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Header from "./components/Header";
 import { Slide, Slider } from "./components/Slider";
@@ -6,8 +6,27 @@ import { Slide, Slider } from "./components/Slider";
 import pokeHome from "./assets/img/pokeScarViolet.jpg";
 import pokeOcean from "./assets/img/pokeOcean.png";
 import pokeSky from "./assets/img/pokeLigthSky.jpg";
+import { getPokemons, iPokeDetails } from "./services/getPoke";
+import { ChoosenStyled } from "./styles/styles";
+import List from "./components/List";
+import Card from "./components/List/Card";
+
 
 function App() {
+  const [poke, setPoke] = useState<iPokeDetails | null>(null);
+
+  useEffect(() => {
+    const addPoke = async () => {
+      const pokeList = await getPokemons();
+      if (pokeList) {
+        setPoke(pokeList);
+      }
+    };
+    if (poke == null) {
+      addPoke();
+    }
+  }, [poke]);
+
   const setings = {
     slidesPerView: 1,
     navigation: true,
@@ -15,10 +34,30 @@ function App() {
       clickable: true,
     },
     autoplay: {
-      delay : 5000
+      delay: 5000,
     },
     loop: true,
   };
+
+  const getInitialPoke = () => {
+    const choosenInitial = [] as iPokeDetails[]
+    const bulba = poke?.find((pokes) => {
+      return pokes.name === "bulbasaur";
+    });
+    const charmander = poke?.find((pokes) => {
+      return pokes.name === "charmander";
+    });
+    const squirtle = poke?.find((pokes) => {
+      return pokes.name === "squirtle";
+    });
+
+    if(bulba !== undefined && charmander !== undefined && squirtle !== undefined){
+       choosenInitial.push(bulba,charmander,squirtle)
+       return choosenInitial;
+    }
+  };
+  const initial = getInitialPoke()
+  
 
   return (
     <>
@@ -43,6 +82,13 @@ function App() {
           <p>NAO SEI O MUNDI</p>
         </Slide>
       </Slider>
+      <ChoosenStyled>
+        <h2 id="choosen">Faça sua Escolha!</h2>
+        <List>
+           {initial?.length && initial.map( poke => <Card name={poke.name} url={poke.url}/>)}
+        </List>
+      </ChoosenStyled>
+      
     </>
   );
 }

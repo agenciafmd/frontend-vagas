@@ -31,7 +31,7 @@ export const SwiperStyled = styled.div`
     position: absolute;
     top: 390px;
     z-index: 3;
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     font-weight: bold;
     border-bottom: 4px solid red;
@@ -42,10 +42,11 @@ export const SwiperStyled = styled.div`
   }
   p {
     margin-left: 25px;
+    margin-left: 8px;
     position: absolute;
     top: 440px;
     z-index: 3;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     overflow: hidden;
     text-overflow: ellipsis;

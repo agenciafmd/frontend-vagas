@@ -5,7 +5,7 @@ import { HeaderStyled } from "./styles";
 
 const Header = () => {
   const [menuOn, setMenuOn] = useState(false);
-
+  
   return (
     <HeaderStyled>
       <div>
@@ -20,7 +20,7 @@ const Header = () => {
                 onClick={() => setMenuOn(true)}
               />
               <div className="link-div">
-                <a href="">Escolha Seu Inicial!</a>
+                <a href="#choosen">Escolha Seu Inicial!</a>
                 <a href="">Pokedex</a>
                 <a href="">Sobre</a>
               </div>
@@ -28,7 +28,7 @@ const Header = () => {
           ) : (
             <div className="menu">
               <button onClick={() => setMenuOn(false)}>X</button>
-              <a href="">Escolha Seu Inicial!</a>
+              <a href="#choosen">Escolha Seu Inicial!</a>
               <a href="">Pokedex</a>
               <a href="">Sobre</a>
             </div>
