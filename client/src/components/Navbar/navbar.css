@@ -1,0 +1,180 @@
+.topnav {
+  height: 75px;
+  width: 100%;
+  background: black;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #FFFFFF;
+}
+
+.btn1{
+  height: 30px;
+  width: 100px;
+}
+
+.btn2{
+  height: 30px;
+  width: 100px;  
+}
+
+/* Style the logo */
+.logo {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  font-family: "Lucida Handwriting";
+  font-weight: bold;
+}
+
+/* Desktop Menu */
+.menu {
+  margin-left: 15px;
+  height: 100%;
+  display: none;
+}
+
+.menu a {
+  color:white;
+}
+
+.menu a:hover {
+  opacity: 0.6;
+}
+
+.show-mobile-menu-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-mobile-menu-button {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  transition: 0.3s;
+}
+
+.mobile-menu a {
+  padding: 10px 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  color: orange;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 1100px) {
+  .show-mobile-menu-button {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+  }
+  .btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 120px;
+    margin: 0 30px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #FFC739;
+    background-color: #FFC739;
+    color: black;
+    font: bold 16px 'Courier New',sans-serif;
+    cursor: pointer;
+  }
+  .btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 120px;
+    margin: 0 30px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #FFC739;
+    color: #FFC739;
+    font: bold 16px 'Courier New',sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 50px 0;
+  }.close-mobile-menu-button {
+    z-index: 999;    
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin: 60px 30px 0 0;
+  }
+}
+
+/* Other styles */
+.content {
+  padding: 40px 20px;
+}
+
+.Link {
+  color: white;
+}
+
+.menu a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  font: bold 16px 'Courier New',sans-serif;
+  text-decoration: none;
+  transition: 0.3s;
+}

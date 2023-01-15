@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.MusicForm {
+  display: flex;
+  
+}
+
+@media screen and (max-width: 650px){
+  input {
+    padding: 20px;
+    width:100px;
+  }
+}
+
+input {
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  border-color: yellow;
+}
+
+.buttonForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  border: none;
+  color: black;
+  width: 50px;
+  height: 30px;
+  border-radius:40%;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: yellow;
+}
+

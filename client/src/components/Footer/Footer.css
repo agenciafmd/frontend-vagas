@@ -1,0 +1,37 @@
+.Footer {
+  width: 100%;
+  background-color:#FFC739;
+  display: flex;
+  margin: 0;
+  padding: 70px 30px;
+  justify-content: center;
+  min-height: 100%;
+  column-gap:50px;
+  box-sizing:border-box;
+  flex-wrap:wrap;
+}
+
+@media (max-width:1000px) {
+  .Footer {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 20px;
+    align-items: center;
+  }
+}
+
+.links {
+  display:flex;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+.Footer h1 {
+  font-size: 22px;
+}
+
+a {
+  color: black;
+  text-decoration:none;
+}

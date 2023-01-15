@@ -1,0 +1,84 @@
+.Banner {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.Banner .BannerH1 {  
+  margin: 20px 5px 20px 5px;
+  font-size: 50px;
+  font-family: RocknRoll One;
+  color: yellow;
+}
+
+@media screen and (max-width:500px){
+  .Banner .BannerH1 {  
+    font-size: 40px;
+  }
+  .imgButton {
+    top: 40%;
+  }
+}
+
+.BannerImg {
+  display: flex;
+  width: 50%;
+  height: 350px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.newImg {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.oldImg {
+  display:none;
+  transition: 'all 2s ease-in-out';
+}
+
+.imgButton {
+  display: flex;
+  background-color: Transparent;
+  border: none;
+  position: absolute;
+  top: 60%;
+}
+
+.left {
+  left: 25%;
+}
+
+.right {
+  right: 25%;
+}
+
+.imgPoint {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: static;
+}
+
+.points {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@media screen and (max-width: 700px){
+  .BannerImg {
+    width: 70%;
+  }
+  .left {
+    left: 15%;
+  }  
+  .right {
+    right: 15%;
+  }
+} 

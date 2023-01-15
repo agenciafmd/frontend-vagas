@@ -1,0 +1,82 @@
+.Home {
+  height: 100%;
+  background: #0E0E0E;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  align-items: center;
+}
+
+span {
+  margin: 40px 0;
+}
+
+b {
+  font: 400 36px 'Inter',sans-serif;
+  color: #FFFFFF;  
+}
+
+.music{
+  color: yellow;
+  font-family: "RocknRoll One";
+}
+
+.Cards{
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  row-gap: 32px;
+  margin: 15px 50px;
+  justify-items: start;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+@media screen and (max-width: 1000px){
+  .Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 15px 50px;
+    justify-items: center;
+  }  
+}
+
+
+
+h2 {
+  font-family: "RocknRoll One";
+  padding: 30px;
+  font-size: 50px;
+  color: yellow;
+}
+
+.FormMusic {
+  display: flex;
+  font-size: 25px;
+  padding: 50px 20px 30px 20px;
+  color: yellow;
+  font-family: "RocknRoll One";
+}
+
+@media screen and (max-width: 650px){
+  .Cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin: 15px 50px;
+    justify-items: center;
+  }
+  .FormMusic {
+    padding: 50px 20px 30px 20px;
+  }
+}

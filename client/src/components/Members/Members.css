@@ -1,0 +1,33 @@
+.member {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+}
+
+.Section3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.music {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+}
+
+.buttonMember {
+  display: flex;
+  background-color: Transparent;
+  border: none;
+  color: white;
+}

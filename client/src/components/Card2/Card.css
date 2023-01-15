@@ -1,0 +1,48 @@
+.Member {
+  padding: 15px;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.Member img {
+  width: 150px;
+  height: 150px;
+  background-color: #313131;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.Member {
+  padding: 10px 10px;
+  width: 100%;
+  height: 180px;
+}
+
+.Member .MemberLetter h1 {
+  margin: 0;  
+}
+
+.Member .MemberLetter {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  color: white;
+  flex-direction: column;
+}
+
+.Member .MemberLetter p {
+  padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .Member .MemberLetter p {
+    width: 90%;
+    height: 300px
+  }
+}
+
+

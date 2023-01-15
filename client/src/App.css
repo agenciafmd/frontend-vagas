@@ -1,0 +1,18 @@
+* {
+  font: bold 16px 'RocknRoll One', sans-serif;
+  margin: 0px;
+  font-display: swap;
+  scroll-behavior: smooth;  
+}
+
+.App {
+  display: flex;
+  background-color: #0E0E0E;
+  align-items: stretch;
+  height: 1000px;
+  min-height: calc(100vh - 75px);
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}

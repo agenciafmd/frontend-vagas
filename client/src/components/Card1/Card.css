@@ -1,0 +1,55 @@
+.Card {
+  display: grid;
+  column-gap: 50px;
+  align-items:center;
+  min-height: 200px;
+  padding: 10px 30px;
+  background-color: #242424;
+  border-radius:5px;
+  justify-items: center;
+}
+
+.Letter {
+  color: #ffffff;
+}
+
+.Card .Letter h1{
+  font: bold 24px 'Inter',sans-serif;
+  margin: 20px 0 10px 0;
+  cursor: pointer;
+}
+
+.Letter p{
+  font-size:20px;
+  margin: 0 0 16px 0;
+  max-height: 68px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.Letter b{
+  font: 400 12px 'Roboto',sans-serif;
+  margin: 0;
+}
+
+.Card img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0 0 0; 
+  background-color: #313131;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media (max-width:1000px) {
+  .Card {    
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 270px;
+    height: 300px;
+  }
+}
