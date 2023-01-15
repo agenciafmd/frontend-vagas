@@ -1,0 +1,16 @@
+<section class="listagem">
+  <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons" let-i="index">
+    <a class="pokemon" *ngIf="pokemon.status">
+      <div class="container" *ngIf=" i < 4">
+        <div class="card">
+          <img [src]="pokemon.status.sprites.other.dream_world.front_default" [alt]="pokemon.name" class="card__img" />
+          <div class="card__data">
+            <h1 class="card__title">
+              <h2>{{ pokemon.name | uppercase }}</h2>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </a>
+  </ng-template>
+</section>

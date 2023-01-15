@@ -1,0 +1,6 @@
+/* Hover card effect */
+.card:hover {
+  .card__img {
+    transform: translate(-1.5rem, -3.5rem) rotate(-15deg);
+  }
+}

@@ -3,10 +3,17 @@
 <app-slide-carousel></app-slide-carousel>
 
 <body>
-  <main></main>
+  <main>
+    <section id="home">
+      <app-pokemon-list></app-pokemon-list>
+    </section>
+    <section id="work">
+      <form [formGroup]="newsletter">
+        <app-form [newsletter]="newsletter"></app-form>
+      </form>
+    </section>
+  </main>
 </body>
-<section>
-  <div class="a">
-    <app-footer> </app-footer>
-  </div>
+<section id="projects">
+  <app-footer> </app-footer>
 </section>
