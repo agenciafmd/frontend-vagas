@@ -1,10 +1,9 @@
 <h1 align="center">Projeto desafio Landing Page</h1>
 <hr>
-<h2 align="center">Aprendizados nesse projeto 🎯</h2>
 O nosso challenge para a <b>mais nova vaga de Front-end</b> consiste em desenvolver uma Landing Page de assunto de
 sua preferência, basta atender os requisitos abaixo:
 
-<h2 align="center">Status do projeto: Em construção...  🚧</h2>
+<h2 align="center">Status do projeto: Concluído ✅</h2>
 
 ### Features
 
@@ -13,37 +12,36 @@ sua preferência, basta atender os requisitos abaixo:
 - [x] Seção com cards (Mínimo 3 cards).
   - [x] Mobile: Blocado abaixo do outro.
   - [x] Desktop: Um ao lado do outro (garantindo a mesma altura).
-- Segunda seção de cards (Mínimo 3 cards).
-  - [] Mobile: Slider
+- [x] Segunda seção de cards (Mínimo 3 cards).
+  - [x] Mobile: Slider
   - [x] Desktop: Slider desligado (garantindo a mesma altura).
 - [x] Formulário de newsletter.
 - [x] Footer.
 - [x] Commit Amigão.
-- [x] API (Swiper)
+- [x] API (Swiper JS)
 
 <hr>
 <h2 align="center"> Prints do projeto </h2>
 <br />
 
 <h3 align="center">Header e seção com Slider</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431369-6f92017f-3ab9-4b11-b097-04480e93226b.jpg" />
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212551400-8971b5ac-98ff-4d8c-8bd3-bc7786d81fc7.jpg" />
 <h3 align="center">Seção cards 1</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431210-72a57e88-f332-4a10-8255-b42a37c80423.jpg" />
-<h3 align="center">Seção cards 2 e formulário de newsletter</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431469-a622af79-2f96-4358-ad8e-432e21191a4c.jpg" />
-<h3 align="center">Formulário de newsletter ao tentar enviar com os campos vazios</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431519-395c87bf-f77b-4b38-89e8-aa358af12f01.jpg" />
-<h3 align="center">Formulário de newsletter com os campos preenchidos</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431556-52acf252-1819-49a6-bcd7-2ba13337e6c5.jpg"/>
-<h3 align="center">Formulário enviado com sucesso abrindo janela modal</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431597-3dc5ce76-ec91-4de7-9fc0-57a028536071.jpg" />
-<h3 align="center">Seção footer</h3>
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212432567-8666fce2-1a23-42fa-9865-bc718716d4f0.jpg" />
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212551512-5b82f885-619d-4ecb-9760-e60f5bc40967.jpg" />
+<h3 align="center">Seção cards 2</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212551567-f56e406b-b427-4980-b1ea-d1f94b23fdb4.jpg" />
+<h3 align="center">Formulário de newsletter e footer</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212551624-260122b3-2c33-4c9d-9ced-1e08ede0eb4b.jpg" />
 
 <hr>
 <h2 align="center"> Demo versão Desktop</h2>
 <br />
-<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431686-0d34ff74-f17c-4b04-ab29-644e628173f4.gif" />
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212551680-5925bd7f-b1f8-4fb6-ace3-8f5aae53d282.gif" />
+
+<hr>
+<h2 align="center"> Demo versão Mobile</h2>
+<br />
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212551740-1ebf58c0-37d0-4fb8-b1aa-44c39df0ad74.gif" />
 
 
 <hr>
@@ -68,6 +66,3 @@ sua preferência, basta atender os requisitos abaixo:
 </tr>
 </tbody>
 </table>
-
-
-<b>Que a força esteja com você :)</b>
