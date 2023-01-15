@@ -57,6 +57,7 @@ const NewsList = () => {
           width={70}
           height={70}
         />
+        <h1>Bitcoin News</h1>
       </div>
     </Container>
   );

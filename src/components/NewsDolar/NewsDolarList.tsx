@@ -53,6 +53,7 @@ const NewsDolarList = () => {
       </Carousel>
       <div className='dolar'>
         <AiFillDollarCircle size={80} color='#ffd700' />
+        <h1>Dolar News</h1>
       </div>
     </Container>
   );

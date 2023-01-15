@@ -3,17 +3,19 @@ import { motion } from 'framer-motion';
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;    
-  justify-content: center;
+  flex-direction: column;
 
   div.bitcoin{
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 32rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+    }
   }
 `;
 

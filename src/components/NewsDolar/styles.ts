@@ -5,18 +5,21 @@ export const Container = styled.div.attrs({
   id: 'news'
 })`
   width: 100%;
-  max-width: 1260px;
-  margin: -150px auto;
+  margin: -100px auto;
   min-height: 100vh;
-  display: flex;    
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column; 
 
   div.dolar {
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 18rem;
+    background: #000;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+    }
   }
 `;
 

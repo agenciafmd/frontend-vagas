@@ -107,7 +107,6 @@ export const Main = styled.div`
 
   div.hiddenX {
     overflow-x: hidden;
-    margin-top: 4rem;
     
     div.news-content {
       display: flex;
