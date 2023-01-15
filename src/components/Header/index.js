@@ -1,7 +1,19 @@
 import React from "react";
-import { Center, Container, ImageContainer, MenuContainer } from "./styles";
+import {
+  Center,
+  Container,
+  ImageContainer,
+  MenuContainer,
+  MenuItem,
+} from "./styles";
 
 function Header() {
+  function scrollIntoView(div) {
+    document.getElementById(div).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   return (
     <Container>
       <Center>
@@ -14,7 +26,21 @@ function Header() {
           ></img>
         </ImageContainer>
         <MenuContainer>
-          <h2>Label</h2>
+          <MenuItem onClick={() => scrollIntoView("section-banner")}>
+            Início
+          </MenuItem>
+          <MenuItem onClick={() => scrollIntoView("section-pokemons")}>
+            Pokémons
+          </MenuItem>
+          <MenuItem onClick={() => scrollIntoView("section-pokemons-details")}>
+            Outros Pokémons
+          </MenuItem>
+          <MenuItem onClick={() => scrollIntoView("section-new-letter")}>
+            Assine
+          </MenuItem>
+          <MenuItem onClick={() => scrollIntoView("section-footer")}>
+            Contato
+          </MenuItem>
         </MenuContainer>
       </Center>
     </Container>

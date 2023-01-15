@@ -7,10 +7,10 @@ function PokemonsDetails({ list, details }) {
   console.log("list", list);
   console.log("details", details);
   return (
-    <Container>
+    <Container id="section-pokemons-details">
       <Content>
         <TitleContainer>
-          <Title title="Habilidades" />
+          <Title title="Outros Pokémons" />
         </TitleContainer>
 
         <CardsContainer>

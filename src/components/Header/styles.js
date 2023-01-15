@@ -23,6 +23,22 @@ const Center = styled.div`
 
 const ImageContainer = styled.div``;
 
-const MenuContainer = styled.div``;
+const MenuContainer = styled.div`
+  display: flex;
+`;
 
-export { Container, Center, ImageContainer, MenuContainer };
+const MenuItem = styled.button`
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin-left: 32px;
+  cursor: pointer;
+`;
+
+export { Container, Center, ImageContainer, MenuContainer, MenuItem };

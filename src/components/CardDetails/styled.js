@@ -5,9 +5,26 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   width: 257px;
   height: 319px;
+  color: #ffffff;
+  border-radius: 40px 40px 0px 0px;
+  cursor: pointer;
+  background-color: #000000;
+  transition: background-color 300ms ease-out;
+
+  :hover {
+    background-color: #ffffff;
+
+    & > span {
+      transition: background-color 400ms ease-out;
+      color: #000000;
+    }
+    & > div > span {
+      transition: background-color 400ms ease-out;
+      color: #000000;
+    }
+  }
 `;
 
 const TitleContainer = styled.div``;
@@ -18,7 +35,6 @@ const Title = styled.span`
   font-weight: 800;
   font-size: 26px;
   line-height: 31px;
-  color: #ffffff;
   text-transform: capitalize;
 `;
 

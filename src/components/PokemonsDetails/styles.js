@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 const Container = styled.section`
   padding: 48px 0px;
   background-color: #000000;
+  min-height: 415px;
 `;
 
 const Content = styled.div`

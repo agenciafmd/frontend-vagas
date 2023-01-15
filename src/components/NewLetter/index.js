@@ -14,7 +14,7 @@ import {
 
 function NewLetter() {
   return (
-    <Container>
+    <Container id="section-new-letter">
       <Content>
         <TitleContainer>
           <Title>Assine nossa</Title>

@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
 
 const Container = styled.div`
+  display: flex;
   background-color: #000000;
   padding: 48px 0px;
+  min-height: 659px;
 `;
 
 const Content = styled.div`

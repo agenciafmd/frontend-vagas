@@ -17,7 +17,7 @@ import {
 
 function Banner() {
   return (
-    <Container>
+    <Container id="section-banner">
       <InfoContainer>
         <Center>
           <TitleContainer>

@@ -5,7 +5,7 @@ import { CardsContainer, Container, Content, TitleContainer } from "./styles";
 
 function Pokemons({ list, details }) {
   return (
-    <Container>
+    <Container id="section-pokemons">
       <Content>
         <TitleContainer>
           <Title title="Pokémons" />

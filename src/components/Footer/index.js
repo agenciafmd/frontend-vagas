@@ -14,7 +14,7 @@ import {
 
 function Footer() {
   return (
-    <Container>
+    <Container id="section-footer">
       <ContactsContainer>
         <Center>
           <LogoContainer>
