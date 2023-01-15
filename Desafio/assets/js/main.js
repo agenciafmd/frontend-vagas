@@ -94,3 +94,34 @@ function emailValidate(){
         removeError(1);
     }
 }
+
+
+// Slider das avaliações
+
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+  
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 1,
+        },
+        781: {
+            slidesPerView: 3,
+        },
+    }
+  });
+
