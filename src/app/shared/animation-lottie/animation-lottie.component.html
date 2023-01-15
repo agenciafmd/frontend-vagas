@@ -1,0 +1,15 @@
+<div
+  class="app-splash"
+  [ngStyle]="{
+  left: windowWidth,
+  opacity: opacityChange,
+  transition: splashTransition
+}"
+  *ngIf="showSplash"
+>
+  <div class="app-splash__size">
+    <div class="app-splash-color">
+      <ng-lottie [options]="options"></ng-lottie>
+    </div>
+  </div>
+</div>
