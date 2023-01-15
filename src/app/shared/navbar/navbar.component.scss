@@ -9,7 +9,9 @@ nav {
   font-family: $body-font;
   padding: 0 5%;
   height: 60px;
-  background-color: #3e65da;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgba(209, 206, 209, 0.4);
 }
 nav .logo {
   float: left;
@@ -77,7 +79,7 @@ nav .icon-burger .line {
     height: auto;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: blue;
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
