@@ -183,7 +183,7 @@ img{
 /* Avaliações */
 
 .slide-container.swiper{
-    height: 40vh;
+    height: 60vh;
 }
 
 .slide-container{
@@ -243,6 +243,7 @@ img{
     font-size: 18px;
     font-weight: 500;
     color: #333;
+    margin: 0;
 }
 .description{
     font-size: 14px;
@@ -499,7 +500,7 @@ form {
     header .navbar {
         position: absolute;
         width: 240px;
-        height: 20vh;
+        height: 30vh;
         top: 100%;
         right: -150%;
         display: flex;
