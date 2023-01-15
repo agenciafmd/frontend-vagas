@@ -15,9 +15,12 @@ export const ChoosenStyled = styled.section`
     width: 70%;
     font-size: 24px;
     font-weight: bolder;
-    color: #dfae3c;
+    color: #5d0083;
     text-decoration: underline;
     text-align: center;
+    @media (min-width: 700px) {
+      font-size: 30px;
+    }
   }
   ul {
     list-style: none;
@@ -74,7 +77,6 @@ export const ChoosenStyled = styled.section`
         font-weight: bold;
         font-size: 25px;
         border-bottom: 2px solid #5d0083;
-        /* border-radius: 16px; */
         padding: 2px 4px;
         color: #5d0083;
       }

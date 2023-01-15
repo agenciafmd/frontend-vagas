@@ -1,6 +1,7 @@
 import { api } from "./api";
 
 export interface iPokeDetails {
+    map(arg0: (poke: any) => JSX.Element): import("react").ReactNode;
     name?: string;
     url?: string ;
     setResults: React.Dispatch<React.SetStateAction<iPokeDetails | null>>
@@ -13,6 +14,7 @@ export interface iPoke {
   next: string;
   previous: null;
   results: {
+    map(arg0: (poke: any) => JSX.Element): import("react").ReactNode;
     find(arg0: (pokes: iPokeDetails) => boolean): iPokeDetails;
     setResults: React.Dispatch<React.SetStateAction<iPokeDetails | null>>
     name: string;

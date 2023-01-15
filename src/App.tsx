@@ -10,6 +10,7 @@ import { getPokemons, iPokeDetails } from "./services/getPoke";
 import { ChoosenStyled } from "./styles/styles";
 import List from "./components/List";
 import Card from "./components/List/Card";
+import { setingsHeader,setingsCard } from "./services/sliderSetings";
 
 
 function App() {
@@ -27,17 +28,6 @@ function App() {
     }
   }, [poke]);
 
-  const setings = {
-    slidesPerView: 1,
-    navigation: true,
-    pagination: {
-      clickable: true,
-    },
-    autoplay: {
-      delay: 5000,
-    },
-    loop: true,
-  };
 
   const getInitialPoke = () => {
     const choosenInitial = [] as iPokeDetails[]
@@ -57,12 +47,11 @@ function App() {
     }
   };
   const initial = getInitialPoke()
-  
 
   return (
     <>
       <Header />
-      <Slider setings={setings}>
+      <Slider card={false} setings={setingsHeader}>
         <Slide>
           <img src={pokeHome} alt="" />
           <h2>O mundo dos Pokemons</h2>
@@ -83,12 +72,16 @@ function App() {
         </Slide>
       </Slider>
       <ChoosenStyled>
-        <h2 id="choosen">Faça sua Escolha!</h2>
+        <h2 id="choosen">Faça sua Escolha! </h2>
         <List>
-           {initial?.length && initial.map( poke => <Card name={poke.name} url={poke.url}/>)}
+           {initial?.length && initial.map( poke => <Card name={poke.name} url={poke.url} slideCard={false}/>)}
         </List>
       </ChoosenStyled>
-      
+      <Slider card={true} setings={setingsCard}>
+          {poke && poke.map(poke => <Slide>
+            <Card name={poke.name} url={poke.url} slideCard={true}/>
+        </Slide>)}
+      </Slider>
     </>
   );
 }
