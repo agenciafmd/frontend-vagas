@@ -25,19 +25,25 @@ sua preferência, basta atender os requisitos abaixo:
 <h2 align="center"> Prints do projeto </h2>
 <br />
 
-<img width="100%" align="center" src="assets/img/header.jpg">
-<img width="100%" align="center" src="assets/img/secao-card1.jpg">
-<img width="100%" align="center" src="assets/img/secao-card2-e-newsletter.jpg">
-<img width="100%" align="center" src="assets/img/newsletter-erro.jpg">
-
-<img width="100%" align="center" src="assets/img/newsletter-input-preenchido.jpg">
-<img width="100%" align="center" src="assets/img/newsletter-modal.jpg">
-<img width="100%" align="center" src="assets/img/secao-footer.jpg">
+<h3 align="center">Header e seção com Slider</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431369-6f92017f-3ab9-4b11-b097-04480e93226b.jpg" />
+<h3 align="center">Seção cards 1</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431210-72a57e88-f332-4a10-8255-b42a37c80423.jpg" />
+<h3 align="center">Seção cards 2 e formulário de newsletter</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431469-a622af79-2f96-4358-ad8e-432e21191a4c.jpg" />
+<h3 align="center">Formulário de newsletter ao tentar enviar com os campos vazios</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431519-395c87bf-f77b-4b38-89e8-aa358af12f01.jpg" />
+<h3 align="center">Formulário de newsletter com os campos preenchidos</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431556-52acf252-1819-49a6-bcd7-2ba13337e6c5.jpg"/>
+<h3 align="center">Formulário enviado com sucesso abrindo janela modal</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431597-3dc5ce76-ec91-4de7-9fc0-57a028536071.jpg" />
+<h3 align="center">Seção footer</h3>
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212432567-8666fce2-1a23-42fa-9865-bc718716d4f0.jpg" />
 
 <hr>
 <h2 align="center"> Demo versão Desktop</h2>
 <br />
-<img width="100%" align="center" src="assets/img/desktop.gif">
+<img width="100%" align="center" src="https://user-images.githubusercontent.com/105670314/212431686-0d34ff74-f17c-4b04-ab29-644e628173f4.gif" />
 
 
 <hr>
