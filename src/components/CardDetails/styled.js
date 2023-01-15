@@ -13,7 +13,7 @@ const Container = styled.div`
 const TitleContainer = styled.div``;
 
 const Title = styled.span`
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
@@ -22,8 +22,16 @@ const Title = styled.span`
   text-transform: capitalize;
 `;
 
+const Label = styled.span`
+  font-family: Inter;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: capitalize;
+`;
+
 const ImageContainer = styled.div``;
 
 const Image = styled.img``;
 
-export { Container, ImageContainer, Image, TitleContainer, Title };
+export { Container, ImageContainer, Image, TitleContainer, Title, Label };

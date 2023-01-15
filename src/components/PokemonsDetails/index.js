@@ -16,7 +16,12 @@ function PokemonsDetails({ list, details }) {
         <CardsContainer>
           {list.map((poke, idx) => {
             return (
-              <CardDetails name={poke.name} image={details[poke.name]?.image} />
+              <CardDetails
+                name={poke.name}
+                image={details[poke.name]?.image}
+                stars={details[poke.name]?.star.base_stat / 5 / 5}
+                label={details[poke.name]?.star.stat.name}
+              />
             );
           })}
         </CardsContainer>

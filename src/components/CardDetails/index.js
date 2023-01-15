@@ -1,14 +1,15 @@
-import { Rating } from "@mui/material";
+import { Rating, Tooltip } from "@mui/material";
 import React from "react";
 import {
   Container,
   Image,
   ImageContainer,
+  Label,
   Title,
   TitleContainer,
 } from "./styled";
 
-function CardDetails({ name, image }) {
+function CardDetails({ name, image, stars, label }) {
   return (
     <Container>
       <ImageContainer>
@@ -17,7 +18,8 @@ function CardDetails({ name, image }) {
       <TitleContainer>
         <Title>{name}</Title>
       </TitleContainer>
-      <Rating name="read-only" value={5} readOnly />
+      <Rating name="read-only" value={stars} readOnly />
+      <Label>{label}</Label>
     </Container>
   );
 }

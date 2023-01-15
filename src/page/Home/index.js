@@ -23,6 +23,7 @@ function Home() {
       newDetails[result.name] = {
         name: res.data.name, // da pra tirar isso se quiser
         image: res.data.sprites.front_default,
+        star: res.data.stats.filter((stat) => stat.stat.name === "attack")[0],
       };
 
       setPokeDetails({
