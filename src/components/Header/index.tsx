@@ -35,6 +35,12 @@ const Header = () => {
           <li><a href='#contact'>Contact</a></li>
           <li><a href='#headlines'>Bitcoin</a></li>
           <li><a href='#news'>News Dolar</a></li>
+          <button
+            id='btn-close'
+            onClick={() => toggleMenu()}
+          >
+            close
+          </button>
         </ul>
       </nav>
     </Container>

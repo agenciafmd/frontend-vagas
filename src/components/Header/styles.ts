@@ -45,6 +45,25 @@ export const Container = styled(motion.header)`
   #btn-mobile {
     display: none;
   }
+  #btn-close {
+    background: transparent;
+    border: 1px solid #660000;
+    border-radius: 2rem;
+    color: #660000;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem .5rem .5rem;
+    padding: .2rem .5rem;
+    cursor: pointer;
+    
+    transition: color 0.2s;
+
+    &:hover {
+      background: #660000;
+      color: #fff;
+    }
+  }
   
   @media (max-width: 768px) {
     #btn-mobile {
