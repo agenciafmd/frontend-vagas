@@ -9,13 +9,21 @@ import { AnimationLottieComponent } from './animation-lottie/animation-lottie.co
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { ModalComponent } from './modal/modal.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 export function playerFactory() {
   return player;
 }
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, SlideCarouselComponent, AnimationLottieComponent, ModalComponent],
+  declarations: [
+    NavbarComponent,
+    FooterComponent,
+    SlideCarouselComponent,
+    AnimationLottieComponent,
+    ModalComponent,
+    PokedexComponent,
+  ],
   imports: [CommonModule, MdbCarouselModule, LottieModule.forRoot({ player: playerFactory })],
-  exports: [NavbarComponent, FooterComponent, SlideCarouselComponent, AnimationLottieComponent],
+  exports: [NavbarComponent, FooterComponent, SlideCarouselComponent, AnimationLottieComponent, PokedexComponent],
 })
 export class SharedModule {}
