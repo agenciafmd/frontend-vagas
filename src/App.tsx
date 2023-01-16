@@ -11,6 +11,7 @@ import { ChoosenStyled } from "./styles/styles";
 import List from "./components/List";
 import Card from "./components/List/Card";
 import { setingsHeader,setingsCard } from "./services/sliderSetings";
+import Form from "./components/Form";
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
             <Card name={poke.name} url={poke.url} slideCard={true}/>
         </Slide>)}
       </Slider>
+      <Form />
     </>
   );
 }
