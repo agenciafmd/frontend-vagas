@@ -1,7 +1,7 @@
 @import '../../../assets/styles/font.scss';
 
 nav {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   left: 0;
   right: 0;
@@ -79,7 +79,9 @@ nav .icon-burger .line {
     height: auto;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: blue;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: rgba(209, 206, 209, 0.4);
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;

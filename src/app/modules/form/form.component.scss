@@ -1,9 +1,36 @@
+@import '../../../assets/styles/button.scss';
+
+.listagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.25rem 0;
+}
+
+.form-position {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  &__email {
+    margin: 0px 25px;
+  }
+}
+
+.validation-error {
+  color: red;
+  margin-top: 0.4em;
+  border-left: 3px solid red;
+  padding-left: 0.2em;
+  margin-top: -45px;
+}
+
 .input {
   font-size: 1.5em;
   background: linear-gradient(21deg, #10abff, #1beabd);
   padding: 3px;
   display: inline-block;
-  border-radius: 12px;
+  border-radius: 5px;
   position: relative;
   margin-bottom: 60px;
   *:not(span) {
@@ -59,19 +86,4 @@ html::after {
   left: 0;
   top: 0;
   margin-bottom: 50px;
-}
-
-.position-form {
-  display: flex;
-}
-
-.listagem {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 3.25rem 0;
-}
-
-.position-email {
-  margin-left: 20px;
 }

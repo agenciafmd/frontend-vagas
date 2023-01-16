@@ -1,16 +1,25 @@
 <section class="listagem">
-  <form [formGroup]="newsletter">
-    <div class="s">
-      <div class="position-form">
+  <form [formGroup]="newsletter" (ngSubmit)="submit()" #formDir="ngForm">
+    <div class="form-position">
+      <div>
         <span class="input">
           <input type="text" name="name" formControlName="name" placeholder="Nome" />
           <span></span>
         </span>
+        <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+          <p>O campo nome é obrigatório</p>
+        </div>
+      </div>
+      <div class="form-position__email">
         <span class="input position-email">
           <input type="text" name="email" formControlName="email" placeholder="E-mail" />
           <span></span>
         </span>
+        <div *ngIf="email.invalid && formDir.submitted" class="validation-error position-error">
+          <p>O campo e-mail é obrigatório</p>
+        </div>
       </div>
+      <div><button class="rainbow-button" alt="Acessar"></button></div>
     </div>
   </form>
 </section>

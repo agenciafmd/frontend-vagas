@@ -1,0 +1,32 @@
+.modal-body {
+  background: #121210;
+  border-left: 4px solid yellow;
+  padding-left: 0.2em;
+  border-radius: 5px;
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  button {
+    color: white;
+    outline: none;
+    background: transparent;
+  }
+  &__text {
+    color: white;
+    text-align: center;
+  }
+  &__icon {
+    font-size: 84px;
+    color: yellow;
+  }
+  &__title {
+    font-size: 30px;
+  }
+  &__description {
+    font-size: 18px;
+    padding: 0 24px;
+    margin: 15px 0;
+  }
+}

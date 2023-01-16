@@ -12,7 +12,7 @@ export default function getLandingPageFormGroup(formBuilder: FormBuilder) {
     email: [
       '',
       {
-        validators: [Validators.required],
+        validators: [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')],
         updateOn: 'change',
       },
     ],
