@@ -1,46 +1,57 @@
 import React, { useState } from "react";
-import "./header.css";
+import { Container } from "./styles";
+import logo from "../../assets/logo.png"
 
 export const Header = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
-    <header>
-        <div className="icon">
-            <h1>Rick and Morty</h1>
-        </div>
+    <Container>
+      <div>
+        <img src={logo} alt="Logo da serie rick and morty" />
+      </div>
 
-      <a
-        href="#banners"
-        onClick={() => setActiveNav("#banners")}
-        className={activeNav === "#banners" ? "active" : ""}
-      >
-        Primeira seção
-      </a>
 
-      <a
-        href="#1card"
-        onClick={() => setActiveNav("#1card")}
-        className={activeNav === "#1card" ? "active" : ""}
-      >
-        Segunda seção
-      </a>
+      <div className="link">
+        <a
+          href="#banners"
+          onClick={() => setActiveNav("#banners")}
+          className={activeNav === "#banners" ? "active" : ""}
+        >
+          Banners
+        </a>
 
-      <a
-        href="#2card"
-        onClick={() => setActiveNav("#2card")}
-        className={activeNav === "#2card" ? "active" : ""}
-      >
-        Terceira seção
-      </a>
+        <a
+          href="#card"
+          onClick={() => setActiveNav("#card")}
+          className={activeNav === "#card" ? "active" : ""}
+        >
+          Personagens vivos
+        </a>
 
-      <a
-        href="#footer"
-        onClick={() => setActiveNav("#footer")}
-        className={activeNav === "#footer" ? "active" : ""}
-      >
-        Footer
-      </a>
-     
-    </header>
+        <a
+          href="#carousel"
+          onClick={() => setActiveNav("#carousel")}
+          className={activeNav === "#carousel" ? "active" : ""}
+        >
+          Personagens mortos
+        </a>
+
+        <a
+          href="#Newslatter"
+          onClick={() => setActiveNav("#Newslatter")}
+          className={activeNav === "#Newslatter" ? "active" : ""}
+        >
+          Newslatter
+        </a>
+
+        <a
+          href="#footer"
+          onClick={() => setActiveNav("#footer")}
+          className={activeNav === "#footer" ? "active" : ""}
+        >
+          Footer
+        </a>
+      </div>
+    </Container>
   );
 };
