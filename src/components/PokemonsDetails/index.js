@@ -4,8 +4,6 @@ import Title from "../Title";
 import CardDetails from "../CardDetails";
 
 function PokemonsDetails({ list, details }) {
-  console.log("list", list);
-  console.log("details", details);
   return (
     <Container id="section-pokemons-details">
       <Content>

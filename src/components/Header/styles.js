@@ -35,12 +35,10 @@ const Center = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 900px) {
-    display: flex;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 100% !important;
-    margin: 0px;
+  @media (max-width: 1300px) {
+    width: 1080px;
+    max-width: 1080px;
+    min-width: 1080px;
   }
 
   @media (max-width: 1080px) {
@@ -49,10 +47,12 @@ const Center = styled.div`
     min-width: 900px;
   }
 
-  @media (max-width: 1300px) {
-    width: 1080px;
-    max-width: 1080px;
-    min-width: 1080px;
+  @media (max-width: 900px) {
+    display: flex;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin: 0px;
   }
 `;
 
