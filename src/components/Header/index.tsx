@@ -22,7 +22,7 @@ const Header = () => {
               <div className="link-div">
                 <a href="#choosen">Escolha Seu Inicial!</a>
                 <a href="#pokedex">Pokedex</a>
-                <a href="">Sobre</a>
+                <a href="#footer">Sobre</a>
               </div>
             </div>
           ) : (
@@ -30,7 +30,7 @@ const Header = () => {
               <button onClick={() => setMenuOn(false)}>X</button>
               <a href="#choosen">Escolha Seu Inicial!</a>
               <a href="#pokedex">Pokedex</a>
-              <a href="">Sobre</a>
+              <a href="#footer">Sobre</a>
             </div>
           )}
       </div>

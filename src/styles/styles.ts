@@ -80,16 +80,7 @@ export const ChoosenStyled = styled.section`
         padding: 2px 4px;
         color: #5d0083;
       }
-      button {
-        margin-top: 70px;
-        width: 60%;
-        height: 36px;
-        border: 2px solid #5d0083;
-        font-size: 18px;
-        border-radius: 16px;
-        background-image: linear-gradient(#ff050d, #950206);
-        color: #c4c4c4;
-      }
+    
 
       .icon {
         position: absolute;

@@ -10,8 +10,8 @@ export const FormSDivStyled = styled.div`
   background-image: linear-gradient(to bottom, white 70%, black);
   height: 250px;
   @media (min-width: 700px) {
-      height: 350px;
-    }
+    height: 350px;
+  }
   h2 {
     margin: 25px 0;
     font-weight: bold;
@@ -31,6 +31,7 @@ export const FormSDivStyled = styled.div`
     align-items: center;
     gap: 15px;
     height: 100px;
+
     @media (min-width: 700px) {
       width: 70%;
       height: 150px;
@@ -40,13 +41,25 @@ export const FormSDivStyled = styled.div`
       height: 150px;
     }
 
-    input {
-      width: 40%;
-      height: 35px;
-      padding: 0 10px;
-      @media (min-width: 700px) {
-      height: 50px;
-    }
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      gap: 15px;
+      input {
+        width: 90%;
+        height: 35px;
+        padding: 0 10px;
+        @media (min-width: 700px) {
+          height: 50px;
+        }
+      }
+      span {
+        color: blue;
+        @media (min-width: 900px) {
+          font-size: 20px;
+        }
+      }
     }
 
     button {
@@ -58,8 +71,8 @@ export const FormSDivStyled = styled.div`
       height: 35px;
       font-size: 21px;
       @media (min-width: 700px) {
-      height: 50px;
-    }
+        height: 50px;
+      }
     }
   }
 `;

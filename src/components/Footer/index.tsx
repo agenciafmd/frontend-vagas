@@ -3,7 +3,7 @@ import Logo from "../../assets/img/pokeLogo.png";
 
 const Footer = () => {
   return (
-    <FooterStyled>
+    <FooterStyled id="footer">
       <div>
         <img src={Logo} alt="logo" />
         <p>poke@mail.com</p>
