@@ -37,6 +37,7 @@ export const Container = styled.div`
       border: none;
       border-radius: 10rem;
       background: #1c1c1c;
+      box-shadow: 0 0 2rem #ffd700;
     }
     
     .free{
