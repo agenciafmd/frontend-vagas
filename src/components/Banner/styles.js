@@ -27,6 +27,24 @@ const Center = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 1300px) {
+    width: 1080px;
+    max-width: 1080px;
+    min-width: 1080px;
+  }
+
+  @media (max-width: 1080px) {
+    width: 900px;
+    max-width: 900px;
+    min-width: 900px;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
 `;
 
 const TitleContainer = styled.div`

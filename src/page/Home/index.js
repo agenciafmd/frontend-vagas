@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Banner from "../../components/Banner";
@@ -14,6 +15,8 @@ function Home() {
   const [listOthers, setListOthers] = useState([]);
   const [pokeDetails, setPokeDetails] = useState({});
   const [currentPokemon, setcurrentPokemon] = useState();
+
+  const isMobile = useMediaQuery("(max-width:900px)");
 
   async function fetchIndividualPokemons(listResults) {
     const newDetails = {};
@@ -61,7 +64,7 @@ function Home() {
 
   return (
     <Container>
-      <Header />
+      <Header isMobile={isMobile} />
       <Banner />
       {!!currentPokemon?.name && (
         <PokemonModal

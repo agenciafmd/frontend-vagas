@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Drawer } from "@mui/material";
 
 const Container = styled.div`
   display: flex;
@@ -19,6 +20,24 @@ const Center = styled.div`
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1300px) {
+    width: 1080px;
+    max-width: 1080px;
+    min-width: 1080px;
+  }
+
+  @media (max-width: 1080px) {
+    width: 900px;
+    max-width: 900px;
+    min-width: 900px;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
 `;
 
 const ImageContainer = styled.div``;
@@ -27,7 +46,9 @@ const MenuContainer = styled.div`
   display: flex;
 `;
 
-const MenuItem = styled.button`
+const MenuItem = styled.a`
+  display: flex;
+  align-items: center;
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
@@ -39,6 +60,35 @@ const MenuItem = styled.button`
   padding: 0px;
   margin-left: 32px;
   cursor: pointer;
+  @media (max-width: 900px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 47px;
+    margin-left: 0px;
+  }
 `;
 
-export { Container, Center, ImageContainer, MenuContainer, MenuItem };
+const DrawerMenu = styled(Drawer)`
+  & .MuiDrawer-paper {
+    width: 100% !important;
+    background-color: #000000;
+  }
+`;
+
+const DrawerContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`;
+
+export {
+  Container,
+  Center,
+  ImageContainer,
+  MenuContainer,
+  MenuItem,
+  DrawerContent,
+  DrawerMenu,
+};
