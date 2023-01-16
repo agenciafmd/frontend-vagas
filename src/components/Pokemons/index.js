@@ -3,7 +3,7 @@ import Card from "../Card";
 import Title from "../Title";
 import { CardsContainer, Container, Content, TitleContainer } from "./styles";
 
-function Pokemons({ list, details }) {
+function Pokemons({ list, details, onClickPokemon }) {
   return (
     <Container id="section-pokemons">
       <Content>
@@ -17,6 +17,7 @@ function Pokemons({ list, details }) {
                 key={idx}
                 name={listItem.name}
                 pokeImage={details[listItem.name]?.image}
+                onClick={() => onClickPokemon(details[listItem.name])}
               />
             );
           })}

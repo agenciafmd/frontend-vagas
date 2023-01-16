@@ -4,6 +4,7 @@ import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import NewLetter from "../../components/NewLetter";
+import PokemonModal from "../../components/PokemonModal";
 import Pokemons from "../../components/Pokemons";
 import PokemonsDetails from "../../components/PokemonsDetails";
 import { Container } from "./styles";
@@ -12,6 +13,7 @@ function Home() {
   const [list, setList] = useState([]);
   const [listOthers, setListOthers] = useState([]);
   const [pokeDetails, setPokeDetails] = useState({});
+  const [currentPokemon, setcurrentPokemon] = useState();
 
   async function fetchIndividualPokemons(listResults) {
     const newDetails = {};
@@ -48,6 +50,10 @@ function Home() {
       });
   }
 
+  function onClickPokemon(details) {
+    setcurrentPokemon(details);
+  }
+
   useEffect(() => {
     fetchPokemonList();
   }, []);
@@ -57,7 +63,25 @@ function Home() {
     <Container>
       <Header />
       <Banner />
-      <Pokemons list={list} details={pokeDetails} />
+      {!!currentPokemon?.name && (
+        <PokemonModal
+          open={true}
+          name={currentPokemon.name}
+          image={currentPokemon.image}
+          base_stat={currentPokemon.star.base_stat}
+          effort={currentPokemon.star.effort}
+          statName={currentPokemon.star.stat.name}
+          statUrl={currentPokemon.star.stat.url}
+          onClose={() => {
+            setcurrentPokemon(null);
+          }}
+        />
+      )}
+      <Pokemons
+        list={list}
+        details={pokeDetails}
+        onClickPokemon={onClickPokemon}
+      />
       <PokemonsDetails list={listOthers} details={pokeDetails} />
       <NewLetter />
       <Footer />

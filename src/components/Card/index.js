@@ -7,9 +7,9 @@ import {
   TitleContainer,
 } from "./styles";
 
-function Card({ name, pokeImage }) {
+function Card({ name, pokeImage, onClick }) {
   return (
-    <Container pokeImage={pokeImage}>
+    <Container pokeImage={pokeImage} onClick={onClick}>
       <ImageContainer>
         <Image src={"/pokeball.png"} />
       </ImageContainer>
