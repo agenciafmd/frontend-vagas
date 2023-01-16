@@ -45,7 +45,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# View project demo [to view](https://www.loom.com/share/bd997ebfd13d40d0a9e9bc7c2db56e1b).
+# View project demo.
+
+https://user-images.githubusercontent.com/81385265/212727138-14970e0b-cf7e-48e7-aa24-5098d0fca9c3.mp4
+
 ## Quem participa desse projeto e com qual função?
 
 | [<img src="https://avatars.githubusercontent.com/u/81385265?v=4" width=115><br><sub>Dakson Cruz</sub>](https://github.com/DaksonC) |
