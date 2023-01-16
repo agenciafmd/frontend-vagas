@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Main = styled.div`
-  background: linear-gradient(to bottom, #9c9c9c, #ffffff);
+  background: #f5f1ea;
 
   .first {
     overflow: hidden;
@@ -144,8 +144,6 @@ export const Main = styled.div`
       }
     }
   }
-  
-
 `;
 
 export const Section = styled.div`

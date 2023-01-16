@@ -7,6 +7,7 @@ import { Main, Section, Sticky } from './styles';
 import NewsBitcoin from './components/NewsBitcoin';
 import NewsEverything from './components/NewsEverything';
 import TopHeadlinesDolar from './components/NewsDolar';
+import BackToTheTop from './components/BackToTheTop/idex';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         </div>
       </Main>
       <Footer />
+      <BackToTheTop />
     </>
   )
 }
