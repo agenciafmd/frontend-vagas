@@ -40,7 +40,7 @@ function Banner() {
         dynamicHeight={false}
         infiniteLoop={true}
         showIndicators={true}
-        showArrows={true}
+        showArrows={false}
         showThumbs={false}
         axis="horizontal"
       >
