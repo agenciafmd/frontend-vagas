@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  height: 694px;
+  height: auto;
   max-height: 694px;
   outline: none;
   position: relative;
   z-index: 98;
 
   & div {
-    height: 100%;
+    height: 694px;
   }
 
   @media (max-width: 900px) {
     height: 556px;
-  }
-  & div {
-    height: 556px;
+
+    & div {
+      height: 556px;
+    }
   }
 `;
 
@@ -25,6 +26,18 @@ const InfoContainer = styled.div`
   right: 0px;
   left: 0px;
   z-index: 98;
+
+  @media (max-width: 900px) {
+    padding: 0px 70px;
+  }
+
+  @media (max-width: 860px) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 15px;
+  }
 `;
 
 const Center = styled.div`
@@ -110,8 +123,7 @@ const ImageContainer = styled.div`
   height: 100%;
   max-height: 100%;
   position: relative;
-  background: red;
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 `;
 
 const BackgroundContainer = styled.div`

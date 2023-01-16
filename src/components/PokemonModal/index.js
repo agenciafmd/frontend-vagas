@@ -1,4 +1,4 @@
-import Dialog from "@mui/material/Dialog";
+import { DialogActions } from "@mui/material";
 import {
   StatName,
   StatValue,
@@ -9,6 +9,8 @@ import {
   StatImage,
   StatDialogTitle,
   LogoImage,
+  Container,
+  CloseButton,
 } from "./styles";
 
 function PokemonModal({
@@ -19,9 +21,10 @@ function PokemonModal({
   base_stat,
   effort,
   statName,
+  isMobile,
 }) {
   return (
-    <Dialog open={open} onClose={onClose}>
+    <Container open={open} onClose={onClose}>
       <StatDialogTitle>{name}</StatDialogTitle>
       <StatDialogContent>
         <StatImageContainer>
@@ -31,13 +34,21 @@ function PokemonModal({
             alt="Pokemon"
           />
         </StatImageContainer>
+
         <StatContainer>
           <StatName>{statName}</StatName>
           <StatValue>{base_stat}</StatValue>
           <StatEffort>Effort: {effort}</StatEffort>
         </StatContainer>
       </StatDialogContent>
-    </Dialog>
+      {isMobile && (
+        <DialogActions>
+          <CloseButton fullWidth autoFocus onClick={onClose}>
+            Fechar
+          </CloseButton>
+        </DialogActions>
+      )}
+    </Container>
   );
 }
 

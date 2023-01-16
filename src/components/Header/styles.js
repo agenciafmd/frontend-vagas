@@ -2,15 +2,27 @@ import styled from "@emotion/styled";
 import { Drawer } from "@mui/material";
 
 const Container = styled.div`
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0px;
+  right: 0px;
+  left: 0px;
+  overflow: hidden;
   z-index: 99;
-  width: 100%;
   height: 90px;
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(10px);
+
+  @media (max-width: 900px) {
+    padding: 0px 70px;
+  }
+
+  @media (max-width: 860px) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 15px;
+  }
 `;
 
 const Center = styled.div`
@@ -19,12 +31,16 @@ const Center = styled.div`
   min-width: 1280px;
   margin: auto;
   display: flex;
+  height: 100%;
+  align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 1300px) {
-    width: 1080px;
-    max-width: 1080px;
-    min-width: 1080px;
+  @media (max-width: 900px) {
+    display: flex;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin: 0px;
   }
 
   @media (max-width: 1080px) {
@@ -33,10 +49,10 @@ const Center = styled.div`
     min-width: 900px;
   }
 
-  @media (max-width: 900px) {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+  @media (max-width: 1300px) {
+    width: 1080px;
+    max-width: 1080px;
+    min-width: 1080px;
   }
 `;
 
@@ -44,6 +60,7 @@ const ImageContainer = styled.div``;
 
 const MenuContainer = styled.div`
   display: flex;
+  width: auto;
 `;
 
 const MenuItem = styled.a`
@@ -60,6 +77,7 @@ const MenuItem = styled.a`
   padding: 0px;
   margin-left: 32px;
   cursor: pointer;
+
   @media (max-width: 900px) {
     font-size: 20px;
     line-height: 24px;

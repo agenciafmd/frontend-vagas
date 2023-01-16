@@ -66,8 +66,9 @@ function Home() {
     <Container>
       <Header isMobile={isMobile} />
       <Banner />
-      {/* {!!currentPokemon?.name && (
+      {!!currentPokemon?.name && (
         <PokemonModal
+          isMobile={isMobile}
           open={true}
           name={currentPokemon.name}
           image={currentPokemon.image}
@@ -87,7 +88,7 @@ function Home() {
       />
       <PokemonsDetails list={listOthers} details={pokeDetails} />
       <NewLetter />
-      <Footer /> */}
+      <Footer />
     </Container>
   );
 }

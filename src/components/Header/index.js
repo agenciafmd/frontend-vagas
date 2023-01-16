@@ -12,13 +12,12 @@ import {
 
 function Header({ isMobile }) {
   const [openDrawer, setOpenDrawer] = useState(false);
-  console.log("open", openDrawer);
 
   function scrollIntoView(div) {
     if (isMobile) {
       setOpenDrawer(false);
     }
-    
+
     document.getElementById(div).scrollIntoView({
       behavior: "smooth",
     });
@@ -28,13 +27,9 @@ function Header({ isMobile }) {
     <Container>
       <Center>
         <ImageContainer>
-          <img
-            src={"/pokemon-logo.png"}
-            alt="Logo"
-            width={150}
-            height={40}
-          ></img>
+          <img src={"/pokemon-logo.png"} alt="Logo" width={150} height={40} />
         </ImageContainer>
+
         <MenuContainer>
           {isMobile ? (
             <>
@@ -64,11 +59,7 @@ function Header({ isMobile }) {
                 </svg>
               </IconButton>
 
-              <DrawerMenu
-                anchor={"right"}
-                open={openDrawer}
-                // onClose={toggleDrawer(anchor, false)}
-              >
+              <DrawerMenu anchor={"right"} open={openDrawer}>
                 <DrawerContent>
                   <MenuItem onClick={() => scrollIntoView("section-banner")}>
                     Início
