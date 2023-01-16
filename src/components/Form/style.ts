@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const FormSDivStyled = styled.div`
-  margin: 23px auto;
+  margin: 0 auto;
+  margin-top: 23px;
   justify-content: center;
   display: flex;
   align-items: center;

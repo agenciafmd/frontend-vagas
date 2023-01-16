@@ -12,6 +12,7 @@ import List from "./components/List";
 import Card from "./components/List/Card";
 import { setingsHeader,setingsCard } from "./services/sliderSetings";
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
         </Slide>)}
       </Slider>
       <Form />
+      <Footer />
     </>
   );
 }
