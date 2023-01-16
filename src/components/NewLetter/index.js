@@ -30,6 +30,7 @@ function NewLetter() {
               variant="outlined"
             />
           </InputContainer>
+          
           <InputContainer>
             <Input fullWidth={true} label="E-mail" variant="outlined" />
           </InputContainer>
