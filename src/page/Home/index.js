@@ -60,7 +60,6 @@ function Home() {
   useEffect(() => {
     fetchPokemonList();
   }, []);
-  // console.log("new", listOthers);
 
   return (
     <Container>

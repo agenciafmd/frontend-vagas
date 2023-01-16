@@ -63,7 +63,7 @@ const MenuContainer = styled.div`
   width: auto;
 `;
 
-const MenuItem = styled.a`
+const MenuItem = styled.button`
   display: flex;
   align-items: center;
   font-family: Inter;
@@ -93,12 +93,18 @@ const DrawerMenu = styled(Drawer)`
   }
 `;
 
+const DrawerHeader = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+`;
+
 const DrawerContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 90%;
 `;
 
 export {
@@ -109,4 +115,5 @@ export {
   MenuItem,
   DrawerContent,
   DrawerMenu,
+  DrawerHeader,
 };

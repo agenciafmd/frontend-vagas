@@ -1,9 +1,10 @@
-import { Drawer, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import React, { useState } from "react";
 import {
   Center,
   Container,
   DrawerContent,
+  DrawerHeader,
   DrawerMenu,
   ImageContainer,
   MenuContainer,
@@ -14,10 +15,7 @@ function Header({ isMobile }) {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   function scrollIntoView(div) {
-    if (isMobile) {
-      setOpenDrawer(false);
-    }
-
+    setOpenDrawer(false);
     document.getElementById(div).scrollIntoView({
       behavior: "smooth",
     });
@@ -60,6 +58,21 @@ function Header({ isMobile }) {
               </IconButton>
 
               <DrawerMenu anchor={"right"} open={openDrawer}>
+                <DrawerHeader>
+                  <IconButton onClick={() => setOpenDrawer(false)}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="48"
+                      width="48"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
+                      />
+                    </svg>
+                  </IconButton>
+                </DrawerHeader>
+
                 <DrawerContent>
                   <MenuItem onClick={() => scrollIntoView("section-banner")}>
                     Início
