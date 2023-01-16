@@ -48,4 +48,17 @@ export const Container = styled(motion.footer)`
       padding: 1rem;
     }
   }
+
+  @media (max-width: 768px) {
+    div.footer1{
+      p {
+        text-align: justify;  
+      }
+    }
+    div.footer3 {
+      h3 {
+        font-size: .6rem;
+      }
+    }
+  }
 `;

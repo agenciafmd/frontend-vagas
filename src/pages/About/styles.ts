@@ -51,4 +51,45 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .options {
+      button {
+        width: 150px;
+        height: 150px;
+      }
+      .free, .premium {
+        font-size: 1.5rem;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .options {
+      button {
+        width: 100px;
+        height: 100px;
+      }
+      .free, .premium {
+        font-size: 1rem;
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 `;

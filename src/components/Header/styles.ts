@@ -5,7 +5,7 @@ export const Container = styled(motion.header)`
   width: 100%;
   height: 100px;
   padding: 3rem;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   z-index: 99999;
@@ -89,7 +89,7 @@ export const Container = styled(motion.header)`
       width: 100%;
       top: 100px; 
       right: 0px;
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.9);
       text-align: center;
       justify-content: center;
 

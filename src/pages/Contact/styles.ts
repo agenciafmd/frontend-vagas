@@ -15,7 +15,7 @@ export const Container = styled.div`
     text-align: center;
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
   
     h1 {
       font-size: 8rem;
@@ -24,7 +24,7 @@ export const Container = styled.div`
     }
   }
 
-  div.icons {
+  div.fone-icons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -34,6 +34,37 @@ export const Container = styled.div`
       font-size: 1.5rem;
       font-weight: 100;
       margin: 20px;
+    }
+
+    div.icons {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+    div.content {
+      h1 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      div.fone-icons {
+        flex-direction: column;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    div.content {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: .4rem;
+      }
+      div.fone-icons {
+        flex-direction: column;
+      }
     }
   }
 `;

@@ -7,12 +7,14 @@ const Contact = () => {
     <Container>
       <div className='content'>
         <h1>Contact</h1>
-        <div className='icons'>
-          <p>+ 1 (00)0 0000-0000</p>
-          <IoLogoWhatsapp size={50} />
-          <AiOutlineLinkedin size={50} />
-          <AiOutlineFacebook size={50} />
-          <AiOutlineInstagram size={50} />
+        <div className='fone-icons'>
+          <p>+ 55 (00)0 0000-0000</p>
+          <div className="icons">
+            <IoLogoWhatsapp size={50} />
+            <AiOutlineLinkedin size={50} />
+            <AiOutlineFacebook size={50} />
+            <AiOutlineInstagram size={50} />
+          </div>
         </div>
       </div>
     </Container>

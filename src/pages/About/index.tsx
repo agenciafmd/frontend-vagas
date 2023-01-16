@@ -9,7 +9,7 @@ const About = () => {
       </p>
       <div className="options">
         <button className='free'>FREE</button>
-        <button className='premium'>PREMIUM <span>U$ 5,00</span></button>
+        <button className='premium'>PREMIUM <span>U$ 0,00</span></button>
       </div>
     </Container>
   );

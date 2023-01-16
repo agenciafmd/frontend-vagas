@@ -14,11 +14,42 @@ export const Container = styled.div.attrs({
     width: 100%;
     height: 100%;
     background: #000;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .icon-dolar {
+      font-size: 70px;
+    }
 
     h1 {
       font-size: 3rem;
       font-weight: 700;
+      margin-left: 1rem;
       color: #fff;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    div.dolar {
+      flex-direction: row;
+      .icon-dolar {
+        font-size: 50px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    div.dolar {
+      flex-direction: row;
+      .icon-dolar {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 1rem;
+      }
     }
   }
 `;

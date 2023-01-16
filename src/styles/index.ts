@@ -138,6 +138,10 @@ export const Main = styled.div`
         border-radius: 1rem;
 
       }
+
+      @media (max-width: 425px) {
+        font-size: 1.5rem;
+      }
     }
   }
   
