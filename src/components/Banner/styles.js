@@ -10,6 +10,13 @@ const Container = styled.div`
   & div {
     height: 100%;
   }
+
+  @media (max-width: 900px) {
+    height: 556px;
+  }
+  & div {
+    height: 556px;
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -59,6 +66,10 @@ const Marker = styled.div`
   height: 109px !important;
   background: #e9ff00;
   margin-right: 6px;
+
+  @media (max-width: 900px) {
+    height: 54px !important;
+  }
 `;
 
 const Title = styled.h1`
@@ -69,6 +80,11 @@ const Title = styled.h1`
   line-height: 68px;
   color: #ffffff;
   margin: 0px;
+
+  @media (max-width: 900px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -82,9 +98,11 @@ const Text = styled.span`
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  /* or 24px */
-
   color: #ffffff;
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -92,7 +110,8 @@ const ImageContainer = styled.div`
   height: 100%;
   max-height: 100%;
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  background: red;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); */
 `;
 
 const BackgroundContainer = styled.div`
@@ -106,6 +125,8 @@ const BackgroundContainer = styled.div`
 `;
 
 const Image = styled.img`
+  min-height: 100%;
+  min-width: 100%;
   object-fit: cover;
 `;
 
