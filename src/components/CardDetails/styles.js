@@ -25,6 +25,11 @@ const Container = styled.div`
       color: #000000;
     }
   }
+
+  @media (max-width: 624px) {
+    width: 100%;
+    height: 213px;
+  }
 `;
 
 const TitleContainer = styled.div``;

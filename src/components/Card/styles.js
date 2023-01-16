@@ -25,12 +25,22 @@ const Container = styled.div`
       transition: background-color 400ms ease-out;
     }
   }
+
+  @media (max-width: 624px) {
+    width: 100%;
+    height: 299px;
+  }
 `;
 
 const ImageContainer = styled.div``;
 const Image = styled.img`
   width: 197px;
   height: 197px;
+
+  @media (max-width: 860px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const TitleContainer = styled.span`

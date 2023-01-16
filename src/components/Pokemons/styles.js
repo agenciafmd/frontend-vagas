@@ -12,7 +12,7 @@ const Content = styled.div`
   width: 1280px;
   min-width: 1280px;
   margin: auto;
-  
+
   @media (max-width: 1300px) {
     width: 1080px;
     max-width: 1080px;
@@ -42,6 +42,18 @@ const CardsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 900px) {
+    padding: 0px 70px;
+  }
+
+  @media (max-width: 860px) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 15px;
+  }
 `;
 
 export { Container, Content, TitleContainer, CardsContainer };

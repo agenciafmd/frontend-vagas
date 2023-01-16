@@ -88,7 +88,7 @@ function Home() {
       />
       <PokemonsDetails list={listOthers} details={pokeDetails} />
       <NewLetter />
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 }

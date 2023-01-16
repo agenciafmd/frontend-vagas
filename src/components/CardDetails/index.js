@@ -1,4 +1,4 @@
-import { Rating, Tooltip } from "@mui/material";
+import { Rating } from "@mui/material";
 import React from "react";
 import {
   Container,
@@ -7,7 +7,7 @@ import {
   Label,
   Title,
   TitleContainer,
-} from "./styled";
+} from "./styles";
 
 function CardDetails({ name, image, stars, label }) {
   return (
