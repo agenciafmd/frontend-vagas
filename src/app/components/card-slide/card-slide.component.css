@@ -1,0 +1,75 @@
+.slide{
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  @media(min-width: 1200px){
+    .slide {
+      padding: 3rem;
+    }
+  }
+  
+  .slide img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 50px -1px var(--shadow);
+    border-radius: 4px;
+    user-select: none;
+  }
+  
+  .grabbing {
+    cursor: grabbing;
+  }
+  
+  .grabbing .slide img{
+    transform: scale(0.9);
+    box-shadow: 5px 5px 40px -1px var(--shadow);
+  }
+  
+
+  .skill {
+    padding: 0 0 50px 0;
+    position: relative;
+  }
+  .skill-bx {
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+  }
+  .skill h2 {
+      font-size: 45px;
+      font-weight: 700;
+  }
+  .skill p {
+      color: #B8B8B8;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 1.5em;
+      margin: 14px 0 75px 0;
+  }
+  .skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .skill-slider .item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+  }
+  .background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+  }
+
+  
+  

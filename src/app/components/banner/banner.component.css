@@ -1,6 +1,6 @@
 .banner {
     margin-top: 0;
-    padding: 260px 0 100px 0;
+    padding: 220px 0 100px 0;
     background-image: url('../../../assets/img/banner-bg.png');
     background-position: top center;
     background-size: cover;
@@ -65,4 +65,8 @@
   }
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
+  }
+
+  .visually-hidden {
+    display: none !important;
   }

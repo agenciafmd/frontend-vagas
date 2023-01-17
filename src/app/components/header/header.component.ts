@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  public isCollapsed = true;
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
 
 }

@@ -1,0 +1,33 @@
+<section class="project" id="person">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="isVisible">
+					<h2>Personagens</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+						of type and scrambled it to make a type specimen book.</p>
+					<div class="container" id="projects-tabs" defaultActiveKey="first">
+						<nav variant="pills" class="nav-pills mb-5 justify-content-center align-items-center"
+							id="pills-tab">
+
+						</nav>
+						<div id="slideInUp" class="isVisible content">
+							<div class="row">
+								<div *ngFor="let heroes of heroes" class="col-12 col-sm-6 col-md-4">
+									<div class="proj-imgbx">
+										<img src="{{ heroes.image}}" />
+										<div class="proj-txtx">
+											<h4>{{ heroes.name }}</h4>
+											<span>Gênero: {{heroes.gender}}</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
