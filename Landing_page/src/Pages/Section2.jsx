@@ -40,7 +40,7 @@ export function Section_TopRated({movie}) {
         {movie.map((Movies) =>
             <Card 
             h={{ base: '350px', md: '550px'}} 
-            w={{ base: '170px', md: '300px'}} 
+            w={{ base: 'auto', md: '300px'}} 
             background={useColorModeValue('#fff', '#20202380')}
             key={Movies.title}
             >
