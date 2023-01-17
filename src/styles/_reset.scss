@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  list-style-position: inside;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media (max-width: 1280px) {
+    font-size: 55.5%;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  background-color: #000000;
+  color: #fafafa;
+}
+
+section {
+  padding: 8rem 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+ol,
+ul {
+  margin-bottom: 0;
+}
