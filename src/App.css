@@ -1,0 +1,132 @@
+.slick_dots_banner {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex !important;
+	position: absolute;
+	left: 8rem;
+	bottom: 3rem;
+	z-index: 99;
+}
+
+.slick_dots_banner li {
+	margin-right: 0.5rem;
+}
+
+.slick_dots_banner li:last-child {
+	margin-right: 0;
+}
+
+.slick_dots_banner li button {
+	width: 1rem;
+	height: 1rem;
+	font-size: 0;
+	border: none;
+	border-radius: 50%;
+	background-color: #7b7d86;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.slick_dots_banner li button:hover {
+	background-color: #8678d7;
+}
+
+.slick_dots_banner li.slick-active button {
+	background-color: #8678d7;
+}
+
+.customNextArrow {
+	padding: 0;
+	font-size: 2rem;
+	line-height: 0;
+	position: absolute;
+	right: 8rem;
+	bottom: 3rem;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.customPrevArrow {
+	padding: 0;
+	font-size: 2rem;
+	line-height: 0;
+	position: absolute;
+	right: 11rem;
+	bottom: 3rem;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.customNextArrowMajors {
+	color: #ffffff;
+	font-size: 2rem;
+	position: absolute;
+	right: 38%;
+	bottom: -3rem;
+}
+
+.customPrevArrowMajors {
+	color: #ffffff;
+	font-size: 2rem;
+	position: absolute;
+	left: 38%;
+	bottom: -3rem;
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+	.slick_dots_banner {
+		left: 6rem;
+		bottom: 2.5rem;
+	}
+
+	.customPrevArrow {
+		right: 8.5rem;
+		bottom: 2rem;
+	}
+
+	.customNextArrow {
+		right: 6rem;
+		bottom: 2rem;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+	.slick_dots_banner {
+		left: 3rem;
+		bottom: 2rem;
+	}
+
+	.customPrevArrow {
+		right: 5.5rem;
+		bottom: 1.5rem;
+	}
+
+	.customNextArrow {
+		right: 2.5rem;
+		bottom: 1.5rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+	.slick_dots_banner {
+		left: 3rem;
+		bottom: 2rem;
+	}
+
+	.customPrevArrow {
+		right: 4rem;
+		bottom: 1.5rem;
+	}
+
+	.customNextArrow {
+		right: 1.5rem;
+		bottom: 1.5rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.slick_dots_banner {
+		left: calc(50% - 32px);
+	}
+}

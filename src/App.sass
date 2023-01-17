@@ -1,0 +1,100 @@
+@import "Variables"
+
+*
+    box-sizing: border-box
+    outline: none
+
+html
+    scroll-behavior: smooth
+
+body
+    margin: 0
+    padding: 0
+    font-family: $font
+    background-color: $bg_variable2
+
+.inner_content
+    width: 90%
+    margin: 0 auto
+    padding: 0 2rem
+
+.align_center
+    display: flex
+    align-items: center
+
+.flex_end
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.text_center
+    text-align: center
+
+.sec_title
+    margin: 0 0 1.5rem
+    color: $grey4
+    font-size: 4rem
+    font-weight: 600
+    line-height: 1.2
+
+    span
+        color: $purple
+
+.sec_text
+    margin: 2rem 0 5rem
+    color: $grey
+    font-size: 1rem
+    font-weight: 500
+    line-height: 1.8
+
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .sec_title
+        font-size: 3rem
+
+    .sec_text
+        font-size: .75rem
+
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .sec_title
+        font-size: 3rem
+
+    .sec_text
+        font-size: .75rem
+
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .inner_content
+        padding: 0
+
+    .sec_title
+        font-size: 2.5rem
+
+    .sec_text
+        margin: 2rem 0 3rem
+        padding: 0 0.5rem
+        font-size: .75rem
+
+@media (min-width: 768px) and ( max-width: 900px)
+    .inner_content
+        padding: 0
+
+    .sec_title
+        font-size: 3rem
+
+    .sec_text
+        margin: 2rem 0
+        padding: 0 0.5rem
+        font-size: .75rem
+
+@media screen and ( max-width:  767px)
+    .inner_content
+        padding: 0
+
+    .sec_title
+        font-size: 2rem
+
+    .sec_text
+        margin: 2rem 0
+        padding: 0 0.5rem
+        font-size: .75rem
+        br
+            display: none
