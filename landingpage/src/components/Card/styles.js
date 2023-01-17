@@ -51,10 +51,10 @@ div{
 }
 
 @media screen and (max-width: 600px) {
-    height :12rem;
-    width: 15rem;
+    height :15rem;
+    width: 10rem;
     padding:.8rem;
-    margin:  1rem;
+    margin:  1.5rem;
 
 
     h1{
@@ -69,6 +69,12 @@ div{
 
     div{
         margin-top:1rem;
+        width: 90%;
+    
+
+        img{
+        width:100%
+        }
     }
 
 }

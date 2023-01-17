@@ -66,7 +66,7 @@ button.rec-arrow:hover, button.rec-arrow:active, button.rec-arrow:focus {
   }
 
   .carrossel{
-  width:65%;
+  width:80%;
   }
 
   button.rec-dot{

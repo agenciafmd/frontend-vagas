@@ -41,6 +41,9 @@ margin-top:4rem;
 
   .cards{
     margin-top: 1rem;
+    flex-direction:column;
+    align-items: center;
+
   }
 
 }
