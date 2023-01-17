@@ -1,8 +1,10 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
+import { ToastContainer, toast } from "react-toastify";
 import * as yup from "yup";
 
 import { Container } from "./styles";
+import 'react-toastify/dist/ReactToastify.min.css';
 
 interface IFormInput {
   name: string;
@@ -18,7 +20,7 @@ const Home = () => {
   const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>({
     resolver: yupResolver(schema)
   });
-  const onSubmit: SubmitHandler<IFormInput> = data => console.log(data);
+  const onSubmit: SubmitHandler<IFormInput> = data => toast.success(`Welcome  ${data.name}!`);
 
   return (
     <Container>
@@ -38,6 +40,7 @@ const Home = () => {
         </div>
         <button type='submit'>register</button>
       </form>
+      <ToastContainer theme='dark' position='bottom-left' />
     </Container>
   );
 }
