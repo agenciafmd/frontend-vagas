@@ -23,8 +23,6 @@ function PokemonsDetails({ list, details }) {
             );
           })}
         </CardsContainer>
-
-        {/* skills */}
       </Content>
     </Container>
   );

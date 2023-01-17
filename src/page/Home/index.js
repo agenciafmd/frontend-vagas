@@ -26,7 +26,7 @@ function Home() {
         `https://pokeapi.co/api/v2/pokemon/${result.name}`
       );
       newDetails[result.name] = {
-        name: res.data.name, // da pra tirar isso se quiser
+        name: res.data.name,
         image: res.data.sprites.front_default,
         star: res.data.stats.filter((stat) => stat.stat.name === "attack")[0],
       };
@@ -59,7 +59,7 @@ function Home() {
 
   useEffect(() => {
     fetchPokemonList();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
