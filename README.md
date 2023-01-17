@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+## Descrição
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Uma Landing Page sobre Pokémons e suas habilidades.
 
-## Available Scripts
+- Header com os links de âncora para as seções.
+- Seção com 3 banners (Slider).
+- Seção com cards.
+- Mobile: Blocado abaixo do outro.
+- Desktop: Um ao lado do outro (garantindo a mesma altura).
+- Segunda seção de cards.
+- Formulário de newsletter.
+- Footer.
 
-In the project directory, you can run:
+> Este projeto é um fork deste repositório https://github.com/agenciafmd/frontend-vagas.git.
+>
+> O layout como fonte de inspiração do desafio para a vaga de Front-End encontra-se no [Figma](https://www.figma.com/file/SSTsobmlfwSgfxIpk1OWqP/Desafio-para-vaga-de-Front-End?node-id=201%3A4&t=wAMIFXHqq9ZpS4GZ-0).
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Inicialização
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+npm install
+npm start
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Frameworks e Bibliotecas
 
-### `npm run build`
+- ReactJs:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  > Utilizei o ReactJS para a reutilização de componentes e utilização de hooks como useState e useEffect.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Axios:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  > Facilidade de integrar com endpoints externos, código simples e bem dinâmico.
 
-### `npm run eject`
+- Styled-Components/Emotion:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  > O Styled-components permite escrever código CSS real para estilizar componentes, utilizando JavaScript.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Material Ui:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  > O MUI oferece ferramentas de interface de design pronta para os componentes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React Responsive Carousel:
+  > Utilizei React Responsive Carousel para o componente banner com slide automático, pois possibilita a agilidade de desenvolvimento comparado à um carrossel estilizado somente com CSS.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Ferramenta
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Netlify-cli
+  > Utilizei o Netlify CLI para hospedagem demonstrativa do site.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API's
 
-### Analyzing the Bundle Size
+- Lista de pokemons:
+  - Endpoint: "https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit={limit}"
+    > Retorna lista de 8 primeiros Pokémons contendo Nome e Url.
+- Método da solicitação:
+  - GET
+- Parametros:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  - offset
+    > Posição inicial dos pokémons que irá se deslocar
+    > Ex: params: { offset: 8, limit: 8 }
+  - limit
+    > Limite de pokémons que será permitida retornar
 
-### Making a Progressive Web App
+- Lista de pokemons:
+  - Endpoint: "https://pokeapi.co/api/v2/pokemon/${pokeName}"
+    > Retorna o detalhameto do pokémon através do nome.
+- Método da solicitação:
+  - GET
+- Parametros:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  - pokeName
+    > Nome do Pokémon
+    > Ex: params: { pokeName: "bulbasaur"}
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Implementações Futuras
 
-### Deployment
+1. Seção de cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   - Mobile: Slider;
+   - Desktop: Slider desligado;
 
-### `npm run build` fails to minify
+2. Seção do Formulário
+   - Validação de Formulário;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Status do projeto
+
+> Projeto em progresso
+
+## Contato
+
+- E-mail: adrianemaciel.developer@gmail.com
+- Linkedin: https://linkedin.com/in/adrianemacieldeveloper/
