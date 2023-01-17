@@ -16,7 +16,7 @@ const NewsDolarList = () => {
     setWidth(carousel.current?.scrollWidth);
     const getArticles = async () => {
       const response = await axios.get(
-        'https://newsapi.org/v2/everything?q=dolar&apiKey=da3f850c5b5a4633ac2cf948fb8f1273'
+        `${process.env.REACT_APP_BASE_URL}/everything?q=dolar&apiKey=${process.env.REACT_APP_API_KEY}`
       )
       setArticles(response.data.articles);
     }
