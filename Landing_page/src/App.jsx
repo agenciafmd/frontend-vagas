@@ -1,4 +1,4 @@
-import { Header } from './Components/Header/Header'
+import { Header } from './components/Header/Header'
 import { Home } from './Pages/Section1'
 import { Section_TopRated } from './Pages/Section2'
 import { useEffect, useState, useRef } from 'react'
