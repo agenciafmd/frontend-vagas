@@ -34,4 +34,3 @@ Você teve alguma dificuldade em entender o desafio proposto? Se sim, descreva p
 ### Hora da verdade, os seus commit's estão seguindo as recomendações do ([Commit Amigão](https://github.com/agenciafmd/frontend-vagas/#entrega))? ( `preencha com "x" uma das alternativas` :monocle_face:)
  - [] Sim <br>
  - [] Não
-
