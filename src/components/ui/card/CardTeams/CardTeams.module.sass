@@ -1,0 +1,48 @@
+@import "../../../../Variables"
+
+.karambit_animated
+    padding: 0
+    position: absolute
+    top: -12rem
+    left: 0
+    animation: MoveUpDown 2s linear infinite
+
+@keyframes MoveUpDown
+    0%, 100%
+        transform: translateY(0)
+        //transform: rotateZ(0deg)
+
+    50%
+        transform: translateY(-3rem)
+        //transform: rotateZ(-25deg)
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .karambit_animated
+        width: 50%
+        top: -18rem
+        left: 6%
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .karambit_animated
+        width: 50%
+        top: -18rem
+        left: 6%
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .karambit_animated
+        width: 60%
+        top: -14rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .karambit_animated
+        width: 60%
+        top: -14rem
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .karambit_animated
+        width: 100%

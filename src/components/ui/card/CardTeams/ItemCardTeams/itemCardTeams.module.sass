@@ -1,0 +1,86 @@
+@import "../../../../../Variables"
+
+.card_team
+    margin: 0 0 1rem
+    padding: 0
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15)
+    position: relative
+    z-index: 9
+    transition: 0.25s
+
+    &:hover
+        margin-top: -1rem
+
+    .card_photo
+        padding: 2rem 0 0
+        background-size: cover
+        background-color: $grey6
+
+        img
+            display: block
+            width: 100%
+
+    .card_data
+        display: block
+        padding: 1rem
+        background-color: $grey7
+        text-align: center
+
+        .major_stars
+            margin: 0 .5rem
+            color: $green
+            font-size: 2.5rem
+            cursor: pointer
+            transition: .25s
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .card_team
+        .card_photo
+            padding: 1rem 0 0
+
+        .card_data
+            .major_stars
+                margin: 0 0.5rem
+                font-size: 1.75rem
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .card_team
+        .card_photo
+            padding: 1rem 0 0
+
+        .card_data
+            .major_stars
+                margin: 0 0.5rem
+                font-size: 1.75rem
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .card_team
+        .card_photo
+            padding: 1rem 0 0
+
+        .card_data
+            .major_stars
+                margin: 0 0.25rem
+                font-size: 1.5rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .card_team
+        .card_photo
+            padding: 1rem 0 0
+
+        .card_data
+            .major_stars
+                margin: 0 0.25rem
+                font-size: 1rem
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .card_team
+
+        .card_data
+            .major_stars
+                font-size: 2rem
