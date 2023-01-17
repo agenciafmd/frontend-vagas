@@ -1,0 +1,64 @@
+.swiper-pagination-bullet{
+  background-color: #fff;
+}
+
+.swiper{
+  width: 100%;
+}
+
+.Card{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Container-div{
+  position: relative;
+}
+
+.card_overviews{
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.Text_Overview{
+  overflow: scroll;
+}
+
+.Text_Overview::-webkit-scrollbar{
+  width: 6px;
+}
+
+.Text_Overview::-webkit-scrollbar-track {
+  background-color: rgba(187, 184, 184, 0.267);
+}
+
+.Text_Overview::-webkit-scrollbar-thumb{
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+}
+
+.Text_Overview::-webkit-scrollbar-thumb:hover{
+  background-color: #131313;
+}
+
+.test{
+  color: #9ef542;
+  font-size: 20em;
+  z-index: -1;
+  margin: 0;
+  white-space: nowrap;
+  margin-top: auto;
+  transition: all 500ms ease-in-out;
+  overflow-x: hidden;
+  top: 70%;
+  position: absolute;
+  font-family: 'Durer', sans-serif;
+}
+
+#Overviews_Cards{
+  padding: 70px 0 50px;
+}
