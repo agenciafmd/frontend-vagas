@@ -9,7 +9,7 @@ import { HomeLPgModule } from './home/home-lp-routing.module';
 import { FormComponent } from './form/form.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { IvyCarouselModule } from 'angular-responsive-carousel2';
 
 @NgModule({
   declarations: [HomeComponent, FormComponent, PokemonListComponent],
