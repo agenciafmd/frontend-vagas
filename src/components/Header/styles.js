@@ -90,13 +90,27 @@ const DrawerMenu = styled(Drawer)`
   & .MuiDrawer-paper {
     width: 100% !important;
     background-color: #000000;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
   }
 `;
 
 const DrawerHeader = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 10%;
+  height: 90px;
+
+  @media (max-width: 900px) {
+    padding: 0px 70px;
+  }
+
+  @media (max-width: 860px) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 15px;
+  }
 `;
 
 const DrawerContent = styled.div`

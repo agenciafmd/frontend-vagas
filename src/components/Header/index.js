@@ -1,5 +1,5 @@
 import { IconButton } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Center,
   Container,
@@ -12,14 +12,21 @@ import {
 } from "./styles";
 
 function Header({ isMobile }) {
+  const [selected, setSelected] = useState("");
   const [openDrawer, setOpenDrawer] = useState(false);
 
   function scrollIntoView(div) {
     setOpenDrawer(false);
-    document.getElementById(div).scrollIntoView({
-      behavior: "smooth",
-    });
+    setSelected(div);
   }
+
+  useEffect(() => {
+    if (selected !== "") {
+      document.getElementById(selected).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [selected]);
 
   return (
     <Container>
