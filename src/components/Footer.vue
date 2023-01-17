@@ -50,7 +50,7 @@
             ><Icon
               icon="ic:round-email"
               class="my-auto mr-2"
-            />email@email.com</a
+            />bruno.pires.1096@gmail.com</a
           >
         </div>
         <div>
@@ -69,7 +69,7 @@
               hover:transition-200
             "
             ><Icon icon="simple-icons:whatsapp" class="my-auto mr-2" /> (17)
-            99999-9999</a
+            99196-7442</a
           >
         </div>
       </div>
