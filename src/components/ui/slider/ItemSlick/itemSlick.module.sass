@@ -1,0 +1,339 @@
+@import "../../../../Variables"
+
+.slick_item
+    padding: 0
+    position: relative
+
+    .player_info_slick
+        padding: 0rem 0rem 0rem 8rem
+
+        .logoOrg
+            height: 2.5rem
+
+        .player_data
+            display: block
+            width: min-content
+
+            h2
+                margin: 2rem 0 0
+                color: $white
+                font-size: 12rem
+                font-weight: 900
+                line-height: 0.8
+                //text-transform: uppercase
+
+            h3
+                margin: 1rem 0 0
+                color: $grey
+                font-size: 1.60rem
+                font-weight: 500
+                text-transform: uppercase
+                text-align: right
+
+            p
+                color: $grey
+                font-size: .8rem
+                font-weight: 500
+                line-height: 1.8
+
+        .item_grid_info
+            display: flex
+            padding: 2rem 0 0
+
+            .item_grid_item
+                display: flex
+                padding: 0 4rem 0 0
+
+                .item_grid_icon
+
+                    svg
+                        margin-right: 1.5rem
+                        font-size: 4rem
+
+            .item_grid_data
+
+                h4
+                    margin: 0
+                    color: $grey
+                    font-size: .8rem
+                    font-weight: 600
+                    text-transform: uppercase
+
+                p
+                    margin: 0
+                    color: $white
+                    font-size: 2.5rem
+                    font-weight: bold
+                    line-height: 1
+                    text-transform: uppercase
+
+    .player_foto
+        position: absolute
+        left: 50%
+        bottom: 0
+
+    .symbol_area
+        padding: 9rem 3rem
+
+.slick_imperial
+
+    .symbol_area
+        background-color: $green
+
+        img
+            width: 100%
+
+    .item_grid_info
+
+        .item_grid_item
+
+            .item_grid_icon
+
+                svg
+                    color: $green
+
+.slick_heroic
+
+    .symbol_area
+        background-color: $red
+
+        img
+            width: 100%
+
+    .item_grid_info
+
+        .item_grid_item
+
+            .item_grid_icon
+
+                svg
+                    color: $red
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .slick_item
+
+        .player_foto
+            height: 40rem
+            left: 52%
+
+        .symbol_area
+            padding: 6rem 3rem
+
+        .player_info_slick
+            padding: 0rem 0rem 0rem 6rem
+
+            .logoOrg
+                height: 1.75rem
+
+            .player_data
+
+                h2
+                    margin: 1rem 0 0
+                    font-size: 9rem
+
+                h3
+                    margin: 0.5rem 0 0
+                    padding-right: 2rem
+                    font-size: 1rem
+
+                p
+                    padding-right: 2rem
+                    font-size: 0.65rem
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .slick_item
+
+        .player_foto
+            height: 35rem
+            left: 53%
+
+        .symbol_area
+            padding: 6rem 3rem
+
+        .player_info_slick
+            padding: 0rem 0rem 0rem 6rem
+
+            .logoOrg
+                height: 1.75rem
+
+            .player_data
+
+                h2
+                    margin: 1rem 0 0
+                    font-size: 9rem
+
+                h3
+                    margin: 0.5rem 0 0
+                    padding-right: 2rem
+                    font-size: 1rem
+
+                p
+                    padding-right: 2rem
+                    font-size: 0.65rem
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .slick_item
+
+        .player_foto
+            height: 30rem
+
+        .symbol_area
+            padding: 7rem 2rem
+
+        .player_info_slick
+            padding: 0rem 0rem 0rem 3rem
+
+            .logoOrg
+                height: 1.75rem
+
+            .player_data
+
+                h2
+                    margin: 1rem 0 0
+                    font-size: 7rem
+
+                h3
+                    margin: 0.5rem 0 0
+                    padding-right: 2rem
+                    font-size: 1rem
+
+                p
+                    padding-right: 2rem
+                    font-size: 0.65rem
+
+            .item_grid_info
+
+                .item_grid_item
+                    padding: 0 2rem 0 0
+
+                    &:last-child
+                        padding: 0
+
+                    .item_grid_icon
+
+                        svg
+                            margin-right: 0.5rem
+                            font-size: 3rem
+
+                .item_grid_data
+
+                    h4
+                        font-size: .7rem
+
+                    p
+                        font-size: 1.75rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .slick_item
+
+        .player_foto
+            left: 45%
+            height: 30rem
+
+        .symbol_area
+            padding: 9rem 1rem
+
+        .player_info_slick
+            padding: 0rem 0rem 0rem 2.5rem
+
+            .logoOrg
+                height: 1.75rem
+
+            .player_data
+
+                h2
+                    margin: 1rem 0 0
+                    font-size: 6rem
+
+                h3
+                    margin: 0.5rem 0 0
+                    padding-right: 2rem
+                    font-size: 1rem
+
+                p
+                    padding-right: 2rem
+                    font-size: 0.65rem
+
+            .item_grid_info
+
+                .item_grid_item
+                    padding: 0 2rem 0 0
+
+                    &:last-child
+                        padding: 0
+
+                    .item_grid_icon
+
+                        svg
+                            margin-right: 0.5rem
+                            font-size: 3rem
+
+                .item_grid_data
+
+                    h4
+                        font-size: .7rem
+
+                    p
+                        font-size: 1.75rem
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .slick_item
+
+        .player_foto
+            width: 100%
+            left: 0%
+
+        .symbol_area
+            padding: 2rem
+
+        .player_info_slick
+            width: 100%
+            padding: 2rem 1.5rem 6rem
+
+            .logoOrg
+                height: 1.75rem
+                margin: 0 auto
+
+            .player_data
+                width: 100%
+                text-align: center
+
+                h2
+                    margin: 1rem 0 0
+                    font-size: 5rem
+
+                h3
+                    margin: 0.5rem 0 0
+                    font-size: 1rem
+                    text-align: center
+
+                p
+                    font-size: 0.7rem
+
+            .item_grid_info
+                justify-content: center
+
+                .item_grid_item
+                    padding: 0 2rem 0 0
+
+                    &:last-child
+                        padding: 0
+
+                    .item_grid_icon
+
+                        svg
+                            margin-right: 0.5rem
+                            font-size: 3rem
+
+                .item_grid_data
+
+                    h4
+                        font-size: .7rem
+
+                    p
+                        font-size: 1.75rem
