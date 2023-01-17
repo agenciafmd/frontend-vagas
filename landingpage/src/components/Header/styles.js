@@ -28,4 +28,25 @@ z-index:3;
         color :var(--color-green);
         }
     }
+
+
+
+@media screen and (max-width: 1024px) {
+ position:relative;
+}
+
+@media screen and (max-width: 600px) {
+ position:relative;
+ padding:.5rem;
+    div{
+    height: 3rem;
+    }
+
+    .link{
+    width:75%;
+        a{
+        font-size: .65rem;
+        }
+    }
+}
 `;

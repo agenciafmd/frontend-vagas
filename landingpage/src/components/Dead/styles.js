@@ -32,4 +32,62 @@ button.rec-arrow:hover, button.rec-arrow:active, button.rec-arrow:focus {
  
 }
 
+@media screen and (max-width: 1024px) {
+  margin:3rem 0 2rem 0;
+
+  .title{
+  font-size:2rem;
+  }
+
+  button.rec-dot:hover{
+    width: .9rem;
+    height:.9rem;
+  }
+
+  button.rec-arrow{
+    font-size: 1rem;
+    min-width: 3rem;
+    width: 3rem;
+    height:3rem;
+    line-height:0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  margin:2rem 0 1rem 0;
+
+  .title{
+  font-size:1.5rem;
+
+  }
+
+  .cards{
+    margin-top: 1rem;
+  }
+
+  .carrossel{
+  width:65%;
+  }
+
+  button.rec-dot{
+    width: .5rem;
+    height:.5rem;
+  }
+
+  button.rec-dot:hover{
+    width: .8rem;
+    height:.8rem;
+  }
+
+  button.rec-arrow{
+    font-size: .8rem;
+    min-width: 2rem;
+    width: 2rem;
+    height:2rem;
+    line-height:0;
+
+  }
+
+}
+
 `;

@@ -22,4 +22,27 @@ margin-top:4rem;
 
 }
 
+@media screen and (max-width: 1024px) {
+  margin-top:3rem;
+
+  .title{
+  font-size:2rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  margin-top:2rem;
+
+  .title{
+  font-size:1.5rem;
+
+  }
+
+  .cards{
+    margin-top: 1rem;
+  }
+
+}
+
 `;

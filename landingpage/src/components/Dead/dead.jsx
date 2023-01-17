@@ -13,6 +13,7 @@ export const Dead = ({ characters }) => {
 
     const breakPoints = [
         { width: 1, itemsToShow: 1 },
+        { width: 600, itemsToShow: 3 },
         { width: 1200, itemsToShow: 3 }
     ];
     return (

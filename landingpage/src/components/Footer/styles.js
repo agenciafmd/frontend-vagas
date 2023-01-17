@@ -32,4 +32,22 @@ div{
         }
     }
 
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 600px) {
+    padding: 0.5rem 0;
+
+    div{
+        width:2rem;
+        height: 3rem;
+    }
+        
+    .link{
+        a,h1{
+            font-size: .8rem;
+            margin-left:1rem;
+            }
+    }
+}
 `;

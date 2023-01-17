@@ -25,7 +25,7 @@ export const Header = () => {
           onClick={() => setActiveNav("#card")}
           className={activeNav === "#card" ? "active" : ""}
         >
-          Personagens vivos
+          Vivos
         </a>
 
         <a
@@ -33,7 +33,7 @@ export const Header = () => {
           onClick={() => setActiveNav("#carousel")}
           className={activeNav === "#carousel" ? "active" : ""}
         >
-          Personagens mortos
+          Mortos
         </a>
 
         <a
