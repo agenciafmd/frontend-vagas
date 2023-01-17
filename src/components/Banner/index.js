@@ -23,14 +23,14 @@ function Banner() {
           <TitleContainer>
             <Marker />
             <Title>
-              Lorem ipsum dolor <br /> sit amet
+              Os Super Poderosos <br /> POKÉMONS
             </Title>
           </TitleContainer>
           <TextContainer>
             <Text>
-              Quisque cursus nunc urna, eget ultricies orci accumsan at. Cras
+              Entre em uma aventura e descubra o seu monstrinho favorito.
               <br />
-              metus nibh, viverra vitae erat ut, lacinia interdum nisl.
+              Escolha o seu poke mais poderoso e vivenciem batalhas incríveis.
             </Text>
           </TextContainer>
         </Center>
