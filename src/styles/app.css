@@ -8,6 +8,19 @@ body{
     box-sizing: border-box;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    background-color: #8EC648;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 45px;
+    border: 1px solid #F6FF81
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #03120b;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
