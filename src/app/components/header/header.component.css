@@ -176,14 +176,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 0 0 !important;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 400;
     color: rgb(196, 195, 195) !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
+
     font-size: 18px;
     opacity: 0.75;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #FFFFFF !important;
+}
+
+
+
+@media(max-width: 990px) {
+    .button-home {
+        display: none;
+    }
+
+    .nav-link { 
+        padding-top: 10px !important;
+    }
 }

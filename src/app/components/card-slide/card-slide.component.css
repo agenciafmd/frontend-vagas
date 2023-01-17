@@ -71,5 +71,115 @@
     z-index: -4;
   }
 
+  .img-slide{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .elemHideSlide {
+    display: none;
+  }
+
+  .card-slide-img{
+    border-radius: 15px;
+    width: 230px;
+    height: 230px;
+    border: #FFF 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-img{ 
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media(max-width: 1200px) {
+    .elemHide {
+      display: none;
+    }
+
+    .elemHideSlide {
+      display: block;
+    }
+
+  }
+
+  .slider{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+  }
+
+  .slides {
+    display: flex;
+    width: 400%;
+    height: 270px;
+  }
+  
+  .slides input {
+    display: none;
+  }
+
+  .slide-img-carrosel{
+    width: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: #FFF 1px solid;
+  }
+
+  .slide-img-carrosel img {
+    width: 260px;
+
+  }
+
+  .manual-navigation{
+    display: flex;
+    position: absolute;
+    width: 260px;
+    justify-content: center;
+    margin-top: -40px;
+  }
+
+  .manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover{
+    background: #FFF;
+  }
+
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .first{
+    margin-left: -50%;
+  }
+
+  #radio3:checked ~ .first{
+    margin-left: -100%;
+  }
+
+  .navigation-auto div{
+    border: 2px solid ;
+  }
   
   

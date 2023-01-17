@@ -8,8 +8,4 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   public isCollapsed = true;
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
-  }
-
 }

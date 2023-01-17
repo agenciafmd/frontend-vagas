@@ -17,31 +17,31 @@
                     </li>
                 </ul>
                 <div class="navbar-text">
-                    <div class="social-icon">
+                    <div class="social-icon ">
                         <a href="#"><img src="../../../assets/img/nav-icon1.svg" alt="" /></a>
                         <a href="#"><img src="../../../assets/img/nav-icon2.svg" alt="" /></a>
                         <a href="#"><img src="../../../assets/img/nav-icon3.svg" alt="" /></a>
                     </div>
-                    <a to='#connect'>
+                    <a class="button-home" to='#connect'>
                         <button class="vvd"><span>Conhecer</span></button>
                     </a>
                 </div>
             </div>
-            <button class="navbar-toggler" (click)="isCollapsed = ! isCollapsed" [attr.aria-expanded]="!isCollapsed"
+            <button class="navbar-toggler pb-3 pt-3" (click)="isCollapsed = ! isCollapsed" [attr.aria-expanded]="!isCollapsed"
                 aria-controls="collapseExample">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                    <li class="nav-item ">
+                        <a class="nav-link menu-link" aria-current="page" href="#home">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card-slide">Espaçonaves</a>
+                    <li class="nav-item  ">
+                        <a class="nav-link menu-link" href="#card-slide">Espaçonaves</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#person" class="projects nav-link">Personagens</a>
+                    <li class="nav-item ">
+                        <a href="#person" class="projects menu-link nav-link">Personagens</a>
                     </li>
                 </ul>
                 <div class="navbar-text">

@@ -3,48 +3,67 @@
         <div class="row">
             <div class="col-12">
                 <div class="skill-bx wow zoomIn">
-                    <h2>Espaçonaves</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has
-                        been the industry's standard dummy text.</p>
-                    <div class="owl-carousel owl-theme skill-slider row">
+                    <div class="">
+                        <h2>Espaçonaves</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum
+                            has
+                            been the industry's standard dummy text.</p>
+                    </div>
+                    <div class="owl-carousel owl-theme skill-slider row elemHide">
                         <div class="item col-4 ">
-                            <div class="card">
-                                <img [src]="images[0]" class="img-slide" alt="Image" />
-                                <h5>Web Development</h5>
+                            <div class="card-slide-img">
+                                <div class="slide-img p-1 ">
+                                    <img [src]="images[0]" class="img-slide" alt="Image" style="width: 220px;" />
+                                </div>
                             </div>
                         </div>
                         <div class="item col-4 ">
-                            <div class="card">
-                                <img [src]="images[1]" class="img-slide" alt="Image" />
-                                <h5>Brand Identity</h5>
+                            <div class="card-slide-img">
+                                <div class="slide-img p-1 ">
+                                    <img [src]="images[1]" alt="Image" style="width: 220px;" />
+                                </div>
                             </div>
                         </div>
-                        <div class="item col-4">
-                            <div class="card">
-                                <img [src]="images[2]" class="img-slide" alt="Image" />
-                                <h5>Logo Design</h5>
+                        <div class="item col-4 ">
+                            <div class="card-slide-img">
+                                <div class="slide-img p-1 ">
+                                    <img [src]="images[2]" alt="Image" style="width: 240px;" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--<div class="isVisible">
-                        <ngb-carousel *ngIf="images">
-                            <ng-template ngbSlide>
-                                <div class="picsum-img-wrapper">
-                                    <img [src]="images[0]" alt="Space Nave" />
+                    <div class="elemHideSlide ">
+                        <div class="slider">
+                            <div class="slides">
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+
+                                <div class="slide-img-carrosel p-1">
+                                    <img [src]="images[0]" class="img-slide" alt="Image" />
                                 </div>
-                            </ng-template>
-                            <ng-template ngbSlide>
-                                <div class="picsum-img-wrapper">
-                                    <img [src]="images[1]" alt="Space Nave" />
+                                <div class="slide-img-carrosel p-1">
+                                    <img [src]="images[1]" class="img-slide" alt="Image" />
                                 </div>
-                            </ng-template>
-                            <ng-template ngbSlide>
-                                <div class="picsum-img-wrapper">
-                                    <img [src]="images[2]" alt="Space Nave" />
+                                <div class="slide-img-carrosel p-1">
+                                    <img [src]="images[2]" class="img-slide" alt="Image" />
                                 </div>
-                            </ng-template>
-                        </ngb-carousel>
-                    </div>-->
+
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                </div>
+                            </div>
+                            <div class="manual-navigation">
+
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
