@@ -1,6 +1,6 @@
 <section class="listagem">
   <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons" let-i="index">
-    <div class="a" *ngIf="i < 4">
+    <div class="pokemon-size" *ngIf="i < 4">
       <a class="pokemon" *ngIf="pokemon.status">
         <div class="container">
           <div class="card">
@@ -20,16 +20,12 @@
     </div>
   </ng-template>
 </section>
-<section id="about" class="position">
+<section id="link-two" class="position">
   <div class="title-text">Preparados?</div>
   <carousel>
     <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons" let-i="index">
-      <div class="carousel-cell">
+      <div class="carousel-cell" *ngIf="pokemon.status">
         <img [src]="pokemon.status.sprites.other.dream_world.front_default" [alt]="pokemon.name" class="card__img" />
-
-        <div class="card__data">
-          <h1 class="card__title"></h1>
-        </div>
       </div>
     </ng-template>
   </carousel>

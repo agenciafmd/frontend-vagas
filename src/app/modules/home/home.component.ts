@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+
 import getLandingPageFormGroup from 'src/app/shared/form-group/landing-page-form';
 
 @Component({
@@ -7,10 +8,8 @@ import getLandingPageFormGroup from 'src/app/shared/form-group/landing-page-form
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   newsletter = getLandingPageFormGroup(this.formBuilder);
 
   constructor(public formBuilder: FormBuilder) {}
-
-  ngOnInit(): void {}
 }

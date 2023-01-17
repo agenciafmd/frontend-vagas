@@ -1,5 +1,7 @@
+@import '../../../assets/styles/color.scss';
+
 body {
-  background: black;
+  background: $dark-color;
 }
 
 .positon-pokedex {
@@ -10,5 +12,5 @@ body {
 
 h1 {
   text-align: center;
-  color: white;
+  color: $white-color;
 }

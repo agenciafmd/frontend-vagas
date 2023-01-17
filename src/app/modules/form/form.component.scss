@@ -1,4 +1,5 @@
 @import '../../../assets/styles/button.scss';
+@import '../../../assets/styles/color.scss';
 
 .listagem {
   display: flex;
@@ -17,9 +18,9 @@
   }
 }
 .validation-error {
-  color: red;
+  color: $red-color;
   margin-top: 0.4em;
-  border-left: 3px solid red;
+  border-left: 3px solid $red-color;
   padding-left: 0.2em;
   margin-top: -45px;
 }
@@ -60,7 +61,6 @@
     bottom: 0;
     border-radius: inherit;
     pointer-events: none;
-
     box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
   }
 }
@@ -68,12 +68,12 @@
 input {
   font-family: inherit;
   line-height: inherit;
-  color: #2e3750;
+  color: $input-text-color;
   min-width: 12em;
 }
 
 ::placeholder {
-  color: black;
+  color: $dark-color;
 }
 
 html::after {

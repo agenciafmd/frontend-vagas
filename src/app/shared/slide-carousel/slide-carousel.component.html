@@ -1,23 +1,9 @@
-<mdb-carousel [controls]="true" [indicators]="true">
-  <mdb-carousel-item>
-    <img src="../../../assets/image/01.jpg" class="d-block w-100" alt="..." />
+<mdb-carousel [controls]="true" [indicators]="true" alt="indicador para alterar imagem">
+  <mdb-carousel-item *ngFor="let item of slide">
+    <img [src]="item.image" class="d-block w-100" [alt]="item.alt" />
     <div class="carousel-caption d-none d-md-block">
-      <h5>CURIOSIDADE</h5>
-      <p>O anime de Pokémon tem 1131 episódios.</p>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <img src="../../../assets/image/01.jpg" class="d-block w-100" alt="..." />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>CURIOSIDADE</h5>
-      <p>São mais de 120 jogos de Pokémon.</p>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <img src="../../../assets/image/01.jpg" class="d-block w-100" alt="..." />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>CURIOSIDADE</h5>
-      <p>Ash teve 3 dubladores no Brasil.</p>
+      <h5>{{item.title}}</h5>
+      <p>{{item.description}}</p>
     </div>
   </mdb-carousel-item>
 </mdb-carousel>

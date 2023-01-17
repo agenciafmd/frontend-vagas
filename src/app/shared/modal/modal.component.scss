@@ -1,6 +1,8 @@
+@import '../../../assets/styles/color.scss';
+
 .modal-body {
-  background: #121210;
-  border-left: 4px solid yellow;
+  background: $dark-grey;
+  border-left: 4px solid $title-color;
   padding-left: 0.2em;
   border-radius: 5px;
 
@@ -9,17 +11,17 @@
     justify-content: flex-end;
   }
   button {
-    color: white;
+    color: $white-color;
     outline: none;
     background: transparent;
   }
   &__text {
-    color: white;
+    color: $white-color;
     text-align: center;
   }
   &__icon {
     font-size: 84px;
-    color: yellow;
+    color: $title-color;
   }
   &__title {
     font-size: 30px;

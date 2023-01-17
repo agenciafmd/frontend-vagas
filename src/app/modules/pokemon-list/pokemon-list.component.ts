@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { PokeApiService } from 'src/app/core/service/poke-api.service';
 
 @Component({
