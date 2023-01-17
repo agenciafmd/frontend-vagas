@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 112rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
