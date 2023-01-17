@@ -1,0 +1,30 @@
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+
+*{
+  font-family: 'Centra', sans-serif;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(187, 184, 184, 0.267);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #131313;
+}
