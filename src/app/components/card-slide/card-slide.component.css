@@ -155,7 +155,7 @@
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: .50s;
   }
 
   .manual-btn:not(:last-child){
@@ -171,15 +171,41 @@
   }
 
   #radio2:checked ~ .first{
-    margin-left: -50%;
+    margin-left: -25%;
   }
 
   #radio3:checked ~ .first{
-    margin-left: -100%;
+    margin-left: -50%;
   }
 
   .navigation-auto div{
-    border: 2px solid ;
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .navigation-auto{
+   position: absolute;
+    width: 260px;
+    margin-top: 230px;
+    display: flex;
+    justify-content: center;
   }
   
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FFF;
+  }
+
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FFF;
+  }
+
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FFF;
+  }
+
   

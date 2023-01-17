@@ -13,9 +13,5 @@ export class CardSlideComponent {
    
   }
 
-  onClick(e: any): void {
-    console.log(e);
-  }
-
 }
 

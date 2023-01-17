@@ -9,7 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardsComponent } from './components/cards/cards.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CardSlideComponent } from './components/card-slide/card-slide.component'
+import { CardSlideComponent } from './components/card-slide/card-slide.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CardSlideComponent } from './components/card-slide/card-slide.component
     BrowserModule,
     NgbModule,
     HttpClientModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
