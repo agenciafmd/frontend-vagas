@@ -11,7 +11,7 @@ import {
   Link 
 } from '@chakra-ui/react';
 
-import { ThemeToggle } from '../Theme-toggle';
+import { ThemeToggle } from '../toggle_theme';
 import { Link as Link2 } from 'react-scroll';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
