@@ -1,0 +1,208 @@
+@import "../../../Variables"
+
+.header_scrolled
+
+    transition: 25s
+    animation: MoveUpDown 1s linear
+
+@keyframes MoveUpDown
+    0%
+        transform: translateY(-100%)
+
+    100%
+        transform: translateY(0)
+
+.header_default
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 9999
+    background-color: $bg_variable2
+    padding: 2rem 0
+    margin: 0
+    border-bottom: 0.063rem solid $grey2
+    transition: .25s
+
+    .logo
+        display: block
+        padding: 0
+
+    .button_menu_mobile
+        display: none
+        color: $white
+        font-size: 3rem
+        line-height: 0
+        background-color: transparent
+        border: none
+        cursor: pointer
+        transition: .25s
+
+        &:hover
+            color: $purple
+
+    .button_menu_close
+        display: none
+        font-size: 1.5rem
+        line-height: 0
+        background-color: transparent
+        border: none
+        cursor: pointer
+        transition: .25s
+        position: absolute
+        top: 1rem
+        right: 1rem
+
+        svg
+            path
+                stroke: $white
+
+    .nav_default
+        ul
+            display: flex
+            flex-direction: row
+            padding: 0
+            margin: 0
+            list-style: none
+
+            li
+                margin-left: 5rem
+
+                a
+                    color: $grey
+                    font-size: 1rem
+                    font-weight: 500
+                    cursor: pointer
+                    text-decoration: none
+                    transition: .25s
+
+                    &:hover
+                        color: $grey3
+
+                    svg
+                        margin-right: .5rem
+                        font-size: 1.75rem
+                        vertical-align: middle
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .header_default
+        padding: 1.5rem 0
+
+        .logo
+            height: 2.5rem
+
+        .nav_default
+            ul
+                li
+                    margin-left: 3rem
+                    &:first-child
+                        margin-left: 0
+                    a
+                        font-size: .9rem
+                        svg
+                            font-size: 1.5rem
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .header_default
+        padding: 1.5rem 0
+
+        .logo
+            height: 2.5rem
+
+        .nav_default
+            ul
+                li
+                    margin-left: 3rem
+                    &:first-child
+                        margin-left: 0
+                    a
+                        font-size: .9rem
+                        svg
+                            font-size: 1.5rem
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .header_default
+        padding: 1.5rem 0
+
+        .logo
+            width: 100%
+
+        .nav_default
+            ul
+                li
+                    margin-left: 2rem
+                    &:first-child
+                        margin-left: 0
+                    a
+                        font-size: .8rem
+                        svg
+                            font-size: 1.25rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .header_default
+        padding: 1.5rem 0
+
+        .logo
+            width: 100%
+
+        .nav_default
+            ul
+                li
+                    margin-left: 1.5rem
+                    &:first-child
+                        margin-left: 0
+                    a
+                        font-size: .75rem
+                        svg
+                            font-size: 1.25rem
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .header_default
+        padding: 1rem 0
+
+        .logo
+            width: 100%
+
+        .button_menu_mobile
+            display: block
+            font-size: 2.75rem
+
+        .button_menu_close
+            display: block
+
+        .nav_default
+            background-color: $grey7
+            display: flex
+            width: 100%
+            height: auto
+            padding: 3rem 0 1rem
+            position: fixed
+            left: 0
+            bottom: 0
+            z-index: 999
+            transition: .25s
+            transform: translateY(100%)
+
+            ul
+                width: 100%
+                padding: 0 3rem
+                margin-top: 0.5rem
+                border-top: 1px solid $grey5
+                justify-content: center
+                flex-direction: column
+
+                li
+                    margin: .75rem 0
+                    a
+                        font-size: 1rem
+
+                        svg
+                            font-size: 1.25rem
+
+        .nav_mobile_open
+            transform: translateY(0%) !important

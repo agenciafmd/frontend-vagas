@@ -1,0 +1,84 @@
+@import "../../../Variables"
+
+.footer_default
+    padding: 2rem 0
+    margin: 0
+    border-top: 0.063rem solid $grey2
+
+    .logo
+        display: block
+
+    .copyright
+        width: 100%
+        text-align: center
+
+    .copyright, .development
+        margin: 0
+        color: $grey
+        font-size: 1.25rem
+        font-weight: 500
+        line-height: 1.8
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .footer_default
+        .logo
+            height: 2.5rem
+
+        .copyright, .development
+            font-size: 1rem
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .footer_default
+        .logo
+            height: 2.5rem
+
+        .copyright, .development
+            font-size: 1rem
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .footer_default
+        .logo
+            width: 100%
+
+        .development
+            font-size: .85rem
+
+        .copyright
+            font-size: .85rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .footer_default
+        .logo
+            width: 100%
+
+        .development
+            font-size: .85rem
+
+        .copyright
+            font-size: .85rem
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .order_m1
+        order: 1
+
+    .order_m2
+        order: 2
+
+    .order_m3
+        order: 3
+
+    .footer_default
+        .logo
+            width: 100%
+
+        .development
+            font-size: .85rem
+
+        .copyright
+            margin: 2rem 0 0
+            font-size: .85rem
