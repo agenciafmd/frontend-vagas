@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  background-color: #000000;
-  color: #fafafa;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 section {
@@ -47,5 +47,5 @@ ul {
 }
 
 a {
-  color: #ffffff;
+  color: var(--white);
 }

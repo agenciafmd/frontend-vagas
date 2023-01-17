@@ -8,10 +8,10 @@ export default function App() {
   return (
     <>
       <Header />
-      {/* <Banner />
-      <About />
-      <Testimonials />
-      <Footer /> */}
+      <Banner />
+      {/* <About /> */}
+      {/* <Testimonials /> */}
+      {/* <Footer /> */}
     </>
   );
 }

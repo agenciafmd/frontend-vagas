@@ -1,0 +1,55 @@
+.bgSwiper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+
+  .slide1,
+  .slide2 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &::before {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      content: "";
+    }
+
+    .content {
+      position: relative;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        .divider {
+          width: 6px;
+          height: 109px;
+          background: #e9ff00;
+        }
+      }
+
+      .description {
+        margin-top: 1.6rem;
+      }
+
+      h1 {
+        max-width: 60.6rem;
+      }
+    }
+  }
+
+  .slide1 {
+    background: url("/slide1.jpg") center/cover;
+  }
+  .slide2 {
+    background: url("/slide2.jpg") center/cover;
+  }
+}
