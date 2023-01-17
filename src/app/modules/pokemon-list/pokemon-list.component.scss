@@ -112,3 +112,15 @@ $padding: 1.25rem;
     transition: 0.5s;
   }
 }
+
+.carousel {
+  z-index: 0;
+  margin-bottom: 120px;
+}
+
+.title-text {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin: 80px 0px 20px 0;
+}
