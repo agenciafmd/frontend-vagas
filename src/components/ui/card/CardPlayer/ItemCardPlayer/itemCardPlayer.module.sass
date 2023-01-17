@@ -1,0 +1,189 @@
+@import "../../../../../Variables"
+
+.card_player
+    padding: 0
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15)
+    position: relative
+    z-index: 9
+    transition: 0.25s
+
+    &:hover
+        margin-top: -1rem
+
+    .card_photo
+        padding: 2rem 0 0
+        background-size: cover
+        background-color: $grey6
+
+        img
+            display: block
+
+    .card_data
+        display: block
+        padding: 3rem
+        background-color: $grey7
+
+        h3
+            margin: 0 0 .75rem
+            color: $grey4
+            font-size: 1.5rem
+            font-weight: 500
+            text-align: center
+
+            span
+                color: $purple
+
+        .card_nation
+            color: $grey
+            font-size: 1rem
+            font-weight: 400
+
+            img
+                display: inline-block
+                height: 2.5rem
+                margin-right: 0.75rem
+                vertical-align: middle
+
+        .player_age
+            color: $grey
+            font-size: 1rem
+            font-weight: 400
+
+        .card_social
+            display: flex
+            justify-content: center
+            margin: 1.5rem 0 0
+            padding: 1.5rem 0 0
+            border-top: 1px solid $grey5
+            list-style: none
+
+            li
+                margin: 0 .75rem
+                line-height: 0
+
+                svg
+                    color: $grey2
+                    font-size: 2.5rem
+                    cursor: pointer
+                    transition: .25s
+
+                    &:hover
+                        color: $purple
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .card_player
+        margin: .5rem 0
+        border: 1px solid $grey5
+        .card_photo
+            img
+                width: 100%
+
+        .card_data
+            padding: 2rem
+            h3
+                margin: 0 0 0.5rem
+                font-size: 1rem
+
+            .card_nation
+                font-size: .75rem
+
+                img
+                    height: 1.5rem
+                    margin-right: 0.5rem
+
+            .player_age
+                font-size: .75rem
+
+            .card_social
+                li
+                    svg
+                        font-size: 1.75rem
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .card_player
+        margin: .5rem 0
+        border: 1px solid $grey5
+        .card_photo
+            img
+                width: 100%
+
+        .card_data
+            padding: 2rem
+            h3
+                margin: 0 0 0.5rem
+                font-size: 1rem
+
+            .card_nation
+                font-size: .75rem
+
+                img
+                    height: 1.5rem
+                    margin-right: 0.5rem
+
+            .player_age
+                font-size: .75rem
+
+            .card_social
+                li
+                    svg
+                        font-size: 1.75rem
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .card_player
+        margin: .5rem 0
+        border: 1px solid $grey5
+        .card_photo
+            img
+                width: 100%
+
+        .card_data
+            padding: 1.25rem
+            h3
+                margin: 0 0 0.5rem
+                font-size: .85rem
+
+            .card_nation
+                font-size: .65rem
+
+                img
+                    height: 1.5rem
+                    margin-right: 0.5rem
+
+            .player_age
+                font-size: .65rem
+
+            .card_social
+                li
+                    svg
+                        font-size: 1.5rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .card_player
+        margin: .5rem 0
+        border: 1px solid $grey5
+        .card_photo
+            img
+                width: 100%
+
+        .card_data
+            padding: 2rem
+            h3
+                font-size: 1.25rem
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .card_player
+        margin: 1rem 0
+        border: 1px solid $grey5
+        .card_photo
+            img
+                width: 100%
+
+        .card_data
+            padding: 2rem
+            h3
+                font-size: 1.25rem

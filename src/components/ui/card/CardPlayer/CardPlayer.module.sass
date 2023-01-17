@@ -1,0 +1,41 @@
+@import "../../../../Variables"
+
+.ak_animated
+    position: absolute
+    top: -12rem
+    right: 0
+    animation: MoveUpDown 2s linear infinite
+
+@keyframes MoveUpDown
+    0%, 100%
+        transform: translateY(0)
+
+    50%
+        transform: translateY(-3rem)
+
+//RESPONSIVE 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .ak_animated
+        width: 70%
+
+//RESPONSIVE 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .ak_animated
+        width: 70%
+
+//RESPONSIVE 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .ak_animated
+        width: 70%
+        top: -8rem
+
+//RESPONSIVE 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .ak_animated
+        width: 100%
+
+//RESPONSIVE 767
+@media screen and ( max-width:  767px)
+    .ak_animated
+        width: 120%
+        top: -5rem
