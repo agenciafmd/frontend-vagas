@@ -1,3 +1,8 @@
+# Como rodar o projeto
+
+`npm install` - Instala todas as dependências do projeto.
+`npm start` - Inicia a aplicação na porta 3000.
+
 # Pull Request
 
 Antes de submeter uma pull request, gostariamos de entender como o projeto foi desenvolvido, nos conte sobre ele :slightly_smiling_face:
