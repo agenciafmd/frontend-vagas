@@ -1,0 +1,41 @@
+@import "../../../../Variables"
+
+.alert_default
+    display: block
+    padding: 0rem
+    margin: 1rem 0 0
+    color: $white
+    font-size: 1rem
+    font-weight: 500
+
+    .alert_icon
+        display: inline-block
+        padding: 1.5rem
+        margin-right: 1rem
+        background-color: rgba(0, 0, 0, 0.15)
+        vertical-align: middle
+        svg
+            color: $white
+            font-size: 1.5rem
+            vertical-align: middle
+
+.alert_success
+    background: $green
+
+.alert_error
+    background: $red
+
+//RESPONSIVO 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .alert_default
+        font-size: .75rem
+
+//RESPONSIVO 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .alert_default
+        font-size: .75rem
+
+//RESPONSIVO 767
+@media screen and ( max-width:  767px)
+    .alert_default
+        font-size: .75rem

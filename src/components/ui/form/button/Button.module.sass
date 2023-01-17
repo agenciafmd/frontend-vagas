@@ -1,0 +1,54 @@
+@import "../../../../Variables"
+
+.button_default
+    display: block
+    width: 100%
+    margin: 1rem 0 0
+    padding: 1.5rem
+    background-color: $purple
+    border-color: $purple
+    color: $grey4
+    font-family: $font
+    font-size: 1.25rem
+    font-weight: 600
+    cursor: pointer
+    text-transform: uppercase
+    transition: .25s
+
+    &:hover
+        background-color: $purple2
+        border-color: $purple2
+
+.button_default[aria-disabled="true"]
+    opacity: .5
+    pointer-events: none
+
+//RESPONSIVO 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .button_default
+        padding: 1rem 2rem
+        font-size: 1rem
+
+//RESPONSIVO 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .button_default
+        padding: 1rem 2rem
+        font-size: 1rem
+
+//RESPONSIVO 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .button_default
+        padding: 1rem
+        font-size: .75rem
+
+//RESPONSIVO 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .button_default
+        padding: 1.25rem
+        font-size: 1rem
+
+//RESPONSIVO 767
+@media screen and ( max-width:  767px)
+    .button_default
+        margin: .5rem 0 0
+        font-size: 1rem

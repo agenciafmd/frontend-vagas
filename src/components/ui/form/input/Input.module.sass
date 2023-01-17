@@ -1,0 +1,45 @@
+@import "../../../../Variables"
+
+.input_default
+    width: 100%
+    padding: 1.5rem 2rem
+    color: $grey
+    font-family: $font
+    font-size: 1rem
+    font-weight: 500
+    background-color: $grey6
+    border: 0.063rem solid $grey6
+    transition: .25s
+
+    &:focus
+        border-color: $purple
+
+//RESPONSIVO 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .input_default
+        padding: 1.25rem 2rem
+        font-size: .75rem
+
+//RESPONSIVO 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .input_default
+        padding: 1.25rem 2rem
+        font-size: .75rem
+
+//RESPONSIVO 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .input_default
+        padding: 1rem .75rem
+        font-size: .75rem
+
+//RESPONSIVO 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .input_default
+        padding: 1.25rem 2rem
+
+//RESPONSIVO 767
+@media screen and ( max-width:  767px)
+    .input_default
+        margin: .5rem 0
+        padding: 1.25rem 1.5rem
+        font-size: .85rem

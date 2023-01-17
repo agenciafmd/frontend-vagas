@@ -1,0 +1,51 @@
+.art_animated
+    padding: 0
+    animation: MoveUpDown 2s linear infinite
+
+@keyframes MoveUpDown
+    0%, 100%
+        transform: translateY(0)
+        //transform: rotateZ(0deg)
+
+    50%
+        transform: translateY(-3rem)
+        //transform: rotateZ(-25deg)
+
+.content_form
+    width: 100%
+    padding: 0 3rem
+
+//RESPONSIVO 1400
+@media (min-width: 1400px) and ( max-width: 1650px)
+    .art_animated
+        width: 100%
+
+//RESPONSIVO 1366
+@media (min-width: 1280px) and ( max-width: 1366px)
+    .art_animated
+        width: 100%
+
+//RESPONSIVO 1024
+@media (min-width: 1024px) and ( max-width: 1200px)
+    .art_animated
+        width: 100%
+
+//RESPONSIVO 768
+@media (min-width: 768px) and ( max-width: 900px)
+    .art_animated
+        display: none
+
+    .content_form
+        padding: 0
+
+//RESPONSIVO 767
+@media screen and ( max-width:  767px)
+    .art_animated
+        display: none
+
+    .content_form
+        width: 100%
+        padding: 0
+
+        h1
+            text-align: center
