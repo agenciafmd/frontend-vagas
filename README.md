@@ -1,14 +1,14 @@
 <div align="center" style="margin-bottom: 20px;">
-<img alt="gobarber" src=".https://github.com/dihgo01/frontend-vagas/blob/main/src/assets/img/home.png" width="270" heigth="auto"/>
+<img alt="gobarber" src="https://github.com/dihgo01/frontend-vagas/blob/main/src/assets/img/home.png" width="270" heigth="auto"/>
 </div>
 
 <div align="center" style="margin: 20px;">
 
 <p align="center" >
-  <a href="#star-introduction"> :star: Introdução</a> |
-  <a href="#rocket-technologies"> :rocket: Tecnologias</a> |
-  <a href="#hammer-application-deploy"> :hammer: Deploy da Aplicação</a> |
-  <a href="#computer-how-to-use"> :computer: Como usar </a> |
+  <a href="#star"> :star: Introdução</a> |
+  <a href="#rocket"> :rocket: Tecnologias</a> |
+  <a href="#hammer"> :hammer: Deploy da Aplicação</a> |
+  <a href="#computer"> :computer: Como usar </a> |
 </p>
 
 </div>
