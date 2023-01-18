@@ -1,27 +1,56 @@
-# ChallengeFms
+<div align="center" style="margin-bottom: 20px;">
+<img alt="gobarber" src=".https://github.com/dihgo01/frontend-vagas/blob/main/src/assets/img/home.png" width="270" heigth="auto"/>
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+<div align="center" style="margin: 20px;">
 
-## Development server
+<p align="center" >
+  <a href="#star-introduction"> :star: Introdução</a> |
+  <a href="#rocket-technologies"> :rocket: Tecnologias</a> |
+  <a href="#hammer-application-deploy"> :hammer: Deploy da Aplicação</a> |
+  <a href="#computer-how-to-use"> :computer: Como usar </a> |
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+</div>
 
-## Code scaffolding
+## :star: Introdução
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Aplicativo feito para o teste da empresa [F&MD](https://fmd.ag/), uma landing page feita em Angular de Start Wars com formulário de assinatura de newsletter. Acesse [aqui](https://fmdchallenge.vercel.app/) para ver online
 
-## Build
+## :rocket: Tecnologias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-## Running unit tests
+- [NodeJS](https://nodejs.org/en/)
+- [Angular](https://angular.io/)
+- [Ng-Bootstrap](https://ng-bootstrap.github.io/#/components/carousel/examples)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :hammer: Deploy da Aplicação
+Para utilizar a aplicação em produção você precisa:
+```sh
+$ npm ou yarn build
 
-## Running end-to-end tests
+```
+Os artefatos de compilação serão armazenados no diretório `dist/`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## :computer: Como usar
 
-## Further help
+#### Clone do Projeto
+```sh
+$ git clone https://github.com/dihgo01/frontend-vagas
+$ cd frontend-vagas
+```
+#### Iniciando a aplicação
+```sh
+$ npm ou yarn install
+$ ng server
+```
+Acesse a aplicação em http://localhost:4200/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Made with ♥ by Diego Candido :wave: [Get in touch!](https://www.linkedin.com/in/diego-c-c-s/)
+
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+
+

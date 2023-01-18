@@ -10,8 +10,8 @@
                         <div class="col-md-12 col-xl-7">
                             <form>
                                 <div class="new-email-bx">
-                                    <input value="" type="email" placeholder="Endereço de e-mail" />
-                                    <button type="submit">Enviar</button>
+                                    <input value="email" type="email" [(ngModel)]="email" name="email"  placeholder="Endereço de e-mail" >
+                                    <button type="button" (click)="sendEmail()">Enviar</button>
                                 </div>
                             </form>
                         </div>
