@@ -4,7 +4,7 @@ import "./styles.scss";
 
 export default function Footer() {
   return (
-    <footer className="Footer">
+    <footer className="Footer" id="footer">
       <div className="container-fluid">
         <div className="container">
           <a href="#">
