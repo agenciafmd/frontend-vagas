@@ -10,7 +10,7 @@ export default function App() {
       <Header />
       <Banner />
       <About />
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* <Footer /> */}
     </>
   );

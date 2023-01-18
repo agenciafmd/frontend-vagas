@@ -1,0 +1,55 @@
+.Testimonials {
+  .container {
+    h2 {
+      margin-bottom: 4.8rem;
+      text-align: center;
+    }
+
+    .mySwiper {
+      width: 100%;
+      height: 100%;
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+          display: flex;
+          gap: 1.6rem;
+
+          .icon {
+            display: flex;
+            align-items: flex-start;
+
+            .rectangle {
+              width: 2.2rem;
+              height: 13rem;
+              background-color: var(--color-primary);
+            }
+            .user {
+              min-width: 10rem;
+              margin-left: -2.4rem;
+            }
+          }
+        }
+
+        .text {
+          h3 {
+            margin-top: 6rem;
+          }
+
+          .rating {
+            margin: 0.875rem 0;
+          }
+        }
+      }
+
+      .swiper-pagination-bullet,
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+    }
+  }
+}
