@@ -1,5 +1,5 @@
 <div align="center" style="margin-bottom: 20px;">
-<img alt="gobarber" src="https://github.com/dihgo01/frontend-vagas/blob/main/src/assets/img/home.png" width="270" heigth="auto"/>
+<img alt="gobarber" src="https://github.com/dihgo01/frontend-vagas/blob/main/src/assets/img/home.png" width="auto" heigth="auto"/>
 </div>
 
 <div align="center" style="margin: 20px;">
