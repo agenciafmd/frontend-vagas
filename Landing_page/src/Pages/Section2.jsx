@@ -40,7 +40,7 @@ export function Section_TopRated({movie}) {
         {movie.map((Movies) =>
             <Card 
             h={{ base: '350px', md: '550px'}} 
-            w={{ base: 'auto', md: '300px'}} 
+            w={{ base: '170px', md: '300px'}} 
             background={useColorModeValue('#fff', '#20202380')}
             key={Movies.title}
             >
@@ -53,7 +53,7 @@ export function Section_TopRated({movie}) {
                 w={{ base: '150px', md: '500px'}}
                 />
 
-                <Stack spacing='24px' marginTop='10px'>
+                <Stack spacing='24px' marginTop='10px' display='flex' justifyContent='center' alignItems='center'>
                   <Heading 
                   fontSize={{ base: '13px', md: '17px'}}
                   >
@@ -61,9 +61,10 @@ export function Section_TopRated({movie}) {
                   </Heading>
 
                   <Button 
-                  boxShadow='inner'
                   display={{ base: 'none', md: 'block'}}
+                  boxShadow='xl'
                   border='2px solid #20202380'
+                  w='100%'
                   fontWeight='medium'
                   >
                     Buy section
@@ -80,7 +81,7 @@ export function Section_TopRated({movie}) {
                 display={{ base: 'block', md: 'none'}}
                 boxShadow='xl'
                 border='2px solid #20202380'
-                margin='0'
+                w='100%'
                 fontWeight='medium'
                 >
                   Buy section
