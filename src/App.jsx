@@ -9,7 +9,7 @@ export default function App() {
     <>
       <Header />
       <Banner />
-      {/* <About /> */}
+      <About />
       {/* <Testimonials /> */}
       {/* <Footer /> */}
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -12,14 +12,18 @@ export default function Banner() {
   return (
     <>
       <Swiper
-        className="bgSwiper"
+        className="Banner"
         loop={true}
         effect={"fade"}
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         navigation={true}
-        modules={[EffectFade, Navigation, Pagination]}
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
       >
         <SwiperSlide className="slide1">
           <div className="container">

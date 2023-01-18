@@ -1,0 +1,48 @@
+.About {
+  background-image: url("/icon-music.svg");
+  background-repeat: no-repeat;
+  background-position-x: 64px;
+
+  .container {
+    h2 {
+      margin-bottom: calc(4.8rem * 2);
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 2.4rem;
+
+      .card {
+        width: 25rem;
+        height: 28rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: var(--white);
+        border-radius: 4rem 4rem 0rem 0rem;
+
+        .icon {
+          margin-top: -4.8rem;
+        }
+
+        h3,
+        p {
+          color: var(--black);
+          text-align: center;
+        }
+
+        p {
+          margin: 1.6rem 0;
+          font-size: 1.6rem;
+          width: 100%;
+          max-width: 18rem;
+        }
+
+        .btnCard {
+          margin-top: 1.6rem;
+        }
+      }
+    }
+  }
+}
