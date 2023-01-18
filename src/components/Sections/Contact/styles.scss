@@ -1,0 +1,36 @@
+.Contact {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      width: 100%;
+      max-width: 40.6rem;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        width: 24.4rem;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7.2rem;
+        height: 4.2rem;
+        background: var(--color-primary);
+        border-radius: 2rem;
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

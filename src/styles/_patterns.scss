@@ -20,3 +20,13 @@
     font-size: 20px;
   }
 }
+
+input {
+  height: 4.2rem;
+  padding: 1.6rem;
+  background: transparent;
+  border-radius: 2rem;
+  border: 1px solid var(--color-primary);
+  color: var(--white);
+  font-size: 1.6rem;
+}
