@@ -168,3 +168,18 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
 }
+
+footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+footer h6 {
+  color: #000000;
+}
