@@ -11,43 +11,43 @@ import "./styles.scss";
 export default function Banner() {
   return (
     <>
-      <section
+      <Swiper
+        className="bgSwiper"
         loop={true}
         effect={"fade"}
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade]}
+        navigation={true}
+        modules={[EffectFade, Navigation, Pagination]}
       >
-        <Swiper className="bgSwiper">
-          <SwiperSlide className="slide1">
-            <div className="container">
-              <div className="content">
-                <div className="title">
-                  <div className="divider"></div>
-                  <h1>Menos do mesmo na hora de tocar bateria!</h1>
-                </div>
-                <div className="description">
-                  <p>Aprenda como tocar bateria do zero com nosso curso online</p>
-                </div>
+        <SwiperSlide className="slide1">
+          <div className="container">
+            <div className="content">
+              <div className="title">
+                <div className="divider"></div>
+                <h1>Menos do mesmo na hora de tocar bateria!</h1>
+              </div>
+              <div className="description">
+                <p>Aprenda como tocar bateria do zero com nosso curso online</p>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide className="slide2">
-            <div className="container">
-              <div className="content">
-                <div className="title">
-                  <div className="divider"></div>
-                  <h1>Menos do mesmo na hora de tocar bateria!</h1>
-                </div>
-                <div className="description">
-                  <p>Aprenda como tocar bateria do zero com nosso curso online</p>
-                </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="slide2">
+          <div className="container">
+            <div className="content">
+              <div className="title">
+                <div className="divider"></div>
+                <h1>Menos do mesmo na hora de tocar bateria!</h1>
+              </div>
+              <div className="description">
+                <p>Aprenda como tocar bateria do zero com nosso curso online</p>
               </div>
             </div>
-          </SwiperSlide>
-        </Swiper>
-      </section>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </>
   );
 }
