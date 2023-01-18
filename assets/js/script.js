@@ -34,12 +34,12 @@ const emailInput = document.getElementById('email')
 form.addEventListener('submit', (event) => {
     event.preventDefault()
 
-    if(nameInput.value === ''){
+    if (nameInput.value === '') {
         nameInput.style.borderColor = "#FF0000"
         return
     }
 
-    if(emailInput.value === '' || isEmailValid(emailInput.value)){
+    if (emailInput.value === '' || isEmailValid(emailInput.value)) {
         emailInput.style.borderColor = "#FF0000"
         return
     }
@@ -49,12 +49,12 @@ form.addEventListener('submit', (event) => {
 
 function isEmailValid(email) {
     const emailRegex = new RegExp(
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z]{2,}$/
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     )
 
     if (emailRegex.test(email)) {
-        return true
+        return false
     }
 
-    return false
+    return true
 }
