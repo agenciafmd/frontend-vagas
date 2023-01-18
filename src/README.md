@@ -1,3 +1,13 @@
+
+## Who participates in this project and with what role?
+| [<img src="https://avatars.githubusercontent.com/u/81385265?v=4" width=115><br><sub>Dakson Cruz</sub>](https://github.com/DaksonC) |
+| :---: |
+|<sub>Front End</sub>|
+
+# View project demo.
+
+https://user-images.githubusercontent.com/81385265/212784371-94f2ce0e-0d49-46db-9acd-f7c69635d6de.mp4
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,13 +54,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-# View project demo.
-
-https://user-images.githubusercontent.com/81385265/212784371-94f2ce0e-0d49-46db-9acd-f7c69635d6de.mp4
-
-## Who participates in this project and with what role?
-
-| [<img src="https://avatars.githubusercontent.com/u/81385265?v=4" width=115><br><sub>Dakson Cruz</sub>](https://github.com/DaksonC) |
-| :---: |
-|<sub>Front End</sub>|
