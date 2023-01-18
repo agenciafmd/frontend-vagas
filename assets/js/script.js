@@ -26,3 +26,35 @@ function createDiv(img) {
     section.appendChild(div)
     div.appendChild(image)
 }
+
+const form = document.getElementById('form')
+const nameInput = document.getElementById('name')
+const emailInput = document.getElementById('email')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    if(nameInput.value === ''){
+        nameInput.style.borderColor = "#FF0000"
+        return
+    }
+
+    if(emailInput.value === '' || isEmailValid(emailInput.value)){
+        emailInput.style.borderColor = "#FF0000"
+        return
+    }
+
+    form.submit()
+})
+
+function isEmailValid(email) {
+    const emailRegex = new RegExp(
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z]{2,}$/
+    )
+
+    if (emailRegex.test(email)) {
+        return true
+    }
+
+    return false
+}
