@@ -1,10 +1,12 @@
+import { useEffect } from 'react'
 import { Row } from 'react-bootstrap'
 import bg from '../src/assets/banner/background.jpg'
+import { setItem } from '../src/common/storage'
 import { Highlight } from '../src/components/Highlight'
 import { Newsletter } from '../src/components/Newsletter'
 import { SectionOne } from '../src/components/SectionOne'
 import { SectionTwo } from '../src/components/SectionTwo'
-import { useWindowSize } from '../src/hooks/useWindowSize'
+import auth from '../src/service/auth'
 
 const highlightcontent = [
   {
@@ -12,8 +14,10 @@ const highlightcontent = [
   }
 ]
 
-export default function Home() {
-  const { width } = useWindowSize()
+export default function Home({ authorization }) {
+  useEffect(() => {
+    setItem('token', authorization.access_token)
+  }, [])
 
   return (
     <>
@@ -29,10 +33,23 @@ export default function Home() {
         <SectionTwo />
       </Row>
 
-      {/* <Row className="m-0">{width > 576 && <Newsletter />}</Row> */}
       <Row className="m-0">
         <Newsletter />
       </Row>
     </>
   )
+}
+
+export const getStaticProps = async () => {
+  try {
+    const response = await auth.post()
+    const authorization = response.data
+
+    return {
+      props: { authorization },
+      revalidate: 3600
+    }
+  } catch (error) {
+    console.log(error)
+  }
 }
