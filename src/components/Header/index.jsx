@@ -10,7 +10,7 @@ export default function Header() {
             <img src="/menosdomesmo.svg" alt="Logo Menos do Mesmo" />
           </a>
         </div>
-        <ul className="menu">
+        <ul className="menuDesktop">
           <li>
             <a href="#">Início</a>
           </li>
@@ -24,6 +24,9 @@ export default function Header() {
             <a href="#contact">Contato</a>
           </li>
         </ul>
+        <button className="menuMobile" aria-label="Menu Mobile">
+          <img src="/menu-mobile.svg" alt="Menu Mobile" width="32" height="32" />
+        </button>
       </div>
     </header>
   );

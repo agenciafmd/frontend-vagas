@@ -16,10 +16,36 @@
       max-width: 23.4rem;
     }
 
-    .menu {
+    .menuDesktop {
       display: flex;
       gap: 3.2rem;
       font-size: 1.6rem;
+    }
+
+    .menuMobile {
+      display: none;
+      cursor: pointer;
+      background: transparent;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .container {
+      .menuDesktop {
+        display: none;
+      }
+      .menuMobile {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      .logo {
+        max-width: 20rem;
+      }
     }
   }
 }
