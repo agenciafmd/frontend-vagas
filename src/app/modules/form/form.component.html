@@ -1,7 +1,7 @@
 <section class="listagem">
   <form [formGroup]="newsletter" (ngSubmit)="submit()" #formDir="ngForm">
     <div class="form-position">
-      <div class="form">
+      <div>
         <span class="input">
           <input type="text" name="name" formControlName="name" placeholder="Nome" />
           <span></span>
@@ -10,7 +10,7 @@
           <p>O campo nome é obrigatório</p>
         </div>
       </div>
-      <div class="form-position__email form">
+      <div class="form-position__email">
         <span class="input position-email">
           <input type="text" name="email" formControlName="email" placeholder="E-mail" />
           <span></span>

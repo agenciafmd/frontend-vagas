@@ -17,15 +17,15 @@ export class PokemonListComponent implements OnInit {
   constructor(private pokeApiService: PokeApiService, private router: Router) {}
 
   ngOnInit(): void {
-    this.pokeApiService.apiListAllPokemons.subscribe(
-      (res) => {
+    this.pokeApiService.apiListAllPokemons.subscribe({
+      next: (res) => {
         this.setAllPokemons = res.results;
         this.getAllPokemons = this.setAllPokemons;
       },
-      (error) => {
+      error: (error) => {
         this.apiError = true;
       },
-    );
+    });
   }
 
   public getSearch(value: string) {

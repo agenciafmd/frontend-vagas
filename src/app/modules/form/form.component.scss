@@ -6,19 +6,16 @@
   justify-content: center;
   align-items: center;
   padding: 3.25rem 0;
-}
-
-.form{
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .form-position {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
+  align-items: center;
+  flex-direction: column;
   &__email {
-    margin: 0px 25px;
+    margin: 25px 25px;
   }
 }
 .validation-error {
@@ -26,6 +23,7 @@
   margin-top: 0.4em;
   border-left: 3px solid $red-color;
   padding-left: 0.2em;
+  position: relative;
 }
 
 .input {
