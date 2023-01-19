@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Space Landing Page</title>
+</head>
+<body>
+
+    <header id="home">
+
+        <div class="menu">
+            <img src="assets/images/astronauta.png" alt="">
+            <nav>  
+                <a href="">Home</a>
+                <a href="#images">Imagens</a>
+                <a href="#trivia">Curiosidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+        <div class="banner">
+            <video autoplay loop muted src="assets/videos/earth-small.mp4" type="video/mp4" width="100%" height="100%">
+        </div>
+    
+    <main>
+        <div class="gradient"></div>
+        <section class="space-images" id="images">
+            
+            <h2>Imagens Espaciais</h2>
+            <div class="planets" id="planets-images"></div>
+        </section>
+
+        <section class="space-trivia" id="trivia">
+            <div class="gradient"></div>
+            <h2>Curiosidades Espaciais</h2>
+            
+            <div class="trivia">
+                <div class="curiosity" id="curiosity1">  
+                    <img src="assets/images/ponto.png" alt="ponto de interrogação">
+                    <div>
+                        <h6>Quantas Terras caberiam dentro do Sol?</h6>
+                        <span>Dentro do Sol seria possível colocar 1,3 milhões de planetas Terra.</span>
+                    </div>
+                </div>
+                <div class="curiosity" id="curiosity2">
+                    <img src="assets/images/ponto.png" alt="ponto de interrogação">
+                    <div>
+                        <h6>Quantas constelações existem?</h6>
+                        <span>A União Astronômica Internacional (IAU) reconhece oficialmente 88 constelações que cobrem os céus do norte e do sul.</span>
+                    </div>
+                </div>
+                <div class="curiosity" id="curiosity3">
+                    <img src="assets/images/ponto.png" alt="ponto de interrogação">
+                    <div>
+                        <h6>Quais planetas não possuem um satélite natural?</h6>
+                        <span>Todos os planetas do sistema solar, exceto Mercúrio e Vênus, possuem satélites naturais.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="btn1"></button>
+                <button id="btn2"></button>
+                <button id="btn3"></button>
+            </div>
+            
+        </section>
+        <section id="contact" class="contact">
+            <h2>Assine nossa <br> newsletter</h2>
+                    <form id="form" class="form">
+                        <input type="text" id="name" placeholder="Nome">
+                        <input type="email" id="email" placeholder="E-mail">
+                    <button type="submit"><img src="assets/images/seta.png" alt="prosseguir"></button>
+                    </form>       
+        </section>
+        
+    </main>
+
+    <footer>
+        <img src="assets/images/black-astronauta.png" alt="">
+        <h6>email@email.com</h6>            
+        <h6>17 9 4736-4958</h6>    
+    </footer>
+   
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
