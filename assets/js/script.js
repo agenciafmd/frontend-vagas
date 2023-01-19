@@ -27,6 +27,40 @@ function createDiv(img) {
     div.appendChild(image)
 }
 
+const curios1 = document.getElementById('curiosity1')
+const curios2 = document.getElementById('curiosity2')
+const curios3 = document.getElementById('curiosity3')
+const btn2 = document.getElementById('btn2')
+const btn1 = document.getElementById('btn1')
+const btn3 = document.getElementById('btn3')
+
+btn1.addEventListener('click', ()=>{
+    curios1.style.display="block"
+    curios2.style.display="none"
+    curios3.style.display="none"
+    btn1.style.backgroundColor = "#6495ed"
+    btn2.style.backgroundColor = "#ffffff"
+    btn3.style.backgroundColor = "#ffffff"
+})
+
+btn2.addEventListener('click', ()=>{
+    curios1.style.display="none"
+    curios2.style.display="block"
+    curios3.style.display="none"
+    btn2.style.backgroundColor = "#6495ed"
+    btn1.style.backgroundColor = "#ffffff"
+    btn3.style.backgroundColor = "#ffffff"
+})
+
+btn3.addEventListener('click', ()=>{
+    curios1.style.display="none"
+    curios2.style.display="none"
+    curios3.style.display="block"
+    btn3.style.backgroundColor = "#6495ed"
+    btn1.style.backgroundColor = "#ffffff"
+    btn2.style.backgroundColor = "#ffffff"
+})
+
 const form = document.getElementById('form')
 const nameInput = document.getElementById('name')
 const emailInput = document.getElementById('email')

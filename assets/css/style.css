@@ -147,6 +147,16 @@ h6 {
 .contact h2 {
   margin-left: 80px;
 }
+.buttons{
+  display: none;
+  margin: 10px;
+}
+#btn1, #btn2, #btn3{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+}
 
 .form {
   display: flex;
@@ -192,10 +202,6 @@ footer h6 {
   color: #000000;
 }
 @media (max-width: 1024px) {
-  nav {
-    display: none;
-  }
-
   .planets {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -220,15 +226,24 @@ footer h6 {
   .planets {
     grid-template-columns: repeat(1, 1fr);
   }
+
 }
 
 @media (max-width: 430px) {
+  nav {
+    display: none;
+  }
+
   .curiosity {
     width: 250px;
     height: auto;
     display: flex;
     align-items: row;
   }
+  #curiosity2, #curiosity3{
+    display: none;
+  }
+
   h2 {
     font-size: 28px;
   }
@@ -248,5 +263,8 @@ footer h6 {
   .menu img{
     height: 30px;
     width: 30px;
+  }
+  .buttons{
+    display: block;
   }
 }
