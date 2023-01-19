@@ -207,6 +207,9 @@ footer h6 {
   }
 }
 @media (max-width: 780px) {
+  .planets {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .contact {
     flex-direction: column;
     align-items: center;
@@ -222,14 +225,10 @@ footer h6 {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 430px) {
   .planets {
     grid-template-columns: repeat(1, 1fr);
   }
-
-}
-
-@media (max-width: 430px) {
   nav {
     display: none;
   }
