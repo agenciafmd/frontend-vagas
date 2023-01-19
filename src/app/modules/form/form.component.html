@@ -1,7 +1,7 @@
 <section class="listagem">
   <form [formGroup]="newsletter" (ngSubmit)="submit()" #formDir="ngForm">
     <div class="form-position">
-      <div>
+      <div class="form">
         <span class="input">
           <input type="text" name="name" formControlName="name" placeholder="Nome" />
           <span></span>
@@ -10,7 +10,7 @@
           <p>O campo nome é obrigatório</p>
         </div>
       </div>
-      <div class="form-position__email">
+      <div class="form-position__email form">
         <span class="input position-email">
           <input type="text" name="email" formControlName="email" placeholder="E-mail" />
           <span></span>
@@ -19,7 +19,7 @@
           <p>O campo e-mail é obrigatório</p>
         </div>
       </div>
-      <div><button (keyup.space)="submit()" class="rainbow-button" alt="Acessar"></button></div>
+      <div><button aria-label="Acessar" (keyup.space)="submit()" class="rainbow-button" alt="Acessar"></button></div>
     </div>
   </form>
 </section>

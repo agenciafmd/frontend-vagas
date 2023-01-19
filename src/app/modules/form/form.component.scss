@@ -8,6 +8,10 @@
   padding: 3.25rem 0;
 }
 
+.form{
+  margin-bottom: 60px;
+}
+
 .form-position {
   display: flex;
   justify-content: center;
@@ -22,7 +26,6 @@
   margin-top: 0.4em;
   border-left: 3px solid $red-color;
   padding-left: 0.2em;
-  margin-top: -45px;
 }
 
 .input {
@@ -32,7 +35,6 @@
   display: inline-block;
   border-radius: 5px;
   position: relative;
-  margin-bottom: 60px;
   *:not(span) {
     position: relative;
     display: inherit;
