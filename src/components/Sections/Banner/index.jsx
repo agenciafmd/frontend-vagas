@@ -1,7 +1,7 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 import Div100vh from "react-div-100vh";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
