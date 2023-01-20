@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import dino from '../../../assets/cardRating/dino.png'
 import { Rating } from '../../Rating'
 import {
   CardRatingContainer,
@@ -7,23 +6,26 @@ import {
   CardRatingInfos
 } from './style'
 
-export function CardRating({ rating }) {
+export function CardRating({ title, sub, thumb, rating }) {
   return (
     <CardRatingContainer>
       <CardRatingImageContainer>
         <hr />
-        <Image src={dino} alt="alt" className="cardRatingImage" />
+        <Image
+          src={thumb}
+          alt="alt"
+          className="cardRatingImage"
+          width={85}
+          height={85}
+        />
       </CardRatingImageContainer>
 
       <CardRatingInfos>
         <div className="cardRatingTitle">
-          <h3>Lorem Ipsum!!</h3>
+          <h3>{title}</h3>
           <Rating value={rating} />
         </div>
-        <p>
-          Quisque cursus nunc urna, eget ultricies orci accumsan at. Cras metus
-          nibh, viverra vitae erat ut, lacinia interdum nisl...
-        </p>
+        <span>{sub}</span>
       </CardRatingInfos>
     </CardRatingContainer>
   )

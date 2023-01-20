@@ -33,7 +33,7 @@ export const CardRatingImageContainer = styled.div`
 `
 
 export const CardRatingInfos = styled.div`
-  margin: 48px 0 0 90px;
+  margin: 28px 0 0 90px;
 
   .cardRatingTitle {
     margin-bottom: 11px;

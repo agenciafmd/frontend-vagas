@@ -31,8 +31,14 @@ export const SectionTwoCards = styled.div`
 
   display: grid;
   align-items: flex-start;
+  justify-items: center;
   grid-template-columns: repeat(3, minmax(330px, 1fr));
   gap: 65px;
+
+  a {
+    color: ${props => props.theme.pallete.primary.text};
+    text-decoration: none;
+  }
 
   @media (max-width: 980px) {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
