@@ -12,7 +12,7 @@ export default function Contact() {
 
   const validationForm = yup.object().shape({
     name: yup.string().required("O campo nome é obrigatório."),
-    email: yup.string().required("O campo e-mail é obrigatório."),
+    email: yup.string().email("Informe um e-mail válido!").required("O campo e-mail é obrigatório."),
   });
 
   const {
@@ -25,6 +25,7 @@ export default function Contact() {
 
   const onSubmit = (data) => {
     //console.log(data);
+    console.log("Valeu pelo desafio galera da F&MD! 👊");
     setOpenModal(true);
   };
 
@@ -34,21 +35,11 @@ export default function Contact() {
         <h2 data-aos="fade-up">Entre em contato conosco agora!</h2>
         <form onSubmit={handleSubmit(onSubmit)} data-aos="fade-down">
           <div>
-            <input
-              type="text"
-              placeholder="Nome"
-              name="name"
-              {...register("name")}
-            />
+            <input type="text" placeholder="Nome" name="name" {...register("name")} />
             <p className="error">{errors.name?.message}</p>
           </div>
           <div>
-            <input
-              type="text"
-              placeholder="E-mail"
-              name="email"
-              {...register("email")}
-            />
+            <input type="text" placeholder="E-mail" name="email" {...register("email")} />
             <p className="error">{errors.email?.message}</p>
           </div>
           <button type="submit">
@@ -61,10 +52,7 @@ export default function Contact() {
         <div className="bgModal">
           <img src="/icone-sucesso.svg" alt="icone Sucesso" />
           <h3>Sucesso!</h3>
-          <p>
-            Sua inscrição foi realizada e em breve você começará a receber
-            nossas notícias.
-          </p>
+          <p>Sua inscrição foi realizada e em breve você começará a receber nossas notícias.</p>
         </div>
       </Modal>
     </section>

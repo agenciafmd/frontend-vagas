@@ -17,7 +17,7 @@ export default function Footer() {
 
       <div className="container">
         <div className="copy">
-          <p>F&MD</p>
+          <a href="#">F&MD</a>
         </div>
       </div>
     </footer>

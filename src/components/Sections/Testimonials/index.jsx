@@ -69,11 +69,7 @@ export default function Testimonials() {
               </div>
               <div className="text">
                 <h3>Ricardo Paulino</h3>
-                <img
-                  src="/rating.svg"
-                  alt="Icone Avaliações"
-                  className="rating"
-                />
+                <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
                 <p>O curso possui ótima organização e exemplos maravilhosos.</p>
               </div>
             </div>
@@ -86,15 +82,8 @@ export default function Testimonials() {
               </div>
               <div className="text">
                 <h3>Murilo Magno</h3>
-                <img
-                  src="/rating.svg"
-                  alt="Icone Avaliações"
-                  className="rating"
-                />
-                <p>
-                  Intercalei com o curso de teoria o que facilitou bastante o
-                  meu desenvolvimento!
-                </p>
+                <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
+                <p>Intercalei com o curso de teoria o que facilitou bastante o meu desenvolvimento!</p>
               </div>
             </div>
           </SwiperSlide>
@@ -106,15 +95,8 @@ export default function Testimonials() {
               </div>
               <div className="text">
                 <h3>Robson Oliveira</h3>
-                <img
-                  src="/rating.svg"
-                  alt="Icone Avaliações"
-                  className="rating"
-                />
-                <p>
-                  Incrivelmente fácil aprender com vocês! A didática do
-                  professor é primorosa.
-                </p>
+                <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
+                <p>Incrivelmente fácil aprender com vocês! A didática do professor é primorosa.</p>
               </div>
             </div>
           </SwiperSlide>
@@ -126,15 +108,8 @@ export default function Testimonials() {
               </div>
               <div className="text">
                 <h3>Giovanni Souza</h3>
-                <img
-                  src="/rating.svg"
-                  alt="Icone Avaliações"
-                  className="rating"
-                />
-                <p>
-                  Estou muito satisfeito com o curso e todos os módulos
-                  disponíveis!
-                </p>
+                <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
+                <p>Estou muito satisfeito com o curso e todos os módulos disponíveis!</p>
               </div>
             </div>
           </SwiperSlide>
@@ -146,15 +121,8 @@ export default function Testimonials() {
               </div>
               <div className="text">
                 <h3>Jorge Luiz</h3>
-                <img
-                  src="/rating.svg"
-                  alt="Icone Avaliações"
-                  className="rating"
-                />
-                <p>
-                  Gostei bastante do curso e com ele pude evoluir muito meu
-                  aprendizado!
-                </p>
+                <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
+                <p>Gostei bastante do curso e com ele pude evoluir muito meu aprendizado!</p>
               </div>
             </div>
           </SwiperSlide>

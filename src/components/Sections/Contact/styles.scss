@@ -52,8 +52,24 @@
 
       form {
         flex-direction: column;
+        width: 100%;
 
         button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      h2 {
+        width: 100%;
+        max-width: 32rem;
+      }
+
+      form {
+        input {
           width: 100%;
         }
       }
