@@ -23,6 +23,10 @@ html {
   }
 }
 
+:target {
+  scroll-margin-top: 9rem; // altura do header
+}
+
 body {
   background-color: var(--black);
   color: var(--white);

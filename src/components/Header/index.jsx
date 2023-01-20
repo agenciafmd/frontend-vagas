@@ -37,11 +37,19 @@ export default function Header() {
               Contato
             </a>
           </li>
+          <button className="closeMenu" onClick={handleOpenMenu}>
+            <img
+              src="/menu-close.svg"
+              alt="Fechar Menu Mobile"
+              width="48"
+              height="48"
+            />
+          </button>
         </ul>
         <button className="menuMobile" onClick={handleOpenMenu}>
           <img
             src="/menu-mobile.svg"
-            alt="Menu Mobile"
+            alt="Abrir Menu Mobile"
             width="32"
             height="32"
           />
