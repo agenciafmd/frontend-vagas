@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import spotifyButton from '../../assets/spotify-button.svg'
 import { Slider } from '../Slider'
 import { SlideOption } from '../Slider/style'
 import {
@@ -10,27 +11,45 @@ import {
 } from './style'
 
 export function Highlight({ content }) {
+  if (content.length === 0) return
+
   return (
     <HighlightContainer>
-      <Slider>
-        {content.map((item, index) => {
+      <Slider amount={content[0].playlists.items}>
+        {content[0].playlists.items.map((item, index) => {
           return (
             <SlideOption key={index + 1}>
               <HighlightThumbContainer>
                 <Gradient />
-                <Image src={item.thumb} alt="Banner" />
+                <Image
+                  src={item.images[0].url}
+                  alt="Banner"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
               </HighlightThumbContainer>
 
               <HighlightInfosContainer>
                 <HighlightInfosBox>
                   <hr />
-                  <h1>Lorem ipsum dolor sit amet</h1>
+                  <h1>{item.name}</h1>
                 </HighlightInfosBox>
 
-                <p>
-                  Quisque cursus nunc urna, eget ultricies orci accumsan at.
-                  Cras metus nibh, viverra vitae erat ut, lacinia interdum nisl.
-                </p>
+                <p>{item.description}</p>
+
+                <a
+                  href={item.external_urls.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={spotifyButton}
+                    alt="Spotify Button"
+                    width={205}
+                    height={77}
+                    style={{ cursor: 'pointer' }}
+                  />
+                </a>
               </HighlightInfosContainer>
             </SlideOption>
           )

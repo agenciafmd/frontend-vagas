@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group'
 import { SliderPagination } from './SliderPagination'
 import { SlideContainer } from './style.js'
 
-export function Slider({ children }) {
+export function Slider({ children, amount }) {
   const [current, setCurrent] = useState(0)
   const length = children.length
 
@@ -43,7 +43,12 @@ export function Slider({ children }) {
         </div>
       </CSSTransition>
 
-      <SliderPagination prev={prevSlide} next={nextSlide} position={current} />
+      <SliderPagination
+        prev={prevSlide}
+        next={nextSlide}
+        position={current}
+        amount={amount}
+      />
     </SlideContainer>
   )
 }

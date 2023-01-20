@@ -14,6 +14,7 @@ export const HighlightContainer = styled.div`
 
 export const HighlightThumbContainer = styled.div`
   width: 100%;
+  height: 694px;
   max-height: 694px;
 
   position: relative;
@@ -27,7 +28,9 @@ export const HighlightThumbContainer = styled.div`
 export const Gradient = styled.div`
   width: 100%;
   height: 100%;
+  z-index: 1;
   position: absolute;
+  bottom: 0;
   background: linear-gradient(${props => props.theme.pallete.background.third});
 `
 
@@ -42,6 +45,7 @@ export const HighlightInfosContainer = styled.div`
   position: absolute;
   top: 40%;
   left: 80px;
+  z-index: 90;
 
   height: 200px;
 

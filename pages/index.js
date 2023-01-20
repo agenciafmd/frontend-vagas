@@ -1,28 +1,41 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Row } from 'react-bootstrap'
-import bg from '../src/assets/banner/background.jpg'
-import { setItem } from '../src/common/storage'
+import { getItem, setItem } from '../src/common/storage'
 import { Highlight } from '../src/components/Highlight'
 import { Newsletter } from '../src/components/Newsletter'
 import { SectionOne } from '../src/components/SectionOne'
 import { SectionTwo } from '../src/components/SectionTwo'
 import auth from '../src/service/auth'
-
-const highlightcontent = [
-  {
-    thumb: bg
-  }
-]
+import spotify from '../src/service/spotify'
 
 export default function Home({ authorization }) {
+  const [highlightContent, setHighlightContent] = useState([])
+
   useEffect(() => {
     setItem('token', authorization.access_token)
+
+    const getEndpointForHighlight = async () => {
+      try {
+        const responseHighlight = await spotify.get(
+          '/browse/featured-playlists',
+          {
+            headers: {
+              Authorization: `Bearer ${getItem('token')}`
+            }
+          }
+        )
+        setHighlightContent(oldArr => [...oldArr, responseHighlight.data])
+      } catch (error) {
+        console.log(error.message, 'tycatch index l24')
+      }
+    }
+    getEndpointForHighlight()
   }, [])
 
   return (
     <>
       <Row className="m-0">
-        <Highlight content={highlightcontent} />
+        <Highlight content={highlightContent} />
       </Row>
 
       <Row className="m-0">
@@ -47,7 +60,7 @@ export const getStaticProps = async () => {
 
     return {
       props: { authorization },
-      revalidate: 3600
+      revalidate: authorization.expires_in
     }
   } catch (error) {
     console.log(error)
