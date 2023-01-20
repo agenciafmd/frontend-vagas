@@ -48,13 +48,16 @@
   }
 
   .slide1 {
-    background: url("/slide1.jpg") center/cover;
+    background: url("/slide1.jpg");
+    background: -webkit-image-set(url("/slide1.webp") 1x) no-repeat center/cover;
   }
   .slide2 {
-    background: url("/slide2.jpg") center/cover;
+    background: url("/slide2.jpg");
+    background: -webkit-image-set(url("/slide2.webp") 1x) no-repeat center/cover;
   }
   .slide3 {
-    background: url("/slide3.jpg") center/cover;
+    background: url("/slide3.jpg");
+    background: -webkit-image-set(url("/slide3.webp") 1x) no-repeat center/cover;
   }
 
   @media (max-width: 768px) {
