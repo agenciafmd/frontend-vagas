@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.scss";
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleOpenMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -10,22 +16,35 @@ export default function Header() {
             <img src="/menosdomesmo.svg" alt="Logo Menos do Mesmo" />
           </a>
         </div>
-        <ul className="menuDesktop">
+        <ul className={`menuDesktop  ${openMenu && "show"}`}>
           <li>
-            <a href="#">Início</a>
+            <a href="#" onClick={handleOpenMenu}>
+              Início
+            </a>
           </li>
           <li>
-            <a href="#about">Sobre</a>
+            <a href="#about" onClick={handleOpenMenu}>
+              Sobre
+            </a>
           </li>
           <li>
-            <a href="#testimonials">Depoimentos</a>
+            <a href="#testimonials" onClick={handleOpenMenu}>
+              Depoimentos
+            </a>
           </li>
           <li>
-            <a href="#contact">Contato</a>
+            <a href="#contact" onClick={handleOpenMenu}>
+              Contato
+            </a>
           </li>
         </ul>
-        <button className="menuMobile" aria-label="Menu Mobile">
-          <img src="/menu-mobile.svg" alt="Menu Mobile" width="32" height="32" />
+        <button className="menuMobile" onClick={handleOpenMenu}>
+          <img
+            src="/menu-mobile.svg"
+            alt="Menu Mobile"
+            width="32"
+            height="32"
+          />
         </button>
       </div>
     </header>
