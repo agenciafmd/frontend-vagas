@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.10.5",
     "@hookform/resolvers": "^2.9.10",
     "@mui/material": "^5.11.5",
+    "aos": "^3.0.0-beta.6",
     "axios": "^1.2.3",
     "react": "^18.2.0",
     "react-div-100vh": "^0.7.0",
