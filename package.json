@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-div-100vh": "^0.7.0",
     "react-dom": "^18.2.0",
     "sass": "^1.57.1",
     "swiper": "^8.4.5"

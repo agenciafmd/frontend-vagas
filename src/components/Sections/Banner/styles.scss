@@ -1,6 +1,6 @@
 .Banner {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   top: 0;
 
@@ -63,7 +63,9 @@
     .slide3 {
       .content {
         .title {
+          gap: 1.6rem;
           .divider {
+            width: 1rem;
             height: 6rem;
           }
         }

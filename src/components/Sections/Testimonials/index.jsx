@@ -11,7 +11,7 @@ export default function Testimonials() {
   return (
     <section className="Testimonials" id="testimonials">
       <div className="container">
-        <h2>O que alunos e alunas dizem</h2>
+        <h2>O que os alunos dizem</h2>
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -33,9 +33,6 @@ export default function Testimonials() {
             },
             1024: {
               slidesPerView: 3,
-            },
-            1280: {
-              slidesPerView: 4,
             },
           }}
         >
@@ -87,7 +84,7 @@ export default function Testimonials() {
               <div className="text">
                 <h3>Giovanni Souza</h3>
                 <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
-                <p>Estou muito satisfeito com o curso e todos os módulos disponíveis</p>
+                <p>Estou muito satisfeito com o curso e todos os módulos disponíveis!</p>
               </div>
             </div>
           </SwiperSlide>
@@ -100,7 +97,7 @@ export default function Testimonials() {
               <div className="text">
                 <h3>Matheus Costa</h3>
                 <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
-                <p>Gostei bastante do curso e evolui muito meu aprendizado</p>
+                <p>Gostei bastante do curso e com ele pude evoluir muito meu aprendizado!</p>
               </div>
             </div>
           </SwiperSlide>
