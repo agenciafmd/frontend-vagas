@@ -43,7 +43,11 @@ export const SectionOneCards = styled.div`
   grid-template-columns: repeat(4, minmax(257px, 1fr));
   gap: 30px;
 
-  @media (max-width: 980px) {
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 1080px) {
     grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
   }
 `

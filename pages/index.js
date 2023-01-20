@@ -1,35 +1,29 @@
 import { useEffect, useState } from 'react'
 import { Row } from 'react-bootstrap'
-import { getItem, setItem } from '../src/common/storage'
+import { setItem } from '../src/common/storage'
 import { Highlight } from '../src/components/Highlight'
 import { Newsletter } from '../src/components/Newsletter'
 import { SectionOne } from '../src/components/SectionOne'
 import { SectionTwo } from '../src/components/SectionTwo'
 import auth from '../src/service/auth'
-import spotify from '../src/service/spotify'
+import getFeaturedPlaylists from '../src/service/endpoints/getFeaturedPlaylists'
+import getNewsAlbumsReleases from '../src/service/endpoints/getNewsAlbumsReleases'
 
 export default function Home({ authorization }) {
   const [highlightContent, setHighlightContent] = useState([])
+  const [sectionOneContent, setSectionOneContent] = useState('')
 
   useEffect(() => {
     setItem('token', authorization.access_token)
 
-    const getEndpointForHighlight = async () => {
-      try {
-        const responseHighlight = await spotify.get(
-          '/browse/featured-playlists',
-          {
-            headers: {
-              Authorization: `Bearer ${getItem('token')}`
-            }
-          }
-        )
-        setHighlightContent(oldArr => [...oldArr, responseHighlight.data])
-      } catch (error) {
-        console.log(error.message, 'tycatch index l24')
-      }
+    const triggersAPIEndpoints = async () => {
+      const highlightResponse = await getFeaturedPlaylists()
+      setHighlightContent(oldArr => [...oldArr, highlightResponse])
+
+      const sectionOneResponse = await getNewsAlbumsReleases()
+      setSectionOneContent(sectionOneResponse.albums.items)
     }
-    getEndpointForHighlight()
+    triggersAPIEndpoints()
   }, [])
 
   return (
@@ -39,7 +33,7 @@ export default function Home({ authorization }) {
       </Row>
 
       <Row className="m-0">
-        <SectionOne />
+        <SectionOne content={sectionOneContent} />
       </Row>
 
       <Row className="m-0">

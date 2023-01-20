@@ -1,18 +1,29 @@
-import Image from 'next/image'
-import claws from '../../assets/claws.svg'
 import { Card } from './Card'
 import { SectionOneCards, SectionOneContainer } from './style'
 
-export function SectionOne() {
+export function SectionOne({ content }) {
+  if (content.length === 0) return
+
   return (
     <SectionOneContainer>
-      <h1>Lorem Ipsim Dolor</h1>
+      <h1>Novos Lançamentos</h1>
       <SectionOneCards>
-        <Image src={claws} alt="claws" className="bg--section_one" />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {content.map((album, index) => {
+          return (
+            <a
+              key={index + 1}
+              href={album.external_urls.spotify}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card
+                title={album.name}
+                sub={album.artists[0].name}
+                thumb={album.images[1].url}
+              />
+            </a>
+          )
+        })}
       </SectionOneCards>
     </SectionOneContainer>
   )

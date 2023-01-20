@@ -12,34 +12,35 @@ export const CardContainer = styled.div`
   z-index: 99;
   position: relative;
 
-  .bg {
-    height: 319px;
-    width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
 
-    position: absolute;
-    bottom: 0px;
-    z-index: -1;
-
-    background-color: ${props => props.theme.pallete.secondary.second};
-    border-radius: 40px 40px 0px 0px;
+  :hover {
+    scale: 1.1;
+    transition: 0.2s;
   }
 `
 
-export const CardImageContainer = styled.div``
+export const CardImageContainer = styled.div`
+  margin-bottom: 15px;
+`
 
 export const CardInfos = styled.div`
   padding: 10px 16px 35px 16px;
   text-align: center;
 
-  color: ${props => props.theme.pallete.primary.main};
+  color: ${props => props.theme.pallete.primary.text};
 
   h3 {
-    font-size: 1.5em;
+    max-width: 245px;
+    font-size: 1.4em;
     font-weight: 700;
   }
 
-  p {
-    font-size: 1em;
+  span {
+    font-size: 0.9em;
+    color: ${props => props.theme.pallete.primary.text};
+    opacity: 70%;
   }
 `
 
