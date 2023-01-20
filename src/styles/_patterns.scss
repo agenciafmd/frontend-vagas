@@ -40,3 +40,26 @@ input {
   color: var(--white);
   font-size: 1.6rem;
 }
+
+.bgModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black);
+  width: 469px;
+  height: 255px;
+  border-left: 14px solid #e9ff00;
+  box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+
+  p {
+    max-width: 38rem;
+  }
+}
