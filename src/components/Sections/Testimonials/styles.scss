@@ -29,7 +29,9 @@
             }
             .user {
               min-width: 10rem;
-              margin-left: -2.4rem;
+              margin-left: -1rem;
+              margin-top: 1rem;
+              clip-path: circle();
             }
           }
         }

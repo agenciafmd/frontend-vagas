@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import api from "../../../services/api";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,6 +9,29 @@ import "swiper/css/pagination";
 import "./styles.scss";
 
 export default function Testimonials() {
+  const [user1, setUser1] = useState();
+  const [user2, setUser2] = useState();
+  const [user3, setUser3] = useState();
+  const [user4, setUser4] = useState();
+  const [user5, setUser5] = useState();
+
+  // Consumo API: Random User (https://randomuser.me/)
+  useEffect(() => {
+    api
+      .get(`api/?gender=male&results=5`)
+      .then((response) => {
+        //console.log(response.data);
+        setUser1(response.data.results[0].picture.medium);
+        setUser2(response.data.results[1].picture.medium);
+        setUser3(response.data.results[2].picture.medium);
+        setUser4(response.data.results[3].picture.medium);
+        setUser5(response.data.results[4].picture.medium);
+      })
+      .catch((error) => {
+        console.error("erro" + error);
+      });
+  }, []);
+
   return (
     <section className="Testimonials" id="testimonials">
       <div className="container">
@@ -40,7 +64,7 @@ export default function Testimonials() {
             <div className="card">
               <div className="icon">
                 <div className="rectangle"></div>
-                <img src="/icon-user.svg" alt="Icone Usuario" className="user" />
+                <img src={user1} alt="Icone Usuario" className="user" />
               </div>
               <div className="text">
                 <h3>Ricardo Paulino</h3>
@@ -53,7 +77,7 @@ export default function Testimonials() {
             <div className="card">
               <div className="icon">
                 <div className="rectangle"></div>
-                <img src="/icon-user.svg" alt="Icone Usuario" className="user" />
+                <img src={user2} alt="Icone Usuario" className="user" />
               </div>
               <div className="text">
                 <h3>Murilo Magno</h3>
@@ -66,7 +90,7 @@ export default function Testimonials() {
             <div className="card">
               <div className="icon">
                 <div className="rectangle"></div>
-                <img src="/icon-user.svg" alt="Icone Usuario" className="user" />
+                <img src={user3} alt="Icone Usuario" className="user" />
               </div>
               <div className="text">
                 <h3>Robson Oliveira</h3>
@@ -79,7 +103,7 @@ export default function Testimonials() {
             <div className="card">
               <div className="icon">
                 <div className="rectangle"></div>
-                <img src="/icon-user.svg" alt="Icone Usuario" className="user" />
+                <img src={user4} alt="Icone Usuario" className="user" />
               </div>
               <div className="text">
                 <h3>Giovanni Souza</h3>
@@ -92,10 +116,10 @@ export default function Testimonials() {
             <div className="card">
               <div className="icon">
                 <div className="rectangle"></div>
-                <img src="/icon-user.svg" alt="Icone Usuario" className="user" />
+                <img src={user5} alt="Icone Usuario" className="user" />
               </div>
               <div className="text">
-                <h3>Matheus Costa</h3>
+                <h3>Jorge Luiz</h3>
                 <img src="/rating.svg" alt="Icone Avaliações" className="rating" />
                 <p>Gostei bastante do curso e com ele pude evoluir muito meu aprendizado!</p>
               </div>
