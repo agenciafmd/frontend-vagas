@@ -50,6 +50,19 @@ export default function Banner() {
           </div>
         </div>
       </SwiperSlide>
+      <SwiperSlide className="slide3">
+        <div className="container">
+          <div className="content">
+            <div className="title">
+              <div className="divider"></div>
+              <h1>Menos do mesmo na hora de tocar bateria!</h1>
+            </div>
+            <div className="description">
+              <p>Aprenda como tocar bateria do zero com nosso curso online</p>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
     </Swiper>
   );
 }

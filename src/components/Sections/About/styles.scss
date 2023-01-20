@@ -1,7 +1,7 @@
 .About {
   background-image: url("/icon-music.svg");
   background-repeat: no-repeat;
-  background-position-x: 64px;
+  background-position-x: 6.4rem;
 
   .container {
     h2 {
@@ -32,6 +32,11 @@
           text-align: center;
         }
 
+        h3 {
+          width: 100%;
+          max-width: 20rem;
+        }
+
         p {
           margin: 1.6rem 0;
           font-size: 1.6rem;
@@ -41,6 +46,23 @@
 
         .btnCard {
           margin-top: 1.6rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    background-position-x: -5rem;
+    background-position-y: 46.7rem;
+    background-size: 40%;
+
+    .container {
+      .cards {
+        flex-direction: column;
+        gap: 8rem;
+
+        .card {
+          width: 100%;
         }
       }
     }

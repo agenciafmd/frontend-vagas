@@ -11,6 +11,16 @@
       background: var(--color-primary);
     }
   }
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: -48px;
+
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
 }
 
 .swiper-button-prev,
