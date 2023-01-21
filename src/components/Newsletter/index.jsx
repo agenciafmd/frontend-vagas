@@ -40,9 +40,9 @@ export function Newsletter() {
   return (
     <>
       <NewsletterContainer>
-        <h1>
+        <h2>
           Assine nossa <span>newsletter</span>
-        </h1>
+        </h2>
 
         <NewsletterForm onSubmit={handleSubmit(onSubmit, onError)}>
           <InputBox>

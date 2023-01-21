@@ -49,7 +49,7 @@ export function Layout({ children }) {
             </FooterBoxInfos>
 
             <FooterBoxLogo>
-              <h1>F&MD</h1>
+              <h2>F&MD</h2>
             </FooterBoxLogo>
           </FooterContainer>
         </Row>

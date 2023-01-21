@@ -81,7 +81,7 @@ export const FooterBoxLogo = styled.div`
 
   background: ${props => props.theme.pallete.secondary.main};
 
-  h1 {
+  h2 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 1.8em;

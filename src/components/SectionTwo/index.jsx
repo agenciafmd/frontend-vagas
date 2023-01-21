@@ -10,7 +10,7 @@ export function SectionTwo({ content }) {
 
   return (
     <SectionTwoContainer>
-      <h1>Recomendações</h1>
+      <h2>Recomendações</h2>
       <SectionTwoCards>
         {width > 576 && (
           <>

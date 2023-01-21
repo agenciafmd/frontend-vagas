@@ -6,7 +6,7 @@ export function SectionOne({ content }) {
 
   return (
     <SectionOneContainer>
-      <h1>Novos Lançamentos</h1>
+      <h2>Novos Lançamentos</h2>
       <SectionOneCards>
         {content.map((album, index) => {
           return (

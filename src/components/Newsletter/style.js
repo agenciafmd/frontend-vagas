@@ -20,7 +20,7 @@ export const NewsletterContainer = styled.div`
     padding: 0px 10px;
   }
 
-  h1 {
+  h2 {
     max-width: 330px;
 
     font-size: 3em;

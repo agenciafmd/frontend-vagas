@@ -16,7 +16,7 @@ export const SectionOneContainer = styled.section`
     padding: 40px 16px;
   }
 
-  h1 {
+  h2 {
     font-size: 3em;
     font-weight: 700;
 
