@@ -28,6 +28,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-br" className={inter.className}>
         <Head>
           <meta name="theme-color" content={theme.pallete.primary.main} />
+          <link rel="shortcut icon" href="favicon.svg" type="svg" />
         </Head>
         <body>
           <Main />
