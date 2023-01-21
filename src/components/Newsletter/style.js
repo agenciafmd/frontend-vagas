@@ -2,15 +2,22 @@ import styled from 'styled-components'
 
 export const NewsletterContainer = styled.div`
   padding: 100px 80px;
+  gap: 50px;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
   @media (max-width: 834px) {
     flex-direction: column;
-    padding: 0px 80px;
+    padding: 100px 30px;
     margin-bottom: 100px;
+    text-align: center;
+  }
+
+  @media (max-width: 340px) {
+    padding: 0px 10px;
   }
 
   h1 {
@@ -40,8 +47,12 @@ export const NewsletterForm = styled.form`
   align-items: center;
   gap: 15px;
 
-  @media (max-width: 576px) {
+  @media (max-width: 834px) {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (max-width: 576px) {
     gap: 40px;
   }
 `
@@ -61,4 +72,12 @@ export const NewsletterButton = styled.button`
   border-radius: 20px;
 
   cursor: pointer;
+
+  @media (max-width: 834px) {
+    width: 50%;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 `

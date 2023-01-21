@@ -36,7 +36,7 @@ export function Layout({ children }) {
           </HeaderContainer>
         </Row>
 
-        <Row className="m-0">
+        <Row className="m-0 justify-content-center">
           <MainContainer>{children}</MainContainer>
         </Row>
 

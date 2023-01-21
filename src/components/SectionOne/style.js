@@ -47,7 +47,11 @@ export const SectionOneCards = styled.div`
     text-decoration: none;
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1120px) {
+    grid-template-columns: repeat(2, minmax(257px, 1fr));
+  }
+
+  @media (max-width: 834px) {
     grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
   }
 `

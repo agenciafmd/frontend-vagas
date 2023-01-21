@@ -64,7 +64,7 @@ export const FooterBoxInfos = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 576px) {
+  @media (max-width: 834px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.3em;

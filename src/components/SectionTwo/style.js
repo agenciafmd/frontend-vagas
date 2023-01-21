@@ -40,8 +40,13 @@ export const SectionTwoCards = styled.div`
     text-decoration: none;
   }
 
-  @media (max-width: 980px) {
+  @media (max-width: 1120px) {
+    grid-template-columns: repeat(3, minmax(230px, 1fr));
+  }
+
+  @media (max-width: 834px) {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    justify-items: start;
   }
 
   @media (max-width: 320px) {
