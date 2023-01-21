@@ -25,10 +25,22 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt-br" className={inter.className}>
+      <Html
+        lang="pt-br"
+        className={`${inter.className} scroll-smooth`}
+        style={{ scrollBehavior: 'smooth' }}
+      >
         <Head>
+          <meta
+            name="description"
+            content="Descubra as melhores playlists, os melhores albums e singles do momento no Spotify."
+          />
           <meta name="theme-color" content={theme.pallete.primary.main} />
           <link rel="shortcut icon" href="favicon.svg" type="svg" />
+          <link
+            rel="canonical"
+            href="https://menos-do-mesmo.vercel.app/"
+          ></link>
         </Head>
         <body>
           <Main />
