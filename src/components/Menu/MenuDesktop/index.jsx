@@ -6,16 +6,16 @@ export function MenuDesktop() {
     <Nav>
       <NavList>
         <NavItem>
-          <Link href="/">Link para seção 1</Link>
+          <Link href="/">Home</Link>
         </NavItem>
         <NavItem>
-          <Link href="/">Link para seção 2</Link>
+          <Link href="/#sectionOne">Lançamentos</Link>
         </NavItem>
         <NavItem>
-          <Link href="/">Link para seção 3</Link>
+          <Link href="/#sectionTwo">Recomendações</Link>
         </NavItem>
         <NavItem>
-          <Link href="/">Link para o footer</Link>
+          <Link href="/#footer">Footer</Link>
         </NavItem>
       </NavList>
     </Nav>

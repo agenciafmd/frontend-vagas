@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image.js'
-import { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import logo from '../../assets/logo.svg'
 import logoV2 from '../../assets/logoV2.svg'
@@ -17,8 +16,6 @@ import {
 
 export function Layout({ children }) {
   const { width } = useWindowSize()
-
-  useEffect(() => console.log(width))
 
   return (
     <>
@@ -41,7 +38,7 @@ export function Layout({ children }) {
         </Row>
 
         <Row className="position-relative m-0">
-          <FooterContainer>
+          <FooterContainer id="footer">
             <FooterBoxInfos>
               <Image src={logoV2} alt="Logo" width={233.62} />
               <span>email@email.com</span>

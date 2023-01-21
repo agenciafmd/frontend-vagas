@@ -1,10 +1,8 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { Modal, ModalBody } from 'react-bootstrap'
-import claws from '../../../assets/claws.svg'
 import toggleMenu from '../../../assets/toggleMenu.svg'
 import { MenuDesktop } from '../MenuDesktop'
-import { MenuMobileImgContainer } from './style'
 
 export function MenuMobile() {
   const [show, setShow] = useState(false)
@@ -24,10 +22,6 @@ export function MenuMobile() {
       <Modal show={show} fullscreen="sm-down" contentClassName="customModal">
         <ModalBody onClick={handleClose}>
           <MenuDesktop />
-
-          <MenuMobileImgContainer>
-            <Image src={claws} alt="claws" height={347} />
-          </MenuMobileImgContainer>
         </ModalBody>
       </Modal>
     </>

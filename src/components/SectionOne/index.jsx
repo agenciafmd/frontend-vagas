@@ -5,7 +5,7 @@ export function SectionOne({ content }) {
   if (content.length === 0) return
 
   return (
-    <SectionOneContainer>
+    <SectionOneContainer id="sectionOne">
       <h2>Novos Lançamentos</h2>
       <SectionOneCards>
         {content.map((album, index) => {
