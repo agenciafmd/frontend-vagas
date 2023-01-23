@@ -1,106 +1,172 @@
-# Menos-do-Mesmo
+## A empresa
+![alt text](assets/logo.svg)
 
-Desenvolver uma Landing Page.
+Somente um lugar apaixonante pode manter um time apaixonado. E somente um time apaixonado é capaz de realizar um bom trabalho. Por isso, na F&MD, fazemos de tudo para que as pessoas sejam felizes além do fim de semana. Não é discurso pronto pra pegar bem com o mercado. É algo que nasceu com a gente. É claro que existe cobrança. É claro que existem problemas. Mas quando surge algum, tentamos resolver do jeito mais justo possível. Nem sempre a gente acerta.
 
-<div align='center'>
+Curioso em saber um pouco do nosso ecosistema? Deem uma olhada nesse reels do Instagram e espero que ele
+te agrade e mostre um pouquinho do nosso ambiente: [Crazy F&MD](https://www.instagram.com/p/CjJUzHTLjo1/)
 
-![](https://imgur.com/EFHWyI0.gif)
+<b>Nosso Site</b>: [F&MD Site](https://fmd.ag/)
+<br>
+<b>Nosso Instagram</b>: [F&MD Instagram](https://www.instagram.com/agenciafmd/)
 
-</div>
+## Oportunidade
+Estamos em busca de pessoas apaixonadas por Front-end e com sede de projetos e experiências FODAS.
 
-### Construído com
+Seu dia será repleto de:
+```javascript
+const differentials = [
+  'Tecnologia foda',
+  'Pessoas engajadas em crescer juntas',
+  'Ambiente de trabalho saudável',
+  'Respeito às pessoas em primeiro lugar',
+  'Produzir trabalhos incríveis',
+  'Oportunidade em aperfeiçoar Hard Skills',
+  'Oportunidade em aperfeiçoar Soft Skills',
+  'Salário coerente com o mercado, trabalho e perfil profissional',
+  'Disputas de Pebolim(Pebolas)',
+  'Disputas de Fifinha',
+  'Entre muitas outras coisas legais!',
+  ...awesomeThings
+];
+```
 
-Algumas das principais ferramentas utilizadas foram:
+Nossa stack é composta por:
 
-- [![React.](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
-- [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-- [![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)
-- ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-- ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
-- [![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
-- [![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
-- [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+````javascript
+const frontendFMDTechnologies = [
+    'HTML',
+    'CSS',
+    'Javascript',
+    'Bootstrap',
+    'Blade (Laravel template engineering)',
+    'Angular',
+    'Sass',
+    'Typescript',
+    'Git',
+    'Ionic',
+    'NPM',
+    'Webpack',
+    'RxJs',
+    'NGRX',
+    'NGXS',
+];
+````
+````javascript
+const frontendFMDTools = [
+    'WebStorm',
+    'Homestead (VirtualBox, Vagrant)',
+    'Gitlab',
+    'Github',
+    'Discord',
+    'Trello',
+    'Plann',
+    'Jira',
+    'Postman',
+    'Figma',
+    'Notion',
+    'Visual Studio(Just Sometimes)',
+    'Linux (Terminal)',
+];
+````
 
----
+Usando como base projetos conceituados pela comunidade, como por exemplo o Bootstrap ou Angular, a estrutura de arquivos e diretórios que utilizamos consciste no isolamento por responsabilidade para agrupar determinada funcionalidade que necessita de vários arquivos para abranger todo seu conteúdo sem perder a objetividade e facilitar a manutenção.
 
-## Dando início
+## Requisitos principais
+- Proatividade
+- Sentimento de dono
+- Comprometimento, organização e senso de trabalho em equipe
+- Estar disposto a buscar o aprendizado e evolução constante
+- Usar o bom senso para tomada de decisões em situações adversas
 
-Esta aplicação está online e você pode verificar através desse [link](https://menos-do-mesmo.vercel.app/), que está hospeadado na Vercel.
+## Challenge
 
-Ou no caso de obter uma cópia localmente, siga esses passos de exemplo.
+O nosso challenge para a <b>mais nova vaga de Front-end</b> consiste em desenvolver uma Landing Page de assunto de
+sua preferência, basta atender os requisitos abaixo:
 
-### Pré-requisitos
+- Header com os links de âncora para as seções.
+- Seção com 3 banners (Slider).
+- Seção com cards (Mínimo 3 cards).
+  - Mobile: Blocado abaixo do outro.
+  - Desktop: Um ao lado do outro (garantindo a mesma altura).
+- Segunda seção de cards (Mínimo 3 cards).
+  - Mobile: Slider
+  - Desktop: Slider desligado (garantindo a mesma altura).
+- Formulário de newsletter.
+- Footer.
 
-- NPM
-  ```sh
-  npm install npm@latest -g
-  ```
-- KEYS
-  ```sh
-  As chaves são privadas e estão criptografadas no dotenv. Por questão de testes local deixarei um arquivo com elas de forma pública.
-  ```
+Ficou em dúvida?! Não se preocupe, nós preparamos um Figma como fonte de inspiração para a sua proposta - [Protótipo de LP](https://www.figma.com/file/SSTsobmlfwSgfxIpk1OWqP/Desafio-para-vaga-de-Front-End?t=uB4gXzXXZJyrCnnN-1).
 
-### Instalação
+<b>Requisitos mínimos</b>
+- HTML
+- CSS
+- Javascript
+- Consumir API
 
-1. Clone o repo
-   ```sh
-   git clone git@github.com:akaigao/menos-do-mesmo.git
-   ```
-2. Instale pacotes NPM
-   ```sh
-   npm install
-   ```
-3. Aguarde a instalção de todos os pacotes e rode no terminal
-   ```sh
-   npm run dev
-   ```
+<b>Sugestões para dar um diferencial e deixar foda!</b>
+- Animações
+- Frameworks SPA (Angular, Vue, React...)
+- Frameworks Front-end (Bootstrap, Angular Material, Tailwind CSS...)
+- Pré-processadores de CSS (Sass, Less, Stylus...)
+- Typescript
 
----
+E caso esteja em dúvida de qual API usar, esse [site](https://publicapis.dev/) possuí diversas API's bem legais que podem te ajudar, escolha o que seu s2 mandar!
 
-# Uso
+## Entrega
 
-### API
+Para avaliarmos o projeto de teste, submeta um [Pull Request (PR)](https://github.com/agenciafmd/frontend-vagas/blob/main/docs/pull_request_template.md)  para este repositório!
 
-<div align="center">
+### Commits
 
-![](https://developer.spotify.com/assets/WebAPI_intro.png)
+Em nossos projetos adotamos um styleguide ([Commit Amigão](https://github.com/BeeTech-global/bee-stylish/blob/master/commits/README.md#anatomia-do-commit-amig%C3%A3o)) para facilitar a identificação dos commit's, onde a estrutura é baseada em
 
-</div>
+```
+<tipo>(<escopo>): <assunto>
+```
 
-Optei por usar a [Web API do Spotify](https://developer.spotify.com/documentation/web-api/quick-start/) que oferece algumas opções de uso.
+<b>Os valores permitidos para o `<tipo>` são:</b>
 
-A opção que escolhi foi a Client Credentials, na qual o usuário que acessa o site não precisa informa sua conta spotify para ter acesso a ele.
+-  feat (nova funcionalidade)
+-  style (formatação geral no código. Não confundir com CSS)
+-  refactor (refatoração de código de produção)
+-  test (adicionar/refatorar testes)
+-  fix (adivinha qual é esse)
+-  docs (e esse também)
+-  chore (atualização de tarefas ou código que não está relacionado a produção)
 
-Todos os endpoints escolhidos retornam os valores que o próprio Spotify julga relevante, tais como: principais playlists, albums que estão em alta e singles recomendados.
+  <b>`<escopo>`</b><br>
 
-### Responsividade
+  O escopo deve informar onde foi feito a alteração
 
-<div align='center'>
+  <b>`<assunto>`</b>
 
-![](https://imgur.com/1WDNqdD.png)
+    - Máximo de 50 caracteres
+    - Tipo de escopo devem estar em letras minúsculas
+    - Assunto deve estar no imperativo
 
-</div>
+Exemplo:
 
-### Validação
+```
+    feat(seção sobre nós): adiciona os dados mockados da api no html
+```
 
-<div align='center'>
 
-![](https://imgur.com/eYrvCh5.png)
+## Avaliação
 
-</div>
+Iremos avaliar os seguintes critérios:
 
-### Modal
+- Código limpo e organização
+- Semântica
+- Organização dos commits
+- Acessibilidade
 
-<div align='center'>
+## Dúvidas
 
-![](https://imgur.com/nu68r9X.png)
+Não deixe que alguma dúvida faça você pirar! Abra uma issue ou nos mande um e-mail em <b>frontend@fmd.ag</b>, fechou?!
 
-</div>
+## Quer saber se temos vagas abertas?
 
----
+Acesse nosso [LinkedIn](https://www.linkedin.com/company/agenciafmd/) e fique de olho :slightly_smiling_face:
 
-Link do projeto: [menos-do-mesmo](https://github.com/akaigao/menos-do-mesmo)
-
-Obrigado e espero que gostem!
-
-<p align="right">©️akaigao</p>
+<b>Que a força esteja com você :)</b>
+>>>>>>> main
