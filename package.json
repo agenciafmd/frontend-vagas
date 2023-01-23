@@ -12,6 +12,7 @@
     "@next/font": "13.1.1",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
     "react": "18.2.0",
