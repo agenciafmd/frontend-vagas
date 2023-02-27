@@ -2,14 +2,31 @@ import { MapPin, House, SquaresFour, X, Coffee, Phone } from 'phosphor-react'
 import logoCoffeeDelivery from '../assets/logo-coffee-delivery.svg'
 
 import { clsx } from 'clsx'
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
+
+interface Location {
+  city: string
+  region: string
+}
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('#')
+  const [location, setLocation] = useState<Location>({} as Location)
 
   const handleOpenMenuMobile = useCallback(() => {
     setIsOpen((prev) => !prev)
+  }, [])
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('http://ip-api.com/json/', {
+        method: 'GET',
+      }).then((response) => response.json())
+
+      setLocation(response)
+    }
+    fetchData()
   }, [])
 
   return (
@@ -133,14 +150,14 @@ export function Navbar() {
         </div>
 
         <span
-          title="Porto Alegre"
+          title={location.city}
           className={clsx(
-            'flex items-center gap-1 mr-8 bg-purple-light p-2 rounded-md text-purple',
+            'flex items-center gap-1 mr-4 bg-purple-light p-2 rounded-md text-purple',
             'md:ml-8'
           )}
         >
           <MapPin className="text-purple" weight="fill" />
-          Porto Alegre
+          {location.city} - {location.region}
         </span>
 
         <button
