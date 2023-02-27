@@ -84,14 +84,6 @@ export function Navbar() {
             )}
           >
             <li className="">
-              <House
-                className={clsx(
-                  'w-full',
-                  activeLink === '#' ? 'text-purple' : '',
-                  'md:hidden'
-                )}
-                size={22}
-              />
               <a
                 href="#"
                 className={clsx(
@@ -101,18 +93,18 @@ export function Navbar() {
                 )}
                 onClick={() => setActiveLink('#')}
               >
+                <House
+                  className={clsx(
+                    'w-full',
+                    activeLink === '#' ? 'text-purple' : '',
+                    'md:hidden'
+                  )}
+                  size={22}
+                />
                 Página inicial
               </a>
             </li>
             <li className="">
-              <Coffee
-                className={clsx(
-                  'w-full',
-                  activeLink === '#coffee' ? 'text-purple' : '',
-                  'md:hidden'
-                )}
-                size={22}
-              />
               <a
                 href="#"
                 className={clsx(
@@ -122,18 +114,18 @@ export function Navbar() {
                 )}
                 onClick={() => setActiveLink('#coffee')}
               >
+                <Coffee
+                  className={clsx(
+                    'w-full',
+                    activeLink === '#coffee' ? 'text-purple' : '',
+                    'md:hidden'
+                  )}
+                  size={22}
+                />
                 Nossos cafés
               </a>
             </li>
             <li className="">
-              <Phone
-                className={clsx(
-                  'w-full',
-                  activeLink === '#contact' ? 'text-purple' : '',
-                  'md:hidden'
-                )}
-                size={22}
-              />
               <a
                 href="#"
                 className={clsx(
@@ -143,6 +135,14 @@ export function Navbar() {
                 )}
                 onClick={() => setActiveLink('#contact')}
               >
+                <Phone
+                  className={clsx(
+                    'w-full',
+                    activeLink === '#contact' ? 'text-purple' : '',
+                    'md:hidden'
+                  )}
+                  size={22}
+                />
                 Contato
               </a>
             </li>
