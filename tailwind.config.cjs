@@ -6,7 +6,7 @@ module.exports = {
       'yellow': '#DBAC2C',
       'yellow-dark': '#C47F17',
       'yellow-light': '#F1E9C9',
-      
+
       'purple-dark': '#4B2995',
       'purple': '#8047F8',
       'purple-light': '#EBE5F9',
@@ -43,6 +43,9 @@ module.exports = {
     },
 
     extend: {
+      backgroundImage: {
+        'background-header': "url('./src/assets/background.svg')"
+      }
     },
   },
   plugins: [],
