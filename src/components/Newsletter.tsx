@@ -26,7 +26,7 @@ export function Newsletter() {
   })
 
   const onSubmitNewsletter = useCallback((data: FormInputs) => {
-    console.log(data)
+    alert(JSON.stringify(data))
   }, [])
 
   return (
