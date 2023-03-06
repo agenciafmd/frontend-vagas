@@ -45,7 +45,25 @@ module.exports = {
     extend: {
       backgroundImage: {
         'background-header': "url('./src/assets/background.svg')"
-      }
+      },
+
+      keyframes: {
+        fadeDown: {
+          'from': {
+            opacity: 0,
+            transform: 'translateY(-20%)',
+          },
+          'to': {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+      },
+
+      animation: {
+        'fade-down': 'fadeDown 1s',
+      },
+
     },
   },
   plugins: [],
