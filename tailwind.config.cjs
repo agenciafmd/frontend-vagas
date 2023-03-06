@@ -23,6 +23,7 @@ module.exports = {
 
       'background': '#fafafa',
       'white': '#ffffff',
+      'danger': '#ef4444'
     },
 
     fontFamily: {
