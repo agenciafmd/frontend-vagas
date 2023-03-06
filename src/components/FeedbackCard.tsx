@@ -1,8 +1,7 @@
 import clsx from 'clsx'
 import { Star } from 'phosphor-react'
 
-import femaleAvatar from '../assets/undraw_female_avatar.svg'
-import maleAvatar from '../assets/undraw_male_avatar.svg'
+import userAvatar from '../assets/undraw_avatar.svg'
 
 export function Feedback() {
   return (
@@ -21,7 +20,7 @@ export function Feedback() {
       </p>
 
       <div className="flex gap-x-2 items-center mt-4">
-        <img src={femaleAvatar} alt="" className="w-16" />
+        <img src={userAvatar} alt="" className="w-16" />
 
         <div className="flex flex-col gap-x-2">
           <h3 className="text-base-subtitle font-roboto font-bold text-base">
