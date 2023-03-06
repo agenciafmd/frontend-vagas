@@ -12,12 +12,13 @@ import clsx from 'clsx'
 export function Header() {
   return (
     <header
-      className={clsx('bg-background-header ', 'lg:py-[5.875rem] lg:px-40')}
+      className={clsx('bg-background-header', 'lg:py-[5.875rem]')}
+      data-aos="zoom-in-down"
+      data-aos-duration={1500}
     >
       <Swiper
         modules={[Pagination, A11y, Mousewheel, Keyboard, Autoplay]}
-        // autoplay={{ delay: 3000 }}
-        speed={300}
+        autoplay={{ delay: 3000 }}
         keyboard
         pagination={{ clickable: true }}
         className="pb-12"
@@ -34,6 +35,7 @@ export function Header() {
               <h1
                 className={clsx(
                   'text-base-title font-baloo font-extrabold text-2xl mt-4',
+                  'sm:text-3xl',
                   'lg:text-5xl'
                 )}
               >
