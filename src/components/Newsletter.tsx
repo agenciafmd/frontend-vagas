@@ -1,8 +1,34 @@
 import clsx from 'clsx'
-import { PaperPlaneTilt } from 'phosphor-react'
+import { PaperPlaneTilt, WarningCircle } from 'phosphor-react'
 import newsletterLogo from '../assets/undraw_conversation.svg'
 
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+import { useCallback } from 'react'
+
+const schema = z.object({
+  email: z
+    .string()
+    .email('Informe um e-mail válido')
+    .min(1, { message: 'Campo obrigatório' }),
+})
+
+type FormInputs = z.infer<typeof schema>
+
 export function Newsletter() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormInputs>({
+    resolver: zodResolver(schema),
+  })
+
+  const onSubmitNewsletter = useCallback((data: FormInputs) => {
+    console.log(data)
+  }, [])
+
   return (
     <section
       id="contact"
@@ -39,31 +65,45 @@ export function Newsletter() {
             e enviamos diretamente para o seu e-mail.
           </p>
 
-          <form className={clsx('mt-4')}>
+          <form
+            onSubmit={handleSubmit(onSubmitNewsletter)}
+            className={clsx('mt-4')}
+          >
             <div
               className={clsx(
-                'flex items-center px-4 py-2 border border-base-hover rounded-lg',
-                'focus-within:ring-1 focus-within:ring-purple'
+                'relative flex items-center px-4 py-2 border border-base-hover rounded-lg',
+                'focus-within:ring-1 focus-within:ring-purple',
+                errors.email ? 'ring-1 ring-danger' : ''
               )}
             >
               <input
+                {...register('email')}
                 type="text"
                 name="email"
                 id="email"
                 placeholder="seumelhoremail@mail.com"
                 className="outline-none w-full text-base-text placeholder:text-base-label"
               />
-              <button
-                type="submit"
-                title="Enviar"
-                className="flex items-center"
-              >
-                <PaperPlaneTilt
-                  weight="fill"
+
+              {errors.email ? (
+                <WarningCircle
                   size={22}
-                  className="text-purple"
+                  weight="fill"
+                  className="text-danger"
                 />
-              </button>
+              ) : (
+                <button
+                  type="submit"
+                  title="Enviar"
+                  className="flex items-center"
+                >
+                  <PaperPlaneTilt
+                    weight="fill"
+                    size={22}
+                    className="text-purple"
+                  />
+                </button>
+              )}
             </div>
           </form>
         </div>
